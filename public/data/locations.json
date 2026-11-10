@@ -1,0 +1,432 @@
+[
+  {
+    "x": -8,
+    "y": -6,
+    "z": -18,
+    "mapId": [
+      21,
+      0
+    ],
+    "name": "Hunter's Dream"
+  },
+  {
+    "x": -199.74,
+    "y": -50.759,
+    "z": 179.42,
+    "mapId": [
+      24,
+      1
+    ],
+    "name": "1st Floor Sickroom"
+  },
+  {
+    "x": -193.4,
+    "y": -28.646,
+    "z": 68.5,
+    "mapId": [
+      24,
+      1
+    ],
+    "name": "Central Yharnam"
+  },
+  {
+    "x": -124.488,
+    "y": -27.021,
+    "z": 64.673,
+    "mapId": [
+      24,
+      1
+    ],
+    "name": "Great Bridge"
+  },
+  {
+    "x": -33.811,
+    "y": -40.722,
+    "z": 87.303,
+    "mapId": [
+      24,
+      1
+    ],
+    "name": "Tomb of Oedon"
+  },
+  {
+    "x": 16.775,
+    "y": -9.511,
+    "z": 103.27,
+    "mapId": [
+      24,
+      0
+    ],
+    "name": "Cathedral Ward"
+  },
+  {
+    "x": 67.808,
+    "y": 35.713,
+    "z": 339.689,
+    "mapId": [
+      24,
+      0
+    ],
+    "name": "Grand Cathedral Ward"
+  },
+  {
+    "x": -24.643,
+    "y": 40.621,
+    "z": 250.57,
+    "mapId": [
+      24,
+      2
+    ],
+    "name": "Upper Cathedral Ward"
+  },
+  {
+    "x": 45.335,
+    "y": 51.403,
+    "z": 300.35,
+    "mapId": [
+      24,
+      2
+    ],
+    "name": "Lumenflower Gardens"
+  },
+  {
+    "x": 114.86,
+    "y": 4.443,
+    "z": 425.02,
+    "mapId": [
+      24,
+      2
+    ],
+    "name": "Altar of Despair"
+  },
+  {
+    "x": 126.4,
+    "y": -65.214,
+    "z": 36,
+    "mapId": [
+      23,
+      0
+    ],
+    "name": "Old Yharnam"
+  },
+  {
+    "x": -139.979,
+    "y": -126.664,
+    "z": 57.359,
+    "mapId": [
+      23,
+      0
+    ],
+    "name": "Church of the Good Chalice"
+  },
+  {
+    "x": 111.86,
+    "y": -120.783,
+    "z": -65.249,
+    "mapId": [
+      23,
+      0
+    ],
+    "name": "Graveyard of the Darkbeast"
+  },
+  {
+    "x": -172,
+    "y": -22,
+    "z": 485.5,
+    "mapId": [
+      22,
+      0
+    ],
+    "name": "Hemwick Charnel Lane"
+  },
+  {
+    "x": -336.3,
+    "y": 2.4,
+    "z": 733,
+    "mapId": [
+      22,
+      0
+    ],
+    "name": "Witch's Abode"
+  },
+  {
+    "x": -190,
+    "y": -76.3,
+    "z": 252,
+    "mapId": [
+      27,
+      0
+    ],
+    "name": "Forbidden Woods"
+  },
+  {
+    "x": -335,
+    "y": -186.5,
+    "z": 479,
+    "mapId": [
+      27,
+      0
+    ],
+    "name": "Forbidden Grave"
+  },
+  {
+    "x": -400.4,
+    "y": -180.8,
+    "z": 414.6,
+    "mapId": [
+      32,
+      0
+    ],
+    "name": "Byrgenwerth"
+  },
+  {
+    "x": 257.4,
+    "y": -51.4,
+    "z": 70,
+    "mapId": [
+      28,
+      0
+    ],
+    "name": "Yahar'gul, Unseen Village"
+  },
+  {
+    "x": 260.4,
+    "y": -88,
+    "z": -55.6,
+    "mapId": [
+      28,
+      0
+    ],
+    "name": "Yahar'gul Chapel"
+  },
+  {
+    "x": 418.8,
+    "y": -123.6,
+    "z": -253.4,
+    "mapId": [
+      28,
+      0
+    ],
+    "name": "Advent Plaza"
+  },
+  {
+    "x": 219.6,
+    "y": -97.6,
+    "z": -78.8,
+    "mapId": [
+      28,
+      0
+    ],
+    "name": "Hypogean Gaol"
+  },
+  {
+    "x": -4.5,
+    "y": 33.8,
+    "z": -187.9,
+    "mapId": [
+      25,
+      0
+    ],
+    "name": "Forsaken Castle Cainhurst"
+  },
+  {
+    "x": 47.8,
+    "y": 111.8,
+    "z": -350.4,
+    "mapId": [
+      25,
+      0
+    ],
+    "name": "Logarius' Seat"
+  },
+  {
+    "x": 122.4,
+    "y": 129,
+    "z": -455,
+    "mapId": [
+      25,
+      0
+    ],
+    "name": "Vileblood Queen's Chamber"
+  },
+  {
+    "x": 129.8,
+    "y": -19.9,
+    "z": 140.8,
+    "mapId": [
+      21,
+      1
+    ],
+    "name": "Abandoned Old Workshop"
+  },
+  {
+    "x": -472.37,
+    "y": -185.25,
+    "z": 594.9,
+    "mapId": [
+      32,
+      0
+    ],
+    "name": "Lecture Building"
+  },
+  {
+    "x": -444.22,
+    "y": -177.25,
+    "z": 514.19,
+    "mapId": [
+      32,
+      0
+    ],
+    "name": "Lecture Building 2nd Floor"
+  },
+  {
+    "x": 0.35,
+    "y": 1500,
+    "z": 0,
+    "mapId": [
+      33,
+      0
+    ],
+    "name": "Nightmare Frontier"
+  },
+  {
+    "x": -104.65,
+    "y": 1462.28,
+    "z": -42.65,
+    "mapId": [
+      33,
+      0
+    ],
+    "name": "Nightmare of Mensis"
+  },
+  {
+    "x": 84.58,
+    "y": 986.7,
+    "z": -0.37,
+    "mapId": [
+      26,
+      0
+    ],
+    "name": "Mergo's Loft: Base"
+  },
+  {
+    "x": 136.69,
+    "y": 1061.26,
+    "z": -14.86,
+    "mapId": [
+      26,
+      0
+    ],
+    "name": "Mergo's Loft: Middle"
+  },
+  {
+    "x": 140.72,
+    "y": 1124.3,
+    "z": -37.98,
+    "mapId": [
+      26,
+      0
+    ],
+    "name": "Wet Nurse's Lunarium"
+  },
+  {
+    "x": -481.68,
+    "y": 1490.49,
+    "z": -497.73,
+    "mapId": [
+      34,
+      0
+    ],
+    "name": "Hunter's Nightmare"
+  },
+  {
+    "x": -434.08,
+    "y": 1503.18,
+    "z": -594.52,
+    "mapId": [
+      34,
+      0
+    ],
+    "name": "Nightmare Church"
+  },
+  {
+    "x": -433.09,
+    "y": 1535.71,
+    "z": -261.57,
+    "mapId": [
+      34,
+      0
+    ],
+    "name": "Nightmare Grand Cathedral"
+  },
+  {
+    "x": -406.81,
+    "y": 1503.79,
+    "z": -743,
+    "mapId": [
+      34,
+      0
+    ],
+    "name": "Underground Corpse Pile"
+  },
+  {
+    "x": -318.67,
+    "y": 1553.02,
+    "z": -824.22,
+    "mapId": [
+      35,
+      0
+    ],
+    "name": "Research Hall"
+  },
+  {
+    "x": -432.15,
+    "y": 1593,
+    "z": -824.37,
+    "mapId": [
+      35,
+      0
+    ],
+    "name": "Lumenwood Garden"
+  },
+  {
+    "x": -454.88,
+    "y": 1595.57,
+    "z": -824.44,
+    "mapId": [
+      35,
+      0
+    ],
+    "name": "Astral Clocktower"
+  },
+  {
+    "x": -619.2,
+    "y": 1594.3,
+    "z": -817.2,
+    "mapId": [
+      36,
+      0
+    ],
+    "name": "Fishing Hamlet"
+  },
+  {
+    "x": -645.2,
+    "y": 1614.66,
+    "z": -867.2,
+    "mapId": [
+      36,
+      0
+    ],
+    "name": "Lighthouse Hut"
+  },
+  {
+    "x": -695.2,
+    "y": 1577.27,
+    "z": -943.2,
+    "mapId": [
+      36,
+      0
+    ],
+    "name": "Coast"
+  }
+]

@@ -1,0 +1,147 @@
+.theme-picker {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  color: var(--link);
+}
+
+.theme-picker svg {
+  position: absolute;
+  left: 9px;
+  pointer-events: none;
+}
+
+.theme-picker select {
+  width: auto;
+  padding-left: 31px;
+  background: var(--button);
+}
+
+.theme-picker option { background: var(--bg); }
+
+:root[data-theme="dream"] {
+  --bg: #0b1427;
+  --panel: rgba(18, 37, 72, .85);
+  --muted: #bbcae3;
+  --panel-muted: #c6d5ed;
+  --border: #3e5c88;
+  --control-border: #50709f;
+  --input: #142442;
+  --button: #203659;
+  --hover: #294a76;
+  --accent: #91c7ff;
+  --accent-ink: #fff;
+  --link: #b6d8ff;
+  --selection: #244473;
+  --chrome: rgba(10, 20, 40, .94);
+  --action: linear-gradient(105deg, #2364aa, #3856b9);
+  --action-hover: linear-gradient(105deg, #2b6eb7, #4261c9);
+  --sky: radial-gradient(circle at 76% 42%, #e1ebff 0 3.7rem, #8fa9fb 3.8rem, #526bd5a0 5rem, transparent 15rem),
+    radial-gradient(ellipse at 68% 32%, #325da9 0, #1b3667 44%, transparent 77%),
+    linear-gradient(115deg, #0b1427 10%, #142b50 58%, #0d192e);
+}
+
+:root[data-theme="blood"] {
+  --bg: #1c090a;
+  --panel: rgba(57, 13, 16, .90);
+  --muted: #d9b6b4;
+  --panel-muted: #e5c5c2;
+  --border: #792d32;
+  --control-border: #9c4348;
+  --input: #2b0d10;
+  --button: #4c161b;
+  --hover: #681e25;
+  --accent: #ff9991;
+  --accent-ink: #fff;
+  --link: #ffbdb4;
+  --selection: #702128;
+  --chrome: rgba(27, 8, 10, .96);
+  --action: linear-gradient(105deg, #981b25, #bd2930);
+  --action-hover: linear-gradient(105deg, #ac242e, #cb363c);
+  --sky: radial-gradient(circle at 76% 42%, #ffc1ad 0 3.7rem, #e94d48 3.8rem, #bd252a88 5rem, transparent 15rem),
+    radial-gradient(ellipse at 68% 32%, #8c2228 0, #501015 43%, transparent 75%),
+    linear-gradient(115deg, #1c090a 10%, #390d10 58%, #1d0b0c);
+}
+
+:root[data-theme="cathedral"] {
+  --bg: #1b1714;
+  --panel: rgba(42, 34, 28, .92);
+  --text: #f2ece4;
+  --panel-text: #f2ece4;
+  --muted: #cec1af;
+  --panel-muted: #cec1af;
+  --border: #5a4a3b;
+  --control-border: #826b52;
+  --input: #211a16;
+  --input-text: #f2ece4;
+  --button: #3e3127;
+  --hover: #504033;
+  --accent: #d4b282;
+  --accent-ink: #221810;
+  --link: #ead0aa;
+  --selection: #594330;
+  --chrome: rgba(27, 23, 20, .94);
+  --action: linear-gradient(105deg, #d9bc96, #c59d65);
+  --action-hover: linear-gradient(105deg, #e3c6a1, #d4ad77);
+  --sky: radial-gradient(ellipse at 72% 20%, #86654966, transparent 58%),
+    url('/assets/bg.png') center / cover no-repeat;
+}
+
+:root:is([data-theme="dream"], [data-theme="blood"]) body {
+  isolation: isolate;
+  background:
+    linear-gradient(90deg, #08051370, transparent 64%),
+    url('/assets/moonlit-spires.svg') center bottom / cover no-repeat,
+    var(--sky);
+  background-attachment: fixed;
+}
+
+:root:is([data-theme="dream"], [data-theme="blood"]) body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, #090613b8 0%, #09061365 52%, #090613b8 100%),
+    linear-gradient(90deg, #090613a0 0%, transparent 76%),
+    url('https://m.media-amazon.com/images/M/MV5BNTEyMWQzNWUtNzE0NC00ZjgxLTg4ODUtZGRhN2FjMmQ4ZDkzXkEyXkFqcGc@._V1_.jpg') 60% center / cover no-repeat;
+}
+
+:root[data-theme="dream"] body::before {
+  filter: grayscale(1) sepia(1) hue-rotate(177deg) saturate(2.5);
+}
+
+:root[data-theme="blood"] body::before {
+  filter: sepia(.15) saturate(1.45);
+}
+
+:root[data-theme="cathedral"] body {
+  background: var(--sky);
+  background-attachment: fixed;
+}
+
+:root[data-theme] body { min-height: 100dvh; }
+
+:root:is([data-theme="dream"], [data-theme="blood"], [data-theme="cathedral"]) {
+  .topbar, .section-tabs { background: var(--chrome); }
+  .topbar { border-inline: 1px solid var(--border); }
+  .section-tabs { border-inline-start: 1px solid var(--border); }
+  .panel, .dropzone, .selection-placeholder, .boss-card, .altar-card, dialog {
+    background-color: var(--panel);
+    backdrop-filter: blur(10px);
+  }
+  .boss-card { padding-inline: 12px; }
+  .altar-card:hover { background: var(--hover); }
+  .altar-card.selected { background: var(--selection); }
+  .button.primary { background: var(--action); border-color: var(--control-border); }
+  .button.primary:hover:enabled { background: var(--action-hover); }
+  .section-tabs > button.active { box-shadow: inset 2px 0 var(--accent); }
+}
+
+@media (max-width: 650px) {
+  .theme-picker select { max-width: 150px; }
+  :root:is([data-theme="dream"], [data-theme="blood"]) body::before {
+    background-position: center, center, 65% center;
+  }
+}
