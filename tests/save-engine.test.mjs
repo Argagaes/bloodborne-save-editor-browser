@@ -208,3 +208,13 @@ test('all rune templates retain their game source, type and effects when added',
     assert.ok(u,`missing rune ${t.id}`);assert.equal(u.shape,t.shape);assert.deepEqual(u.effects,t.effects);
   }
 });
+
+test('modified-byte count ignores data shifted by inserted upgrade and equipment records',()=>{
+  for(const add of [s=>s.addUpgrade({kind:1,source:0x80016094,shape:1,effects:[126314,17112,0xffffffff,0xffffffff,0xffffffff,0xffffffff]}),s=>s.addItem(2000000,1,'inventory','weapon')]) {
+    const s=load(7);assert.equal(s.changedBytes,0);s.transaction('add',()=>add(s));const count=s.changedBytes;
+    assert.ok(count>=40&&count<100,`unexpected count ${count}`);
+    const changed=s.bytes.slice();s.transaction('stat',()=>s.setStat('Insight',45));assert.ok(s.changedBytes>=count&&s.changedBytes<count+20);
+    s.undo();assert.deepEqual(s.bytes,changed);assert.equal(s.changedBytes,count);
+    s.undo();assert.equal(s.changedBytes,0);s.redo();assert.equal(s.changedBytes,count);
+  }
+});

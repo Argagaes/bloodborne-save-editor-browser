@@ -74,6 +74,9 @@ button svg { flex-shrink: 0; }
 .nav-count { color: var(--muted); font-size: 11px; }
 main { padding: 24px; }
 .open-screen { max-width: 700px; }
+.save-error { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; padding: 12px; border: 1px solid #976c65; border-radius: 4px; background: #422d2d; color: #f1d3cc; }
+.app-error { max-width: 700px; margin: 50px auto; padding: 20px; }
+.app-error p { margin: 12px 0; }
 .open-screen > p { color: var(--muted); margin-top: 9px; }
 .dropzone { border: 1px dashed var(--control-border); border-radius: 4px; background: var(--panel); padding: 28px; margin-top: 22px; }
 .dropzone p { color: var(--muted); margin-top: 14px; }
@@ -114,6 +117,23 @@ footer { font-size: 11px; color: var(--muted); padding-top: 16px; margin-top: 26
 .information-page p + p { margin-top: 12px; }
 .information-page ul { margin: 12px 0 0; padding-left: 20px; }
 .information-page a { color: var(--link); }
+.version-button { padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+.quest-research > p { margin: 10px 0; line-height: 1.6; }
+.quest-research > .field { max-width: 450px; margin: 20px 0; }
+.quest-list { border-top: 1px solid var(--border); }
+.quest-entry { padding: 14px 4px; border-bottom: 1px solid var(--border); }
+.quest-entry summary { cursor: pointer; display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between; }
+.quest-entry summary span { color: var(--muted); font-size: 12px; }
+.quest-entry p { margin: 12px 0 0; line-height: 1.6; }
+.quest-flag { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.quest-flag input { margin-top: 4px; }
+.quest-flag-sections h4 { margin: 18px 0 4px; }
+.quest-flag small { display: block; color: var(--muted); margin-top: 3px; }
+.quest-script-refs { margin: 0 0 10px 26px; color: var(--muted); font-size: 12px; }
+.quest-script-refs summary { cursor: pointer; }
+.quest-script-refs ul { margin: 6px 0; padding-left: 20px; }
+.quest-calibration { max-width: 420px; margin: 12px 0; }
+.quest-research a { color: var(--link); }
 .inventory-layout { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(280px, 1fr); align-items: start; gap: 16px; }
 .inventory-layout > .panel { padding: 0; overflow: hidden; }
 .inventory-tools { display: flex; align-items: center; gap: 10px; justify-content: space-between; padding: 12px; border-bottom: 1px solid var(--border); }

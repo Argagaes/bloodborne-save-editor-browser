@@ -89,7 +89,29 @@ export class SaveEditor {
   }
   undo() { const h=this.history.pop(); if(h) { this.redoHistory.push({label:h.label,bytes:this.bytes.slice()}); this.bytes=h.bytes; this.refresh(); } }
   redo() { const h=this.redoHistory.pop(); if(h) { this.history.push({label:h.label,bytes:this.bytes.slice()}); this.bytes=h.bytes; this.refresh(); } }
-  get changedBytes() { return this.bytes.reduce((n,b,i)=>n+(b!==this.original[i]),0); }
+  get changedBytes() {
+    const original=this.original, current=this.bytes;
+    let count=0, oldOffset=0, newOffset=0;
+    const compare=(oldStart,newStart,length)=>{for(let i=0;i<length;i++) if(original[oldStart+i]!==current[newStart+i]) count++;};
+    compare(0,0,84); oldOffset=84; newOffset=84;
+    const recordLength=(bytes,offset)=>{
+      if(offset+8>bytes.length)return 0;
+      const type=bytes[offset+3];
+      return type===0?8:type===0xc0?40:type===0x80||type===0x90?60:0;
+    };
+    for(let i=0;i<4096;i++) {
+      const oldLength=recordLength(original,oldOffset),newLength=recordLength(current,newOffset);
+      if(!oldLength||!newLength||oldOffset+oldLength>original.length||newOffset+newLength>current.length)
+        return current.reduce((n,b,j)=>n+(b!==original[j]),0);
+      if(oldLength===newLength) compare(oldOffset,newOffset,oldLength);
+      else if(oldLength===8) count+=newLength;
+      else if(newLength===8) count+=oldLength;
+      else {compare(oldOffset,newOffset,Math.min(oldLength,newLength)); count+=Math.abs(oldLength-newLength);}
+      oldOffset+=oldLength;newOffset+=newLength;
+    }
+    compare(oldOffset,newOffset,Math.min(original.length-oldOffset,current.length-newOffset));
+    return count;
+  }
   altars(catalog) { return readAltars(this.bytes, this.inventoryOffset, catalog); }
   replaceAltar(slot, dungeon) { writeAltar(this.bytes, this.inventoryOffset, slot, dungeon); }
   setStat(name,value) { const s=this.data.offsets.find(s=>s.name===name); if(!s) throw Error('Unknown attribute.'); const n=integer(value,s.length===1?255:0xffffffff); for(let i=0;i<s.times;i++) this.put(this.usernameOffset+s.rel_offset+4*i,n,s.length); }
