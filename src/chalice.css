@@ -45,3 +45,7 @@
   .altar-card > svg { width: 13px; }
   .catalog-heading { flex-wrap: wrap; }
 }
+.chalice-builder { margin: 16px 0; }
+.chalice-builder p { margin: 10px 0; line-height: 1.5; }
+.chalice-builder .field { margin: 14px 0; }
+.chalice-hex { width: 100%; min-height: 190px; box-sizing: border-box; resize: vertical; font: 12px/1.65 monospace; letter-spacing: .03em; background: var(--panel); color: var(--panel-text); border: 1px solid var(--control-border); padding: 10px; }

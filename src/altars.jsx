@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { CATEGORY_NAMES, parseCatalog } from './chalice-engine.mjs';
 import './chalice.css';
+import ChaliceBuilder from './ChaliceBuilder.jsx';
 
 const catalogUrl = `${import.meta.env.BASE_URL}data/dungeons.json`;
 const categoryName = key => CATEGORY_NAMES[key] || key;
@@ -13,6 +14,7 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('all');
   const [selected, setSelected] = useState(null);
+  const [builder, setBuilder] = useState(null);
   const catalogInput = useRef(null);
   const loadRequest = useRef(0);
 
@@ -48,6 +50,7 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
   useEffect(() => {
     setSlot(1);
     setSelected(null);
+    setBuilder(null);
   }, [editor]);
 
   async function importCatalog(event) {
@@ -77,7 +80,7 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
   return <>
     <input type="file" className="sr-only" accept=".json,application/json" ref={catalogInput} aria-label="Import dungeon catalog" onChange={importCatalog} />
     <div className="altar-grid" aria-label="Chalice altars">
-      {altars.map(altar => <button key={altar.slot} className={`altar-card ${slot === altar.slot ? 'selected' : ''}`} aria-pressed={slot === altar.slot} onClick={() => setSlot(altar.slot)}>
+      {altars.map(altar => <button key={altar.slot} className={`altar-card ${slot === altar.slot ? 'selected' : ''}`} aria-pressed={slot === altar.slot} onClick={() => { setSlot(altar.slot); setBuilder(null); }}>
         <span className="altar-number" aria-hidden="true">{altar.slot}</span>
         <span className="altar-info">
           <span className="eyebrow">Altar {altar.slot}</span>
@@ -87,6 +90,8 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
         {slot === altar.slot && <Icon name="check" size={16} />}
       </button>)}
     </div>
+    <div className="button-row"><button type="button" className="button secondary" onClick={() => setBuilder({template:null, key:Date.now()})}>Build from altar {slot}</button>{selected&&<button type="button" className="button secondary" onClick={() => setBuilder({template:selected, key:Date.now()})}>Build from {selected.glyph}</button>}</div>
+    {builder&&<ChaliceBuilder key={builder.key} altar={altars[slot-1]} template={builder.template} editor={editor} act={act} notify={notify} onClose={()=>setBuilder(null)}/>}
     <div className="catalog-heading">
       <h2>Choose a dungeon</h2>
       <span className="muted">Selected: altar {slot} · {altarName(altars[slot - 1])}</span>

@@ -62,6 +62,8 @@ export function readAltars(bytes, inventoryOffset, catalog) {
       slot,
       dungeon: catalog.find(dungeon => equalBytes(record, dungeon.bytes)),
       empty: equalBytes(record, EMPTY),
+      bytes: record.slice(),
+      flags: bytes.slice(altarOffset(inventoryOffset, slot, FLAGS_OFFSET), altarOffset(inventoryOffset, slot, FLAGS_OFFSET) + RECORD_SIZE),
     };
   });
 }
@@ -70,6 +72,20 @@ export function writeAltar(bytes, inventoryOffset, slot, dungeon) {
   if (!hasAltarLayout(bytes, inventoryOffset)) throw Error('This save does not have a supported altar layout.');
   if (!Number.isInteger(slot) || slot < 1 || slot > ALTAR_COUNT) throw Error('Choose an altar from 1 to 6.');
   if (!(dungeon?.bytes instanceof Uint8Array) || dungeon.bytes.length !== RECORD_SIZE) throw Error('Choose a valid dungeon.');
+  const flags = dungeon.flags ?? ACTIVE_FLAGS;
+  if (!(flags instanceof Uint8Array) || flags.length !== RECORD_SIZE) throw Error('Altar flags must contain exactly 124 bytes.');
   bytes.set(dungeon.bytes, altarOffset(inventoryOffset, slot, DUNGEON_OFFSET));
-  bytes.set(ACTIVE_FLAGS, altarOffset(inventoryOffset, slot, FLAGS_OFFSET));
+  bytes.set(flags, altarOffset(inventoryOffset, slot, FLAGS_OFFSET));
+}
+
+export function parseHexRecord(input) {
+  const text = String(input).trim();
+  if (!text) throw Error('Enter exactly 124 hexadecimal bytes.');
+  const tokens = text.split(/[\s,]+/);
+  if (tokens.length !== RECORD_SIZE || tokens.some(token => !/^(?:0x)?[0-9a-f]{2}$/i.test(token))) throw Error('Enter exactly 124 hexadecimal bytes, such as 1D 0A FF.');
+  return Uint8Array.from(tokens, token => Number.parseInt(token.replace(/^0x/i, ''), 16));
+}
+
+export function formatHexRecord(bytes) {
+  return Array.from(bytes, b => b.toString(16).padStart(2, '0').toUpperCase()).reduce((rows, byte, i) => { if (i % 16 === 0) rows.push([]); rows[rows.length - 1].push(byte); return rows; }, []).map(row => row.join(' ')).join('\n');
 }

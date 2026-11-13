@@ -42,3 +42,14 @@ test('hunter and altar edits share one export and undo history', () => {
   assert.deepEqual(save.bytes, expected);
   assert.deepEqual(save.history.map(edit => edit.label), ['Set Insight', 'Assign dungeon']);
 });
+
+test('custom chalice records and flag bytes round trip and undo without touching other bytes',()=>{
+  const save=new SaveEditor(demo,data),initial=save.bytes.slice(),slot=3;
+  const before=save.altars(catalog)[slot-1];const bytes=before.bytes.slice(),flags=before.flags.slice();
+  bytes[1]^=1;bytes[73]^=0x41;flags[3]^=0x80;flags[123]^=1;
+  const expected=initial.slice();expected.set(bytes,save.inventoryOffset+DUNGEON_OFFSET+STRIDE*(slot-1));expected.set(flags,save.inventoryOffset+FLAGS_OFFSET+STRIDE*(slot-1));
+  save.transaction('custom chalice',()=>save.replaceAltar(slot,{bytes,flags}));assert.deepEqual(save.bytes,expected);
+  const after=new SaveEditor(save.bytes,data).altars(catalog)[slot-1];assert.deepEqual(after.bytes,bytes);assert.deepEqual(after.flags,flags);
+  save.undo();assert.deepEqual(save.bytes,initial);
+  assert.throws(()=>save.transaction('invalid flags',()=>save.replaceAltar(slot,{bytes,flags:new Uint8Array(3)})));assert.deepEqual(save.bytes,initial);
+});
