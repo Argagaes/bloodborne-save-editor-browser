@@ -1,0 +1,68 @@
+[
+  {
+    "eventFlag": 12601251,
+    "offset": 22033,
+    "mask": 16,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 12601253,
+    "offset": 22033,
+    "mask": 4,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 12601254,
+    "offset": 22033,
+    "mask": 2,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 12601255,
+    "offset": 22033,
+    "mask": 1,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 12700134,
+    "offset": 7768,
+    "mask": 2,
+    "baselineValue": 1
+  },
+  {
+    "eventFlag": 12700135,
+    "offset": 7768,
+    "mask": 1,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 12700144,
+    "offset": 7770,
+    "mask": 128,
+    "baselineValue": 1
+  },
+  {
+    "eventFlag": 13300115,
+    "offset": 8266,
+    "mask": 16,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 13300116,
+    "offset": 8266,
+    "mask": 8,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 13501116,
+    "offset": 22891,
+    "mask": 8,
+    "baselineValue": 0
+  },
+  {
+    "eventFlag": 13501126,
+    "offset": 22892,
+    "mask": 2,
+    "baselineValue": 0
+  }
+]

@@ -307,3 +307,68 @@ main{ grid-column: 2; padding: 28px; min-width: 0; }
 .equipped-gem .item-image { width: 32px; height: 32px; }
 .equipped-gem small { margin-top: 2px; }
 .picker-row > .item-image { flex: 0 0 35px; }
+
+.lamp-settings { margin-bottom: 22px; }
+.lamp-settings-intro h3 { font-size: 14px; font-weight: 500; }
+.lamp-settings-intro p { color: var(--muted); font-size: 11px; line-height: 1.5; margin-top: 6px; }
+.lamp-checkbox { display: flex; align-items: center; gap: 9px; min-height: 30px; font-size: 12px; cursor: pointer; }
+.lamp-checkbox input { width: 15px; height: 15px; margin: 0; accent-color: var(--accent); flex: 0 0 auto; }
+.lamp-checkbox small { margin-left: auto; color: var(--muted); font-size: 11px; }
+.lamp-all { margin: 14px 0; padding: 6px 10px; border: 1px solid var(--border); font-weight: 600; }
+.lamp-area-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 10px; }
+.lamp-area { border: 1px solid var(--border); padding: 8px 10px; min-width: 0; }
+.lamp-area-toggle { font-weight: 600; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+.lamp-area-items { padding: 5px 0 0 12px; }
+
+.shortcut-layout { display: grid; grid-template-columns: minmax(240px, .8fr) minmax(300px, 1.2fr); gap: 16px; align-items: start; }
+.shortcut-layout .lamp-area-grid { grid-template-columns: 1fr; }
+.shortcut-map { border: 1px solid var(--border); padding: 12px; min-width: 0; }
+.shortcut-map-header { display: flex; gap: 12px; align-items: start; justify-content: space-between; }
+.shortcut-map-header h3 { font-size: 13px; font-weight: 600; }
+.shortcut-map-header p, .shortcut-map-hint { color: var(--muted); font-size: 11px; line-height: 1.5; margin-top: 6px; }
+.shortcut-map-header .button { flex-shrink: 0; }
+.shortcut-map-error { color: #e99b89; font-size: 12px; margin-top: 8px; }
+.shortcut-map-tools { display: flex; gap: 8px; align-items: center; margin: 12px 0 8px; font-size: 11px; }
+.shortcut-map-tools > span:first-child { flex: 1; }
+.shortcut-map-tools .button { padding: 3px 9px; }
+.shortcut-map-viewport { background: #080a0b; border: 1px solid var(--border); overflow: auto; max-height: 520px; min-height: 220px; }
+.shortcut-map-svg { display: block; height: auto; max-width: none; }
+.shortcut-map-marker { cursor: pointer; }
+.shortcut-map-marker circle { stroke: #e7d4a0; stroke-width: 5px; fill: #47332d; }
+.shortcut-map-marker.open circle { fill: #687347; }
+.shortcut-map-marker.selected circle, .shortcut-map-marker:focus circle { stroke: #fff1b6; stroke-width: 9px; }
+.shortcut-map-marker text { fill: #fff8e3; font: bold 28px sans-serif; pointer-events: none; }
+@media (max-width: 900px) { .shortcut-layout { grid-template-columns: 1fr; } }
+
+.shortcut-map-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 14px 0; }
+.shortcut-map-nav div { text-align: center; min-width: 0; }
+.shortcut-map-nav strong, .shortcut-map-nav small { display: block; }
+.shortcut-map-nav small, .shortcut-entry > small { color: var(--muted); font-size: 10px; margin-top: 3px; }
+.shortcut-entry { border-radius: 3px; padding: 2px 5px 5px; }
+.shortcut-entry.selected { background: color-mix(in srgb, var(--accent) 18%, transparent); }
+.shortcut-entry > small { display: block; padding-left: 24px; overflow-wrap: anywhere; }
+.shortcut-import-buttons { display: flex; flex-wrap: wrap; justify-content: end; gap: 6px; }
+
+.shortcut-map-marker.linked circle { stroke: #c08bff; stroke-width: 7px; }
+.shortcut-map-marker.linked.selected circle, .shortcut-map-marker.linked:focus circle { stroke: #e8bcff; stroke-width: 11px; filter: drop-shadow(0 0 12px #bd69ff); }
+.gem-builder-effects { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; padding: 12px 0; }
+.gem-builder-effect .field { gap: 5px; }
+.gem-builder-secondary { border-top: 1px solid var(--border); margin-top: 16px; padding-top: 14px; }
+.gem-builder-secondary-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-size: 12px; }
+.gem-builder-secondary-heading span { color: var(--muted); font-size: 11px; }
+.gem-builder-effect { min-width: 0; }
+.gem-effect-current { display: flex; gap: 6px; align-items: center; justify-content: space-between; min-height: 28px; color: var(--muted); font-size: 11px; }
+.gem-effect-current span { overflow-wrap: anywhere; }
+.gem-effect-search { position: relative; }
+.gem-effect-search input { width: 100%; }
+.gem-effect-options { position: absolute; z-index: 5; left: 0; right: 0; top: 100%; max-height: min(480px, 55vh); overflow-y: auto; border: 1px solid var(--control-border); background: var(--panel); box-shadow: 0 8px 20px #0008; }
+.gem-effect-options button { display: block; width: 100%; padding: 8px; text-align: left; background: var(--panel); color: var(--panel-text); border: 0; cursor: pointer; font-size: 11px; }
+.gem-effect-options button:hover, .gem-effect-options button.active { background: var(--control-border); }
+.gem-effect-options button small { display: block; color: var(--muted); margin-top: 3px; }
+.gem-effect-empty { display: block; padding: 8px; color: var(--muted); font-size: 11px; }
+.gem-effect-current.has-effect { background: var(--control-border); color: var(--panel-text); border-radius: 3px; padding: 6px 8px; margin: 4px 0; }
+.gem-effect-selected { display: block; color: var(--accent); font-size: 10px; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 3px; }
+.gem-pool-reference { margin: 10px 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.gem-pool-reference summary { cursor: pointer; color: var(--panel-text); }
+.gem-pool-reference p { margin: 6px 0; }
+.gem-pool-reference a { color: var(--accent); }

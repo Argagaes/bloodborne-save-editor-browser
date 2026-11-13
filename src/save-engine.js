@@ -1,5 +1,6 @@
 // Binary layouts ported from src-tauri/src/data_handling. All writes are local.
 import { readAltars, writeAltar } from './chalice-engine.mjs';
+import { SPECIAL_GEMS } from './gem-special.js';
 
 export const SHAPES = { 2147483648: 'Closed', 1: 'Radial', 2: 'Triangle', 4: 'Waning', 8: 'Circle', 63: 'Droplet' };
 export function integer(value, max = 0xffffffff) {
@@ -17,6 +18,7 @@ export class SaveEditor {
     this.redoHistory = [];
     if (this.bytes.length < 100000 || this.bytes.length > 32 * 1024 * 1024) throw Error('Choose a decrypted Bloodborne character file (userdata), not an encrypted save container.');
     this.refresh();
+    this.originalFlagOffset = this.flagOffset;
     if (!this.username || this.lced < 0 || this.usernameOffset < 147 || this.usernameOffset + 93000 >= this.bytes.length) throw Error('This file does not contain a supported decrypted character.');
   }
   view() { return new DataView(this.bytes.buffer, this.bytes.byteOffset, this.bytes.byteLength); }
@@ -132,8 +134,28 @@ export class SaveEditor {
     }
   }
   effectInfo(id) { return this.data.upgrades.gemEffects[id] || this.data.upgrades.runeEffects[id] || {name:'Unknown upgrade',effect:id===0xffffffff?'No effect':`Unknown effect ${id}`}; }
-  setEffect(upgrade,index,id) { integer(index,5); id=integer(id); if(id!==0xffffffff && !this.data.upgrades.gemEffects[id] && !this.data.upgrades.runeEffects[id]) throw Error('Choose a known effect.'); this.put(upgrade.offset+16+4*index,id); }
-  setShape(upgrade,shape) { const valid=upgrade.kind===1?[1,2,4,8,63]:[1,2]; shape=integer(shape); if(!valid.includes(shape)) throw Error('Invalid shape.'); this.put(upgrade.offset+12,shape); }
+  normalizeSpecialGem(upgrade,shape,primary) {
+    const special = SPECIAL_GEMS.find(g=>g.source===this.u32(upgrade.offset+4));
+    if(upgrade.kind===1 && special && (shape!==special.shape || primary!==special.effect)) {
+      const source=0x80016094;
+      this.put(upgrade.offset+4,source);
+      if(upgrade.inventoryOffset!==undefined) this.put(upgrade.inventoryOffset+8,source);
+    }
+  }
+  setEffect(upgrade,index,id) { integer(index,5); id=integer(id); if(id!==0xffffffff && !this.data.upgrades.gemEffects[id] && !this.data.upgrades.runeEffects[id]) throw Error('Choose a known effect.'); if(index===0) this.normalizeSpecialGem(upgrade,this.u32(upgrade.offset+12),id); this.put(upgrade.offset+16+4*index,id); }
+  setShape(upgrade,shape) { const valid=upgrade.kind===1?[1,2,4,8,63]:[1,2]; shape=integer(shape); if(!valid.includes(shape)) throw Error('Invalid shape.'); this.normalizeSpecialGem(upgrade,shape,this.u32(upgrade.offset+16)); this.put(upgrade.offset+12,shape); }
+  addUpgrade(template,location='inventory') {
+    if(!template || ![1,2].includes(template.kind) || !Array.isArray(template.effects) || template.effects.length!==6) throw Error('Choose an upgrade template.');
+    if(!['inventory','storage'].includes(location)) throw Error('Choose inventory or storage.');
+    const slot=this.emptySlot(location); let empty=-1,max=0,i=84;
+    for(let k=0;k<4096;k++) { const type=this.bytes[i+3]; if(type===0) { if(empty<0) empty=i; i+=8; } else if([0x80,0x90,0xc0].includes(type)) { max=Math.max(max,this.view().getUint16(i,true)); i+=type===0xc0?40:60; } else throw Error('Invalid equipment section.'); }
+    if(empty<0 || max>=65535) throw Error('No free upgrade records.');
+    const id=(0xc0800000|(max+1))>>>0, source=integer(template.source);
+    this.put(slot+4,id); this.put(slot+8,source); this.put(slot+12,1); this.incrementCounters(location);
+    const record=new Uint8Array(40),v=new DataView(record.buffer);
+    [id,source,template.kind,template.shape,...template.effects].forEach((n,j)=>v.setUint32(j*4,integer(n),true));
+    const next=new Uint8Array(this.bytes.length); next.set(this.bytes.subarray(0,empty)); next.set(record,empty); next.set(this.bytes.subarray(empty+8,this.bytes.length-32),empty+40); this.bytes=next;
+  }
   slotShape(slot,shape) { shape=integer(shape); if(!SHAPES[shape]) throw Error('Invalid shape.'); if(shape===0x80000000 && slot.gem) throw Error('Unequip the gem before closing this slot.'); this.put(slot.offset,shape); }
   equip(slot,upgrade) {
     if(slot.gem) throw Error('Unequip the current gem first.');
@@ -162,6 +184,67 @@ export class SaveEditor {
   appearance() { return this.bytes.slice(this.face,this.face+235); }
   importAppearance(bytes) { if(bytes.length!==235) throw Error('Appearance files must be exactly 235 bytes.');this.bytes.set(bytes,this.face); }
   fixIsz() { const o=this.usernameOffset+72082;if(this.bytes[o]===255) { if(this.bytes[o+1]<192)this.bytes[o+1]=48;else if(this.bytes[o+1]===192)this.bytes[o+1]=255; } }
+  lampEnabled(eventFlag) {
+    const lamp = this.data.lamps?.find(entry => entry.eventFlag === eventFlag);
+    if (!lamp) throw Error('Unknown lamp.');
+    const offset = this.flagOffset + lamp.offset;
+    if (offset >= this.lced || offset >= this.bytes.length) throw Error('The lamp flag is outside the supported character layout.');
+    return (this.bytes[offset] & lamp.mask) !== 0;
+  }
+  setLamps(eventFlags, enabled) {
+    if (!Array.isArray(eventFlags) || typeof enabled !== 'boolean') throw Error('Invalid lamp selection.');
+    const lamps = eventFlags.map(flag => {
+      const lamp = this.data.lamps?.find(entry => entry.eventFlag === flag);
+      if (!lamp) throw Error('Unknown lamp.');
+      const offset = this.flagOffset + lamp.offset;
+      if (offset >= this.lced || offset >= this.bytes.length) throw Error('The lamp flag is outside the supported character layout.');
+      return { offset, mask: lamp.mask };
+    });
+    for (const {offset, mask} of lamps) this.put(offset, enabled ? this.bytes[offset] | mask : this.bytes[offset] & ~mask, 1);
+  }
+  unlockLamp(eventFlag) { this.setLamps([eventFlag], true); }
+  unlockAllLamps() {
+    if (!Array.isArray(this.data.lamps) || this.data.lamps.length !== 44) throw Error('Lamp data is unavailable.');
+    this.setLamps(this.data.lamps.map(lamp => lamp.eventFlag), true);
+  }
+  shortcutEnabled(eventFlag) {
+    const shortcut = this.data.shortcuts?.find(entry => entry.eventFlag === eventFlag);
+    if (!shortcut) throw Error('Unknown shortcut.');
+    const offset = this.flagOffset + shortcut.offset;
+    if (offset >= this.lced || offset >= this.bytes.length) throw Error('The shortcut flag is outside the supported character layout.');
+    return (this.bytes[offset] & shortcut.mask) !== 0;
+  }
+  setShortcuts(eventFlags, enabled) {
+    if (!Array.isArray(eventFlags) || typeof enabled !== 'boolean') throw Error('Invalid shortcut selection.');
+    const shortcuts = eventFlags.map(flag => {
+      const shortcut = this.data.shortcuts?.find(entry => entry.eventFlag === flag);
+      if (!shortcut) throw Error('Unknown shortcut.');
+      const offset = this.flagOffset + shortcut.offset;
+      if (offset >= this.lced || offset >= this.bytes.length) throw Error('The shortcut flag is outside the supported character layout.');
+      return {offset, mask: shortcut.mask};
+    });
+    for (const {offset, mask} of shortcuts) this.put(offset, enabled ? this.bytes[offset] | mask : this.bytes[offset] & ~mask, 1);
+  }
+  allShortcutsEnabled() {
+    const entries=this.data.shortcuts, auxiliary=this.data['shortcut-auxiliary'];
+    if (!Array.isArray(entries) || !Array.isArray(auxiliary)) throw Error('Shortcut data is unavailable.');
+    return entries.every(entry=>this.shortcutEnabled(entry.eventFlag)) && auxiliary.every(entry=>{
+      const offset=this.flagOffset+entry.offset;
+      if(offset>=this.lced || offset>=this.bytes.length)throw Error('The shortcut flag is outside the supported character layout.');
+      return (this.bytes[offset]&entry.mask)===0;
+    });
+  }
+  setAllShortcuts(enabled) {
+    const entries=this.data.shortcuts, auxiliary=this.data['shortcut-auxiliary'];
+    if(typeof enabled!=='boolean' || !Array.isArray(entries) || !Array.isArray(auxiliary))throw Error('Shortcut data is unavailable.');
+    for(const entry of auxiliary) if(this.flagOffset+entry.offset>=this.lced || this.originalFlagOffset+entry.offset>=this.original.length)throw Error('The shortcut flag is outside the supported character layout.');
+    this.setShortcuts(entries.map(entry=>entry.eventFlag),enabled);
+    for(const entry of auxiliary){
+      const offset=this.flagOffset+entry.offset;
+      const originalBit=this.original[this.originalFlagOffset+entry.offset]&entry.mask;
+      this.put(offset,(this.bytes[offset]&~entry.mask)|(enabled?0:originalBit),1);
+    }
+  }
   worldFlag(name) {
     const flags={maria:[1083,[0,8]],lullaby:[6689,[8,1]],bloodAddled:[4127,[162]]};
     if(name==='multiplayer') {

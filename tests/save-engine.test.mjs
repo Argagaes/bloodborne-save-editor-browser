@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import { SaveEditor } from '../src/save-engine.js';
 import { hasUpstreamFixtures, readUpstreamFixture as fixture } from './upstream-fixtures.mjs';
 const test = hasUpstreamFixtures ? nodeTest : nodeTest.skip;
-const data=Object.fromEntries(['items','weapons','armors','bosses','upgrades','offsets'].map(name=>[name,JSON.parse(fs.readFileSync(new URL(`../public/data/${name}.json`,import.meta.url)))]));
+const data=Object.fromEntries(['items','weapons','armors','bosses','upgrades','offsets','lamps','shortcuts','shortcut-auxiliary'].map(name=>[name,JSON.parse(fs.readFileSync(new URL(`../public/data/${name}.json`,import.meta.url)))]));
 const load=n=>new SaveEditor(fixture(n),data);
 const reparse=s=>new SaveEditor(s.bytes,data);
 const names=['Proyectito','Toe Taster',"I'm Here To Help",'Yeezy','YT: olletnaS','YT: olletnaS','Touch Me','Control','Yew','Touch Me'];
@@ -89,4 +89,122 @@ test('world flags reproduce desktop byte sequences and lantern travel updates ma
   const s=load(7);s.transaction('world',()=>{s.worldFlag('maria');s.worldFlag('lullaby');s.teleport({x:-8,y:-6,z:-18,mapId:[21,0]});});
   assert.deepEqual([...s.bytes.slice(s.flagOffset+1083,s.flagOffset+1085)],[0,8]);assert.deepEqual([...s.bytes.slice(s.flagOffset+6689,s.flagOffset+6691)],[8,1]);
   assert.deepEqual([...s.bytes.slice(4,8)],[0,0,0,21]);assert.deepEqual(reparse(s).coordinates(),[-8,-6,-18]);
+});
+
+
+test('lamp unlocks preserve unrelated bits and support undo',()=>{
+  const s=load(0), lamps=data.lamps, target=lamps.find(l=>l.eventFlag===12417830);
+  const o=s.flagOffset+target.offset; s.bytes[o] &= ~target.mask;
+  const before=s.bytes.slice();
+  s.transaction('unlock lamp',()=>s.unlockLamp(target.eventFlag));
+  assert.equal(s.bytes[o],before[o]|target.mask);
+  assert.equal(s.bytes.reduce((n,b,i)=>n+(b!==before[i]),0),1);
+  s.undo(); assert.deepEqual(s.bytes,before);
+  s.transaction('unlock all',()=>s.unlockAllLamps());
+  for(const lamp of lamps) assert.ok(s.bytes[s.flagOffset+lamp.offset]&lamp.mask);
+  const offsets=new Set(lamps.map(l=>s.flagOffset+l.offset));
+  for(let i=0;i<s.bytes.length;i++) if(!offsets.has(i)) assert.equal(s.bytes[i],before[i]);
+  s.undo(); assert.deepEqual(s.bytes,before);
+  assert.throws(()=>s.unlockLamp(1));
+});
+
+
+test('lamp groups set and clear only their bits, preserving others and undoing atomically',()=>{
+  const s=load(0), lamps=data.lamps;
+  const area=lamps.filter(l=>l.area==='Central Yharnam');
+  assert.equal(area.length,4);
+  const flags=area.map(l=>l.eventFlag);
+  s.transaction('enable all',()=>s.setLamps(lamps.map(l=>l.eventFlag),true));
+  assert.ok(lamps.every(l=>s.lampEnabled(l.eventFlag)));
+  const allEnabled=s.bytes.slice();
+  s.transaction('disable area',()=>s.setLamps(flags,false));
+  for(const lamp of lamps) assert.equal(s.lampEnabled(lamp.eventFlag),!flags.includes(lamp.eventFlag));
+  const allowed=new Set(area.map(l=>s.flagOffset+l.offset));
+  for(let i=0;i<s.bytes.length;i++) if(!allowed.has(i)) assert.equal(s.bytes[i],allEnabled[i]);
+  for(const lamp of area) assert.equal((s.bytes[s.flagOffset+lamp.offset]^allEnabled[s.flagOffset+lamp.offset]) & ~lamp.mask,0);
+  s.undo();assert.deepEqual(s.bytes,allEnabled);
+  s.transaction('disable all',()=>s.setLamps(lamps.map(l=>l.eventFlag),false));
+  assert.ok(lamps.every(l=>!s.lampEnabled(l.eventFlag)));
+  const locked=s.bytes.slice();
+  assert.throws(()=>s.setLamps([flags[0],1],true));assert.deepEqual(s.bytes,locked);
+  s.undo();assert.deepEqual(s.bytes,allEnabled);
+});
+
+
+test('verified main-street shortcut opens and locks without altering neighboring bits',()=>{
+  const s=load(0),shortcut=data.shortcuts[0],offset=s.flagOffset+shortcut.offset;
+  s.bytes[offset] &= ~shortcut.mask;
+  const before=s.bytes.slice();
+  s.transaction('open gate',()=>s.setShortcuts([shortcut.eventFlag],true));
+  assert.equal(s.shortcutEnabled(shortcut.eventFlag),true);
+  assert.equal(s.bytes[offset],before[offset]|shortcut.mask);
+  assert.equal(s.bytes.reduce((n,b,i)=>n+(b!==before[i]),0),1);
+  const open=s.bytes.slice();
+  s.transaction('lock gate',()=>s.setShortcuts([shortcut.eventFlag],false));
+  assert.deepEqual(s.bytes,before);
+  s.undo();assert.deepEqual(s.bytes,open);
+  assert.throws(()=>s.setShortcuts([shortcut.eventFlag,1],false));assert.deepEqual(s.bytes,open);
+});
+
+
+test('shortcut group toggles preserve unrelated bits even when shortcuts share a byte',()=>{
+  const s=load(0), shortcuts=data.shortcuts, ids=shortcuts.map(x=>x.eventFlag);
+  assert.ok(shortcuts.length>5);
+  s.transaction('open shortcuts',()=>s.setShortcuts(ids,true));
+  assert.ok(shortcuts.every(x=>s.shortcutEnabled(x.eventFlag)));
+  const open=s.bytes.slice();
+  const masks=new Map();for(const x of shortcuts){const at=s.flagOffset+x.offset;masks.set(at,(masks.get(at)||0)|x.mask);}
+  s.transaction('lock shortcuts',()=>s.setShortcuts(ids,false));
+  assert.ok(shortcuts.every(x=>!s.shortcutEnabled(x.eventFlag)));
+  for(let i=0;i<s.bytes.length;i++) assert.equal(s.bytes[i],open[i]&~(masks.get(i)||0));
+  s.undo();assert.deepEqual(s.bytes,open);
+});
+
+
+test('global shortcut control clears auxiliary flags and restores original auxiliary bits',()=>{
+  const s=load(0),aux=data['shortcut-auxiliary'];assert.equal(aux.length,11);
+  const before=s.bytes.slice();s.transaction('open all',()=>s.setAllShortcuts(true));
+  assert.ok(s.allShortcutsEnabled());
+  for(const entry of aux)assert.equal(s.bytes[s.flagOffset+entry.offset]&entry.mask,0);
+  s.transaction('lock all',()=>s.setAllShortcuts(false));
+  for(const entry of data.shortcuts)assert.equal(s.shortcutEnabled(entry.eventFlag),false);
+  for(const entry of aux)assert.equal(s.bytes[s.flagOffset+entry.offset]&entry.mask,before[s.originalFlagOffset+entry.offset]&entry.mask);
+});
+
+test('adding gem and rune templates preserves records and supports undo',()=>{
+  const none=0xffffffff;
+  for(const [kind,source,shape,effects] of [[1,0x80016094,1,[126314,17112,none,none,none,none]],[2,0x800186a1,1,[1100000,none,none,none,none,none]]]){
+    const s=load(0),before=s.bytes.slice(),count=s.upgrades.length;
+    s.transaction('add upgrade',()=>s.addUpgrade({kind,source,shape,effects}));
+    const r=reparse(s),u=r.upgrades.find(x=>x.id===Math.max(...r.upgrades.map(x=>x.id)));
+    assert.equal(r.upgrades.length,count+1);assert.equal(u.kind,kind);assert.equal(u.source,source);assert.equal(u.location,'inventory');assert.deepEqual(u.effects,effects);assert.equal(r.u32(u.inventoryOffset+8),source);assert.equal(r.username,s.username);
+    s.undo();assert.deepEqual(s.bytes,before);
+  }
+});
+test('editing a unique gem updates its source in both records',()=>{
+  const s=load(0);s.transaction('add special',()=>s.addUpgrade({kind:1,source:0x800249f0,shape:63,effects:[3126204,3045204,0xffffffff,0xffffffff,0xffffffff,0xffffffff]}));
+  const gem=s.upgrades.find(u=>u.source===0x800249f0&&u.location==='inventory');assert.ok(gem);
+  s.transaction('edit special',()=>s.setEffect(gem,0,126314));const u=reparse(s).upgrades.find(x=>x.id===gem.id);
+  assert.equal(u.source,0x80016094);assert.equal(reparse(s).u32(u.inventoryOffset+8),u.source);assert.equal(u.effects[0],126314);
+});
+
+test('adding a gem to a save with nonzero trailing bytes keeps the fixed-size layout',()=>{
+  const s=load(7),before=s.bytes.slice(),oldName=s.username,oldStats={...s.stats},oldArticles=s.articles.length,oldUpgrades=s.upgrades.length;
+  assert.ok(before.slice(-32).some(Boolean));
+  const none=0xffffffff;
+  s.transaction('add bloodtinge gem',()=>s.addUpgrade({kind:1,source:0x80016094,shape:8,effects:[13513,none,none,none,none,none]}));
+  const r=reparse(s),added=r.upgrades.find(u=>u.kind===1&&u.shape===8&&u.effects[0]===13513&&u.location==='inventory');
+  assert.ok(added);assert.equal(r.bytes.length,before.length);assert.equal(r.username,oldName);assert.deepEqual(r.stats,oldStats);assert.equal(r.articles.length,oldArticles);assert.equal(r.upgrades.length,oldUpgrades+1);
+  assert.deepEqual(r.bytes.slice(-64),before.slice(-96,-32));
+  s.undo();assert.deepEqual(s.bytes,before);
+});
+
+test('all rune templates retain their game source, type and effects when added',()=>{
+  const templates=JSON.parse(fs.readFileSync(new URL('../public/data/rune-templates.json',import.meta.url)));
+  assert.equal(templates.length,73);assert.ok(templates.some(t=>data.upgrades.runeEffects[t.id]?.name==='Milkweed'));
+  for(const t of templates){
+    const s=load(0);s.transaction('add rune',()=>s.addUpgrade({kind:2,source:t.source,shape:t.shape,effects:t.effects}));
+    const u=reparse(s).upgrades.find(x=>x.kind===2&&x.source===t.source&&x.effects[0]===t.id&&x.location==='inventory');
+    assert.ok(u,`missing rune ${t.id}`);assert.equal(u.shape,t.shape);assert.deepEqual(u.effects,t.effects);
+  }
 });

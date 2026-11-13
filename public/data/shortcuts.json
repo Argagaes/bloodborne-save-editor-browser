@@ -1,0 +1,1200 @@
+[
+  {
+    "name": "Door · Entrance",
+    "area": "Hemwick Charnel Lane",
+    "map": "m22_00_00_00",
+    "eventFlag": 12200100,
+    "offset": 6889,
+    "mask": 8,
+    "positions": [
+      [
+        -152.94717,
+        -15.027194,
+        469.7261
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_入口"
+  },
+  {
+    "name": "Lever · 00",
+    "area": "Hemwick Charnel Lane",
+    "map": "m22_00_00_00",
+    "eventFlag": 12200110,
+    "offset": 6890,
+    "mask": 2,
+    "positions": [
+      [
+        -284.06,
+        -9.549999,
+        575.47
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_レバー00"
+  },
+  {
+    "name": "Lever · 02",
+    "area": "Hemwick Charnel Lane",
+    "map": "m22_00_00_00",
+    "eventFlag": 12200125,
+    "offset": 6892,
+    "mask": 4,
+    "positions": [
+      [
+        -208.33,
+        -29.3,
+        541.7
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_レバー02"
+  },
+  {
+    "name": "Door · One-way 01",
+    "area": "Old Yharnam",
+    "map": "m23_00_00_00",
+    "eventFlag": 12300120,
+    "offset": 7017,
+    "mask": 128,
+    "positions": [
+      [
+        12.942898,
+        -90.44849,
+        -48.21939
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_一通扉01"
+  },
+  {
+    "name": "Door · One-way 00",
+    "area": "Old Yharnam",
+    "map": "m23_00_00_00",
+    "eventFlag": 12300121,
+    "offset": 7017,
+    "mask": 64,
+    "positions": [
+      [
+        60.205933,
+        -99.516716,
+        15.917958
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_一通扉00"
+  },
+  {
+    "name": "Door · Grand Cathedral",
+    "area": "Cathedral Ward",
+    "map": "m24_00_00_00",
+    "eventFlag": 12400130,
+    "offset": 7143,
+    "mask": 32,
+    "positions": [
+      [
+        24.09,
+        25.71,
+        263.16
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct 聖堂大扉"
+  },
+  {
+    "name": "Lever · Church route door, rear",
+    "area": "Cathedral Ward",
+    "map": "m24_00_00_00",
+    "eventFlag": 12400157,
+    "offset": 7146,
+    "mask": 4,
+    "positions": [
+      [
+        4.726019,
+        0.094707,
+        179.06421
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct 教会ルート仕掛け扉レバー（裏）"
+  },
+  {
+    "name": "Lever · Church elevator, upper / plaza gate, one-way",
+    "area": "Cathedral Ward",
+    "map": "m24_00_00_00",
+    "eventFlag": 12400160,
+    "offset": 7147,
+    "mask": 128,
+    "positions": [
+      [
+        24.99183,
+        12.824381,
+        118.05208
+      ],
+      [
+        -49.97,
+        -0.429,
+        118.981
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct 教会 エレベーターレバー上 / ObjAct 広場の門（一方通行）"
+  },
+  {
+    "name": "Lever · Plaza door, rear",
+    "area": "Cathedral Ward",
+    "map": "m24_00_00_00",
+    "eventFlag": 12400177,
+    "offset": 7149,
+    "mask": 64,
+    "positions": [
+      [
+        -20.926847,
+        -0.395626,
+        184.53423
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct 広場仕掛け扉レバー（裏）"
+  },
+  {
+    "name": "Flag 12409453",
+    "area": "Cathedral Ward",
+    "map": "m24_00_00_00",
+    "eventFlag": 12409453,
+    "offset": 136558,
+    "mask": 4,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 12409453"
+  },
+  {
+    "name": "Door · Back of starting room",
+    "area": "Central Yharnam",
+    "map": "m24_01_00_00",
+    "eventFlag": 12410112,
+    "offset": 7266,
+    "mask": 128,
+    "positions": [
+      [
+        -200.41045,
+        -40.47792,
+        231.078
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_扉_スタート部屋裏"
+  },
+  {
+    "name": "Door · Shortcut iron gate",
+    "area": "Central Yharnam",
+    "map": "m24_01_00_00",
+    "eventFlag": 12410117,
+    "offset": 7266,
+    "mask": 4,
+    "positions": [
+      [
+        -197.72241,
+        -28.707764,
+        58.554005
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_扉_SC用鉄格子扉"
+  },
+  {
+    "name": "Lever · Courtyard",
+    "area": "Central Yharnam",
+    "eventFlag": 12410200,
+    "offset": 7277,
+    "mask": 128,
+    "map": "m24_01_00_00",
+    "position": [
+      -204.97487,
+      -47.611816,
+      115.439926
+    ],
+    "verified": true,
+    "positions": [
+      [
+        -204.97487,
+        -47.611816,
+        115.439926
+      ]
+    ],
+    "locationConfidence": "verified",
+    "internalName": "Objact_レバー_中庭"
+  },
+  {
+    "name": "Lever · Main street",
+    "area": "Central Yharnam",
+    "eventFlag": 12410202,
+    "offset": 7277,
+    "mask": 32,
+    "map": "m24_01_00_00",
+    "position": [
+      -200.96872,
+      -44.263878,
+      90.8753
+    ],
+    "verified": true,
+    "positions": [
+      [
+        -200.96872,
+        -44.263878,
+        90.8753
+      ]
+    ],
+    "locationConfidence": "verified",
+    "internalName": "Objact_レバー_メイン通り"
+  },
+  {
+    "name": "Lever · Second shortcut",
+    "area": "Central Yharnam",
+    "eventFlag": 12410203,
+    "offset": 7277,
+    "mask": 16,
+    "map": "m24_01_00_00",
+    "position": [
+      -185.77722,
+      -37.411377,
+      -60.741688
+    ],
+    "verified": true,
+    "positions": [
+      [
+        -185.77722,
+        -37.411377,
+        -60.741688
+      ]
+    ],
+    "locationConfidence": "verified",
+    "internalName": "Objact_レバー_第2SC"
+  },
+  {
+    "name": "Lever · E3 starting area ladder mechanism",
+    "area": "Central Yharnam",
+    "map": "m24_01_00_00",
+    "eventFlag": 12410285,
+    "offset": 7287,
+    "mask": 4,
+    "positions": [
+      [
+        -185.581,
+        -43.967,
+        73.742
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_レバー_E3版開始地点仕掛け梯子"
+  },
+  {
+    "name": "o243003_4700 / o243005_4700 / o243005_4701",
+    "area": "Central Yharnam",
+    "map": "m24_01_00_00",
+    "eventFlag": 12410330,
+    "offset": 7293,
+    "mask": 32,
+    "positions": [
+      [
+        -128.40282,
+        -44.27482,
+        -8.521643
+      ],
+      [
+        -129.43098,
+        -44.474445,
+        -5.437012
+      ],
+      [
+        -124.41809,
+        -58.478977,
+        -10.849129
+      ]
+    ],
+    "locationConfidence": "candidate objects",
+    "verified": false,
+    "internalName": "o243003_4700 / o243005_4700 / o243005_4701"
+  },
+  {
+    "name": "Lever · Elevator, upper",
+    "area": "Central Yharnam",
+    "map": "m24_01_00_00",
+    "eventFlag": 12410350,
+    "offset": 7295,
+    "mask": 2,
+    "positions": [
+      [
+        -129.43098,
+        -44.474445,
+        -5.437012
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_レバー_エレベータ上"
+  },
+  {
+    "name": "Door · Dark house, first floor",
+    "area": "Central Yharnam",
+    "eventFlag": 62411303,
+    "offset": 27414,
+    "mask": 1,
+    "map": "m24_01_00_00",
+    "position": [
+      -195.6337,
+      -36.171318,
+      33.70284
+    ],
+    "verified": true,
+    "positions": [
+      [
+        -195.6337,
+        -36.171318,
+        33.70284
+      ]
+    ],
+    "locationConfidence": "verified",
+    "internalName": "Objact_扉_暗い民家1F"
+  },
+  {
+    "name": "Door · Dark house, first floor 2",
+    "area": "Central Yharnam",
+    "eventFlag": 62411306,
+    "offset": 27415,
+    "mask": 32,
+    "map": "m24_01_00_00",
+    "position": [
+      -186.71396,
+      -36.238434,
+      22.997944
+    ],
+    "verified": true,
+    "positions": [
+      [
+        -186.71396,
+        -36.238434,
+        22.997944
+      ]
+    ],
+    "locationConfidence": "verified",
+    "internalName": "Objact_扉_暗い民家1F2"
+  },
+  {
+    "name": "Door · Orphanage, first-floor front",
+    "area": "Upper Cathedral Ward",
+    "map": "m24_02_00_00",
+    "eventFlag": 12420000,
+    "offset": 7377,
+    "mask": 128,
+    "positions": [
+      [
+        -64.225204,
+        48.944145,
+        288.60202
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_孤児院1F正面"
+  },
+  {
+    "name": "Lever · Door / elevator 02",
+    "area": "Upper Cathedral Ward",
+    "map": "m24_02_00_00",
+    "eventFlag": 12420123,
+    "offset": 7392,
+    "mask": 16,
+    "positions": [
+      [
+        -51.439472,
+        48.95599,
+        277.8674
+      ],
+      [
+        78.85109,
+        49.57403,
+        364.51425
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_レバー_扉 / ObjAct_レバー_エレベーター02"
+  },
+  {
+    "name": "Door · Orphanage, second-floor back left",
+    "area": "Upper Cathedral Ward",
+    "map": "m24_02_00_00",
+    "eventFlag": 62420125,
+    "offset": 13142,
+    "mask": 4,
+    "positions": [
+      [
+        -123.21194,
+        58.870068,
+        304.3227
+      ]
+    ],
+    "locationConfidence": "object action",
+    "verified": false,
+    "internalName": "ObjAct_扉_孤児院_2F左奥"
+  },
+  {
+    "name": "Door · Orphanage, second-floor front left, one-way",
+    "area": "Upper Cathedral Ward",
+    "map": "m24_02_00_00",
+    "eventFlag": 62420126,
+    "offset": 13142,
+    "mask": 2,
+    "positions": [
+      [
+        -72.37825,
+        58.803146,
+        275.2378
+      ]
+    ],
+    "locationConfidence": "object action",
+    "verified": false,
+    "internalName": "ObjAct_扉一方通行_孤児院_2F左前"
+  },
+  {
+    "name": "Door · Orphanage, second-floor back right, one-way",
+    "area": "Upper Cathedral Ward",
+    "map": "m24_02_00_00",
+    "eventFlag": 62420127,
+    "offset": 13142,
+    "mask": 1,
+    "positions": [
+      [
+        -106.56902,
+        58.870068,
+        330.8939
+      ]
+    ],
+    "locationConfidence": "object action",
+    "verified": false,
+    "internalName": "ObjAct_扉一方通行_孤児院_2F右奥"
+  },
+  {
+    "name": "Lever · Shortcut elevator, lower / upper",
+    "area": "Cainhurst",
+    "map": "m25_00_00_00",
+    "eventFlag": 12500074,
+    "offset": 7511,
+    "mask": 32,
+    "positions": [
+      [
+        -18.599997,
+        31.0,
+        -236.00002
+      ],
+      [
+        -26.999994,
+        65.0,
+        -239.00003
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_SCエレベーターレバー下 / Objact_SCエレベーターレバー上"
+  },
+  {
+    "name": "Lever · Shortcut elevator, lower / upper / library mechanism switch",
+    "area": "Cainhurst",
+    "map": "m25_00_00_00",
+    "eventFlag": 12500501,
+    "offset": 7564,
+    "mask": 4,
+    "positions": [
+      [
+        -18.599997,
+        31.0,
+        -236.00002
+      ],
+      [
+        -26.999994,
+        65.0,
+        -239.00003
+      ],
+      [
+        -64.32,
+        65.0,
+        -280.87
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_SCエレベーターレバー下 / Objact_SCエレベーターレバー上 / 書庫_仕掛けスイッチ"
+  },
+  {
+    "name": "Door · Evil Eye bridge, front / back",
+    "area": "Nightmare of Mensis",
+    "map": "m26_00_00_00",
+    "eventFlag": 12601051,
+    "offset": 22008,
+    "mask": 16,
+    "positions": [
+      [
+        163.77983,
+        1033.0507,
+        -3.011256
+      ],
+      [
+        163.77983,
+        1033.0507,
+        -3.011256
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_邪眼橋扉_表 / Objact_邪眼橋扉_裏"
+  },
+  {
+    "name": "Lever · D00 / D01",
+    "area": "Nightmare of Mensis",
+    "map": "m26_00_00_00",
+    "eventFlag": 12601256,
+    "offset": 22034,
+    "mask": 128,
+    "positions": [
+      [
+        96.7,
+        986.58,
+        5.558
+      ],
+      [
+        101.93,
+        1014.58,
+        10.68
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_レバーD00 / Objact_レバーD01"
+  },
+  {
+    "name": "Lever · D00 / D01",
+    "area": "Nightmare of Mensis",
+    "map": "m26_00_00_00",
+    "eventFlag": 12601323,
+    "offset": 22042,
+    "mask": 16,
+    "positions": [
+      [
+        96.7,
+        986.58,
+        5.558
+      ],
+      [
+        101.93,
+        1014.58,
+        10.68
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_レバーD00 / Objact_レバーD01"
+  },
+  {
+    "name": "Lever · B00 / B01",
+    "area": "Nightmare of Mensis",
+    "map": "m26_00_00_00",
+    "eventFlag": 12601331,
+    "offset": 22043,
+    "mask": 16,
+    "positions": [
+      [
+        81.15,
+        1075.57,
+        -6.77
+      ],
+      [
+        76.3,
+        1098.39,
+        -11.91
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_レバーB00 / Objact_レバーB01"
+  },
+  {
+    "name": "Lever · Outer cage A00 / A01",
+    "area": "Nightmare of Mensis",
+    "map": "m26_00_00_00",
+    "eventFlag": 12601334,
+    "offset": 22043,
+    "mask": 2,
+    "positions": [
+      [
+        77.92,
+        986.53,
+        0.8
+      ],
+      [
+        83.06,
+        1028.178,
+        -0.66
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_外籠レバーA00 / Objact_外籠レバーA01"
+  },
+  {
+    "name": "Lever · Outer cage B00 / B01",
+    "area": "Nightmare of Mensis",
+    "map": "m26_00_00_00",
+    "eventFlag": 12601335,
+    "offset": 22043,
+    "mask": 1,
+    "positions": [
+      [
+        84.91,
+        1028.178,
+        -0.66
+      ],
+      [
+        88.49,
+        1075.66,
+        -0.77
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "Objact_外籠レバーB00 / Objact_外籠レバーB01"
+  },
+  {
+    "name": "Door · Shortcut, back 1",
+    "area": "Forbidden Woods",
+    "map": "m27_00_00_00",
+    "eventFlag": 12700110,
+    "offset": 7765,
+    "mask": 2,
+    "positions": [
+      [
+        -223.4277,
+        -167.98752,
+        512.4524
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_ショートカット扉_裏1"
+  },
+  {
+    "name": "Door · Shortcut, back 2",
+    "area": "Forbidden Woods",
+    "map": "m27_00_00_00",
+    "eventFlag": 12700111,
+    "offset": 7765,
+    "mask": 1,
+    "positions": [
+      [
+        -202.94882,
+        -76.3927,
+        254.23987
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_ショートカット扉_裏2"
+  },
+  {
+    "name": "Door · Shortcut, back 3",
+    "area": "Forbidden Woods",
+    "map": "m27_00_00_00",
+    "eventFlag": 12700112,
+    "offset": 7766,
+    "mask": 128,
+    "positions": [
+      [
+        -350.66333,
+        -98.64489,
+        209.68776
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_ショートカット扉_裏3"
+  },
+  {
+    "name": "Flag 12700137",
+    "area": "Forbidden Woods",
+    "map": "m27_00_00_00",
+    "eventFlag": 12700137,
+    "offset": 7769,
+    "mask": 64,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 12700137"
+  },
+  {
+    "name": "Flag 12700147",
+    "area": "Forbidden Woods",
+    "map": "m27_00_00_00",
+    "eventFlag": 12700147,
+    "offset": 7770,
+    "mask": 16,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 12700147"
+  },
+  {
+    "name": "Door · Small double door 00, interior 1, push side",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800480,
+    "offset": 7937,
+    "mask": 128,
+    "positions": [
+      [
+        324.911,
+        -70.979004,
+        11.328003
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_両開き小00_屋内1_押す側"
+  },
+  {
+    "name": "Door · Small double door 01, cathedral left, pull side",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800481,
+    "offset": 7937,
+    "mask": 64,
+    "positions": [
+      [
+        226.70801,
+        -98.351,
+        -86.79201
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_両開き小01_聖堂左_引く側"
+  },
+  {
+    "name": "Door · Small double door 02, cathedral right, pull side",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800482,
+    "offset": 7937,
+    "mask": 32,
+    "positions": [
+      [
+        215.97873,
+        -98.351,
+        -68.17981
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_両開き小02_聖堂右_引く側"
+  },
+  {
+    "name": "Door · Small double door 03, cathedral basement, pull side",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800483,
+    "offset": 7937,
+    "mask": 16,
+    "positions": [
+      [
+        204.0,
+        -113.41,
+        -98.3
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_両開き小03_聖堂地下_引く側"
+  },
+  {
+    "name": "Door · Small double door 04, interior 3, push side",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800484,
+    "offset": 7937,
+    "mask": 8,
+    "positions": [
+      [
+        325.18832,
+        -90.72261,
+        -30.452667
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_両開き小04_屋内3_押す側"
+  },
+  {
+    "name": "Lever · Elevator, upper",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800610,
+    "offset": 7953,
+    "mask": 32,
+    "positions": [
+      [
+        241.64,
+        -63.22,
+        11.410004
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct レバー_エレベーター_上"
+  },
+  {
+    "name": "o282000 / o280001_0000 / o280001_0001",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800612,
+    "offset": 7953,
+    "mask": 8,
+    "positions": [
+      [
+        243.617,
+        -63.242844,
+        9.118835
+      ],
+      [
+        241.64,
+        -63.22,
+        11.410004
+      ],
+      [
+        242.2,
+        -97.75,
+        4.5
+      ]
+    ],
+    "locationConfidence": "candidate objects",
+    "verified": false,
+    "internalName": "o282000 / o280001_0000 / o280001_0001"
+  },
+  {
+    "name": "Flag 12800630",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12800630,
+    "offset": 7955,
+    "mask": 2,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 12800630"
+  },
+  {
+    "name": "Flag 12809802",
+    "area": "Yahar’gul",
+    "map": "m28_00_00_00",
+    "eventFlag": 12809802,
+    "offset": 137352,
+    "mask": 32,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 12809802"
+  },
+  {
+    "name": "Lever · Courtyard",
+    "area": "Byrgenwerth / Lecture Building",
+    "map": "m32_00_00_00",
+    "eventFlag": 13200010,
+    "offset": 8128,
+    "mask": 32,
+    "positions": [
+      [
+        -451.6615,
+        -185.23178,
+        425.12628
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_レバー_中庭"
+  },
+  {
+    "name": "Door · Lecture Hall, headmaster’s room terrace",
+    "area": "Byrgenwerth / Lecture Building",
+    "map": "m32_00_00_00",
+    "eventFlag": 13200040,
+    "offset": 8132,
+    "mask": 128,
+    "positions": [
+      [
+        -452.874,
+        -175.03,
+        392.65
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_大扉_学長室テラス"
+  },
+  {
+    "name": "Door · Lecture Hall, headmaster’s room back entrance",
+    "area": "Byrgenwerth / Lecture Building",
+    "map": "m32_00_00_00",
+    "eventFlag": 13200041,
+    "offset": 8132,
+    "mask": 64,
+    "positions": [
+      [
+        -435.874,
+        -183.75,
+        377.8
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_大扉_学長室裏門"
+  },
+  {
+    "name": "Door · School building, first-floor east 0, push",
+    "area": "Byrgenwerth / Lecture Building",
+    "map": "m32_00_00_00",
+    "eventFlag": 13200043,
+    "offset": 8132,
+    "mask": 16,
+    "positions": [
+      [
+        -451.19003,
+        -185.165,
+        602.026
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_校舎扉1F東0押し"
+  },
+  {
+    "name": "Flag 13300100",
+    "area": "Nightmare Frontier",
+    "map": "m33_00_00_00",
+    "eventFlag": 13300100,
+    "offset": 8264,
+    "mask": 8,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 13300100"
+  },
+  {
+    "name": "Flag 13300111",
+    "area": "Nightmare Frontier",
+    "map": "m33_00_00_00",
+    "eventFlag": 13300111,
+    "offset": 8265,
+    "mask": 1,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 13300111"
+  },
+  {
+    "name": "Door · One-way",
+    "area": "Hunter’s Nightmare",
+    "map": "m34_00_00_00",
+    "eventFlag": 13401211,
+    "offset": 22778,
+    "mask": 16,
+    "positions": [
+      [
+        -488.8572,
+        1488.9938,
+        -486.33017
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_一通扉"
+  },
+  {
+    "name": "Door · Shortcut",
+    "area": "Hunter’s Nightmare",
+    "map": "m34_00_00_00",
+    "eventFlag": 13401220,
+    "offset": 22779,
+    "mask": 8,
+    "positions": [
+      [
+        -492.879,
+        1500.09,
+        -421.19598
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_SC扉"
+  },
+  {
+    "name": "Flag 13501108",
+    "area": "Research Hall",
+    "map": "m35_00_00_00",
+    "eventFlag": 13501108,
+    "offset": 22890,
+    "mask": 8,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 13501108"
+  },
+  {
+    "name": "Flag 13501118",
+    "area": "Research Hall",
+    "map": "m35_00_00_00",
+    "eventFlag": 13501118,
+    "offset": 22891,
+    "mask": 2,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 13501118"
+  },
+  {
+    "name": "Lever · Rotating pillar mechanism",
+    "area": "Research Hall",
+    "map": "m35_00_00_00",
+    "eventFlag": 13501128,
+    "offset": 22893,
+    "mask": 128,
+    "positions": [
+      [
+        -355.6003,
+        1629.3997,
+        -824.3335
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_回転レバー_柱ギミック"
+  },
+  {
+    "name": "Flag 13501213",
+    "area": "Research Hall",
+    "map": "m35_00_00_00",
+    "eventFlag": 13501213,
+    "offset": 22903,
+    "mask": 4,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 13501213"
+  },
+  {
+    "name": "Door · Clocktower, first-floor right, after one-way unlock",
+    "area": "Research Hall",
+    "map": "m35_00_00_00",
+    "eventFlag": 13501250,
+    "offset": 22908,
+    "mask": 32,
+    "positions": [
+      [
+        -336.6006,
+        1557.3413,
+        -801.06384
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_時計塔汎用0_右1F_一通解除後"
+  },
+  {
+    "name": "Lever · Elevator, upper",
+    "area": "Fishing Hamlet",
+    "map": "m36_00_00_00",
+    "eventFlag": 13601106,
+    "offset": 23015,
+    "mask": 32,
+    "positions": [
+      [
+        -656.2,
+        1614.7,
+        -880.1067
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_エレベーター_レバー_上"
+  },
+  {
+    "name": "Flag 13601108",
+    "area": "Fishing Hamlet",
+    "map": "m36_00_00_00",
+    "eventFlag": 13601108,
+    "offset": 23015,
+    "mask": 8,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 13601108"
+  },
+  {
+    "name": "Door · Lighthouse",
+    "area": "Fishing Hamlet",
+    "map": "m36_00_00_00",
+    "eventFlag": 13601200,
+    "offset": 23027,
+    "mask": 128,
+    "positions": [
+      [
+        -652.09534,
+        1614.5,
+        -880.27313
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_灯台"
+  },
+  {
+    "name": "Door · Fish-rearing tank",
+    "area": "Fishing Hamlet",
+    "map": "m36_00_00_00",
+    "eventFlag": 13601201,
+    "offset": 23027,
+    "mask": 64,
+    "positions": [
+      [
+        -631.20135,
+        1610.6,
+        -861.9986
+      ]
+    ],
+    "locationConfidence": "object action event",
+    "verified": false,
+    "internalName": "ObjAct_扉_養殖槽"
+  },
+  {
+    "name": "Flag 13601312",
+    "area": "Fishing Hamlet",
+    "map": "m36_00_00_00",
+    "eventFlag": 13601312,
+    "offset": 23041,
+    "mask": 128,
+    "positions": [],
+    "locationConfidence": "unknown",
+    "verified": false,
+    "internalName": "Flag 13601312"
+  }
+]

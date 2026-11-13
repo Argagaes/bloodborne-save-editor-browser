@@ -1,0 +1,128 @@
+{
+  "m22_00_00_00": {
+    "width": 2288,
+    "height": 2790,
+    "x0": -391.2340087890625,
+    "z1": 781.8909912109375,
+    "ppm": 6.0,
+    "image": "data/maps/m22_00_00_00.png",
+    "source": "Yharnam Together cache"
+  },
+  "m23_00_00_00": {
+    "width": 2172,
+    "height": 1348,
+    "x0": -172.03466796875,
+    "z1": 87.28665924072266,
+    "ppm": 6.0,
+    "image": "data/maps/m23_00_00_00.png",
+    "source": "Yharnam Together cache"
+  },
+  "m24_00_00_00": {
+    "width": 2049,
+    "height": 2368,
+    "x0": -157.03233337402344,
+    "z1": 379.4599914550781,
+    "ppm": 6.0,
+    "image": "data/maps/m24_00_00_00.png",
+    "source": "Yharnam Together cache"
+  },
+  "m24_01_00_00": {
+    "width": 2050,
+    "height": 2544,
+    "x0": -301.2538757324219,
+    "z1": 248.02821350097656,
+    "ppm": 6.0,
+    "image": "data/maps/m24_01_00_00.png",
+    "source": "Yharnam Together cache"
+  },
+  "m24_02_00_00": {
+    "width": 961,
+    "height": 998,
+    "x0": -142.6233367919922,
+    "z1": 501.17999267578125,
+    "ppm": 3.0,
+    "image": "data/maps/m24_02_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m25_00_00_00": {
+    "width": 443,
+    "height": 708,
+    "x0": -128.11138916015625,
+    "z1": -0.93280029296875,
+    "ppm": 1.447694182395935,
+    "image": "data/maps/m25_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m26_00_00_00": {
+    "width": 1289,
+    "height": 881,
+    "x0": -210.81832885742188,
+    "z1": 176.0659942626953,
+    "ppm": 3.0,
+    "image": "data/maps/m26_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m27_00_00_00": {
+    "width": 950,
+    "height": 1461,
+    "x0": -421.27899169921875,
+    "z1": 548.6506958007812,
+    "ppm": 3.0,
+    "image": "data/maps/m27_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m28_00_00_00": {
+    "width": 905,
+    "height": 1443,
+    "x0": 152.97000122070312,
+    "z1": 191.68666076660156,
+    "ppm": 3.0,
+    "image": "data/maps/m28_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m32_00_00_00": {
+    "width": 664,
+    "height": 989,
+    "x0": -569.7073364257812,
+    "z1": 615.5,
+    "ppm": 3.0,
+    "image": "data/maps/m32_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m33_00_00_00": {
+    "width": 1042,
+    "height": 768,
+    "x0": -130.1466827392578,
+    "z1": 47.150001525878906,
+    "ppm": 3.0,
+    "image": "data/maps/m33_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m34_00_00_00": {
+    "width": 1685,
+    "height": 3359,
+    "x0": -595.4566650390625,
+    "z1": -226.87330627441406,
+    "ppm": 6.0,
+    "image": "data/maps/m34_00_00_00.png",
+    "source": "Yharnam Together cache"
+  },
+  "m35_00_00_00": {
+    "width": 664,
+    "height": 459,
+    "x0": -520.2000122070312,
+    "z1": -739.13330078125,
+    "ppm": 3.0,
+    "image": "data/maps/m35_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  },
+  "m36_00_00_00": {
+    "width": 816,
+    "height": 762,
+    "x0": -763.2000122070312,
+    "z1": -742.4666748046875,
+    "ppm": 3.0,
+    "image": "data/maps/m36_00_00_00.png",
+    "source": "Yharnam Together renderer"
+  }
+}
