@@ -55,7 +55,7 @@ jobs:
     permissions:
       contents: write
     concurrency:
-      group: rolling-test-release
+      group: desktop-release
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
@@ -63,17 +63,14 @@ jobs:
         with:
           path: release-assets
           merge-multiple: true
-      - name: Publish testing release
+      - name: Publish release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if ! gh release view test-build >/dev/null 2>&1; then
-            gh release create test-build --target "$GITHUB_SHA" --title "Latest test build" --notes "Automatically built from commit $GITHUB_SHA." --prerelease
+          tag="build-${GITHUB_RUN_NUMBER}"
+          mapfile -d '' files < <(find release-assets -type f -print0)
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --target "$GITHUB_SHA" --title "Build ${GITHUB_RUN_NUMBER}" --notes "Built from commit ${GITHUB_SHA}." --draft
           fi
-          gh release edit test-build --notes "Automatically built from commit $GITHUB_SHA."
-          gh release view test-build --json assets --jq '.assets[].name' | while IFS= read -r asset; do
-            case "$asset" in
-              *.deb|*setup.exe|*setup.msi|bloodborne-browser-standalone.exe) gh release delete-asset test-build "$asset" --yes ;;
-            esac
-          done
-          find release-assets -type f -print0 | xargs -0 gh release upload test-build --clobber
+          gh release upload "$tag" "${files[@]}" --clobber
+          gh release edit "$tag" --draft=false --latest
