@@ -15,10 +15,10 @@ jobs:
       matrix:
         include:
           - os: ubuntu-24.04
-            bundles: deb,appimage
+            args: --bundles appimage
             artifact: linux-x64
           - os: windows-latest
-            bundles: nsis
+            args: --no-bundle
             artifact: windows-x64
     runs-on: ${{ matrix.os }}
     steps:
@@ -39,14 +39,13 @@ jobs:
       - run: npm ci
       - run: npm test
       - name: Build desktop packages
-        run: npm run desktop -- build --bundles ${{ matrix.bundles }}
+        run: npm run desktop -- build ${{ matrix.args }}
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact }}
           path: |
-            src-tauri/target/release/bundle/**/*.deb
             src-tauri/target/release/bundle/**/*.AppImage
-            src-tauri/target/release/bundle/**/*.exe
+            src-tauri/target/release/bloodborne-browser-standalone.exe
           if-no-files-found: error
 
   publish:
@@ -72,4 +71,9 @@ jobs:
             gh release create test-build --target "$GITHUB_SHA" --title "Latest test build" --notes "Automatically built from commit $GITHUB_SHA." --prerelease
           fi
           gh release edit test-build --notes "Automatically built from commit $GITHUB_SHA."
+          gh release view test-build --json assets --jq '.assets[].name' | while IFS= read -r asset; do
+            case "$asset" in
+              *.deb|*setup.exe|*setup.msi) gh release delete-asset test-build "$asset" --yes ;;
+            esac
+          done
           find release-assets -type f -print0 | xargs -0 gh release upload test-build --clobber

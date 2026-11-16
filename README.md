@@ -17,7 +17,7 @@ Run `npm test` to check the browser editor. The additional compatibility tests r
 
 ## Desktop builds
 
-Run `npm run desktop -- build` after installing the Tauri prerequisites. GitHub Actions builds Windows and Linux packages from the same source and publishes a test release.
+Run `npm run desktop -- build` after installing the Tauri prerequisites. GitHub Actions publishes a portable Windows executable and Linux AppImage from the same source.
 
 ## Credits
 
