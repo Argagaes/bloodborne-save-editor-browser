@@ -242,12 +242,13 @@ export default function App(){
     {informationOpen && <section className="information-page" aria-labelledby="information-title">
       <div className="page-heading"><h1 id="information-title">Information</h1></div>
       <div className="panel">
-        <p>This browser editor is based on Noxde’s Bloodborne Save Editor and Chalice Editor. The dungeon catalog comes from Noxde’s dungeon list.</p>
-        <p>Browser port, tool integration, lamps and shortcuts by <strong>Argagaes</strong>, who also hosts the editor.</p>
+        <p>This standalone editor is based on Noxde’s Bloodborne Save Editor and Chalice Editor. The dungeon catalog comes from Noxde’s dungeon list.</p>
+        <p>Standalone editor, tool integration, lamps and shortcuts by <strong>Argagaes</strong>, who also hosts the editor.</p>
         <ul>
-          <li><a href="https://github.com/Argagaes/bloodborne-save-editor-browser" target="_blank" rel="noopener noreferrer">Bloodborne Save Editor Browser on GitHub</a></li>
+          <li><a href="https://github.com/Argagaes/bloodborne-save-editor-browser" target="_blank" rel="noopener noreferrer">Bloodborne Save Editor Standalone on GitHub</a></li>
           <li><a href="https://github.com/Noxde/Bloodborne-save-editor" target="_blank" rel="noopener noreferrer">Noxde’s Bloodborne Save Editor on GitHub</a></li>
           <li><a href="https://gist.github.com/Noxde/a29f699f4175bf315d9bd4baeebefb66" target="_blank" rel="noopener noreferrer">Noxde’s dungeon catalog on GitHub Gist</a></li>
+          <li><a href="https://discord.com/invite/Ax6YByr" target="_blank" rel="noopener noreferrer">The Tomb Prospectors Discord</a> — chalice dungeon, gem and datamining research</li>
           <li><a href="https://github.com/Amanises-Yharnam-Together/BBSC-Yharnam-Together" target="_blank" rel="noopener noreferrer">Yharnam Together</a> — map renderer and map data</li>
         </ul>
         <p className="panel-note">Licensed under GPL-3.0. Version {__APP_VERSION__}.</p>
@@ -263,7 +264,7 @@ export default function App(){
 
       <div className="dropzone"><div className="button-row"><button className="button primary" onClick={pickFile} disabled={!data||busy}>{busy?'Opening…':!data?'Loading…':'Choose file'}</button><button className="button secondary" disabled={!data||busy} onClick={example}>Use example save</button></div><p>Or drag and drop a file here.</p><code>userdata0000, userdata0001, …</code></div>
 
-      <div className="format-notes"><p>Use a character file from shadPS4 or a decrypted PlayStation save. Encrypted save exports are not supported.</p><p>Files are edited locally in your browser. Download the edited file when finished; the original file is not overwritten.</p></div>
+      <div className="format-notes"><p>Use a character file from shadPS4 or a decrypted PlayStation save. Encrypted save exports are not supported.</p><p>Files are edited locally on your device. Download the edited file when finished; the original file is not overwritten.</p></div>
 
       {loadError&&<p role="alert" className="error-text">{loadError}</p>}
 

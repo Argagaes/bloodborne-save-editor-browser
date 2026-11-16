@@ -45,7 +45,7 @@ jobs:
           name: ${{ matrix.artifact }}
           path: |
             src-tauri/target/release/bundle/**/*.AppImage
-            src-tauri/target/release/bloodborne-browser-standalone.exe
+            src-tauri/target/release/bloodborne-save-editor-standalone.exe
           if-no-files-found: error
 
   publish:
@@ -73,7 +73,7 @@ jobs:
           gh release edit test-build --notes "Automatically built from commit $GITHUB_SHA."
           gh release view test-build --json assets --jq '.assets[].name' | while IFS= read -r asset; do
             case "$asset" in
-              *.deb|*setup.exe|*setup.msi) gh release delete-asset test-build "$asset" --yes ;;
+              *.deb|*setup.exe|*setup.msi|bloodborne-browser-standalone.exe) gh release delete-asset test-build "$asset" --yes ;;
             esac
           done
           find release-assets -type f -print0 | xargs -0 gh release upload test-build --clobber

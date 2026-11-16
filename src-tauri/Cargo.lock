@@ -158,7 +158,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "bloodborne-browser-standalone"
+name = "bloodborne-save-editor-standalone"
 version = "1.0.0"
 dependencies = [
  "tauri",
