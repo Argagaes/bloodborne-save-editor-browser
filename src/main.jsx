@@ -245,7 +245,7 @@ export default function App(){
         <p>This standalone editor is based on Noxde’s Bloodborne Save Editor and Chalice Editor. The dungeon catalog comes from Noxde’s dungeon list.</p>
         <p>Standalone editor, tool integration, lamps and shortcuts by <strong>Argagaes</strong>, who also hosts the editor.</p>
         <ul>
-          <li><a href="https://github.com/Argagaes/bloodborne-save-editor-browser" target="_blank" rel="noopener noreferrer">Bloodborne Save Editor Standalone on GitHub</a></li>
+          <li><a href="https://github.com/Argagaes/bloodborne-save-editor-tool" target="_blank" rel="noopener noreferrer">Bloodborne Save Editor Standalone on GitHub</a></li>
           <li><a href="https://github.com/Noxde/Bloodborne-save-editor" target="_blank" rel="noopener noreferrer">Noxde’s Bloodborne Save Editor on GitHub</a></li>
           <li><a href="https://gist.github.com/Noxde/a29f699f4175bf315d9bd4baeebefb66" target="_blank" rel="noopener noreferrer">Noxde’s dungeon catalog on GitHub Gist</a></li>
           <li><a href="https://discord.com/invite/Ax6YByr" target="_blank" rel="noopener noreferrer">The Tomb Prospectors Discord</a> — chalice dungeon, gem and datamining research</li>
