@@ -220,9 +220,20 @@ export class SaveEditor {
       if (!lamp) throw Error('Unknown lamp.');
       const offset = this.flagOffset + lamp.offset;
       if (offset >= this.lced || offset >= this.bytes.length) throw Error('The lamp flag is outside the supported character layout.');
-      return { offset, mask: lamp.mask };
+      // Lighting requests use the same map order as the lamp availability groups.
+      // Central Yharnam's request was tested; other group addresses are inferred.
+      const index = (flag % 1000 - 810) / 20;
+      if (!Number.isInteger(index) || index < 0 || index > 19) throw Error('Unsupported lamp flag.');
+      const groupStart = lamp.offset - Math.floor((flag % 1000) / 8);
+      const requestBit = 200 + index;
+      const reset = !enabled ? {offset: this.flagOffset + groupStart - 92000 + Math.floor(requestBit / 8), mask: 0x80 >> (requestBit % 8)} : null;
+      if (reset && (reset.offset < this.flagOffset || reset.offset >= this.lced || reset.offset >= this.bytes.length)) throw Error('The lamp request flag is outside the supported character layout.');
+      return { offset, mask: lamp.mask, reset };
     });
-    for (const {offset, mask} of lamps) this.put(offset, enabled ? this.bytes[offset] | mask : this.bytes[offset] & ~mask, 1);
+    for (const {offset, mask, reset} of lamps) {
+      this.put(offset, enabled ? this.bytes[offset] | mask : this.bytes[offset] & ~mask, 1);
+      if (reset) this.put(reset.offset, this.bytes[reset.offset] & ~reset.mask, 1);
+    }
   }
   unlockLamp(eventFlag) { this.setLamps([eventFlag], true); }
   unlockAllLamps() {

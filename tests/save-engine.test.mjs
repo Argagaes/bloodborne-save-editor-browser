@@ -2,12 +2,23 @@ import nodeTest from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { SaveEditor } from '../src/save-engine.js';
+import { readQuestFlag, writeQuestFlag } from '../src/quest-flags.js';
 import { hasUpstreamFixtures, readUpstreamFixture as fixture } from './upstream-fixtures.mjs';
 const test = hasUpstreamFixtures ? nodeTest : nodeTest.skip;
 const data=Object.fromEntries(['items','weapons','armors','bosses','upgrades','offsets','lamps','shortcuts','shortcut-auxiliary'].map(name=>[name,JSON.parse(fs.readFileSync(new URL(`../public/data/${name}.json`,import.meta.url)))]));
 const load=n=>new SaveEditor(fixture(n),data);
 const reparse=s=>new SaveEditor(s.bytes,data);
 const names=['Proyectito','Toe Taster',"I'm Here To Help",'Yeezy','YT: olletnaS','YT: olletnaS','Touch Me','Control','Yew','Touch Me'];
+
+test('inferred NPC flag edit changes one bit and participates in undo',()=>{
+  const s=load(7), before=s.bytes.slice(), flag=1368, groupBase=1002;
+  const wasOn=readQuestFlag(s,flag,groupBase);
+  s.transaction('experimental NPC flag',()=>writeQuestFlag(s,flag,groupBase,!wasOn));
+  assert.equal(readQuestFlag(s,flag,groupBase),!wasOn);
+  const changes=[];for(let i=0;i<before.length;i++)if(before[i]!==s.bytes[i])changes.push(i);
+  assert.deepEqual(changes,[s.flagOffset+groupBase+Math.floor((flag%1000)/8)]);
+  s.undo();assert.deepEqual(s.bytes,before);
+});
 
 test('all ten repository saves open and round-trip byte for byte',()=>{
   for(let i=0;i<10;i++){
@@ -119,7 +130,8 @@ test('lamp groups set and clear only their bits, preserving others and undoing a
   const allEnabled=s.bytes.slice();
   s.transaction('disable area',()=>s.setLamps(flags,false));
   for(const lamp of lamps) assert.equal(s.lampEnabled(lamp.eventFlag),!flags.includes(lamp.eventFlag));
-  const allowed=new Set(area.map(l=>s.flagOffset+l.offset));
+  const allowed=new Set([...area.map(l=>s.flagOffset+l.offset),s.flagOffset+15902]);
+  assert.equal(s.bytes[s.flagOffset+15902] & 0x40,0);
   for(let i=0;i<s.bytes.length;i++) if(!allowed.has(i)) assert.equal(s.bytes[i],allEnabled[i]);
   for(const lamp of area) assert.equal((s.bytes[s.flagOffset+lamp.offset]^allEnabled[s.flagOffset+lamp.offset]) & ~lamp.mask,0);
   s.undo();assert.deepEqual(s.bytes,allEnabled);
@@ -217,4 +229,33 @@ test('modified-byte count ignores data shifted by inserted upgrade and equipment
     s.undo();assert.deepEqual(s.bytes,changed);assert.equal(s.changedBytes,count);
     s.undo();assert.equal(s.changedBytes,0);s.redo();assert.equal(s.changedBytes,count);
   }
+});
+
+
+test('disabling Central Yharnam also clears its tested lighting request',()=>{
+  const s=load(0), lamp=data.lamps.find(l=>l.eventFlag===12417830);
+  const request=s.flagOffset+15902, availability=s.flagOffset+lamp.offset;
+  s.bytes[request]|=0x40; s.bytes[availability]|=lamp.mask;
+  const before=s.bytes.slice();
+  s.transaction('disable lamp',()=>s.setLamps([lamp.eventFlag],false));
+  assert.equal(s.bytes[request],before[request]&~0x40);
+  assert.equal(s.bytes[availability],before[availability]&~lamp.mask);
+  for(let i=0;i<s.bytes.length;i++) if(i!==request && i!==availability) assert.equal(s.bytes[i],before[i]);
+  s.undo(); assert.deepEqual(s.bytes,before);
+});
+
+
+test('lamp disable clears inferred per-lamp request bits without clearing neighboring flags',()=>{
+  const s=load(0), lamps=data.lamps;
+  s.setLamps(lamps.map(l=>l.eventFlag),true);
+  const requests=lamps.map(l=>{const i=(l.eventFlag%1000-810)/20;return {offset:s.flagOffset+l.offset-Math.floor((l.eventFlag%1000)/8)-92000+Math.floor((200+i)/8), mask:0x80>>((200+i)%8)};});
+  for(const r of requests) s.bytes[r.offset]|=r.mask;
+  const before=s.bytes.slice();
+  s.transaction('disable all',()=>s.setLamps(lamps.map(l=>l.eventFlag),false));
+  for(const r of requests) assert.equal(s.bytes[r.offset]&r.mask,0);
+  const masks=new Map();
+  for(const r of requests) masks.set(r.offset,(masks.get(r.offset)||0)|r.mask);
+  for(const l of lamps) {const o=s.flagOffset+l.offset; masks.set(o,(masks.get(o)||0)|l.mask);}
+  for(let i=0;i<s.bytes.length;i++) assert.equal((before[i]^s.bytes[i])&~(masks.get(i)||0),0);
+  s.undo(); assert.deepEqual(s.bytes,before);
 });

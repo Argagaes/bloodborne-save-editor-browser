@@ -1,0 +1,75 @@
+name: Desktop builds
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            bundles: deb,appimage
+            artifact: linux-x64
+          - os: windows-latest
+            bundles: nsis
+            artifact: windows-x64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri -> target
+      - name: Install Linux dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev patchelf
+      - run: npm ci
+      - run: npm test
+      - name: Build desktop packages
+        run: npm run desktop -- build --bundles ${{ matrix.bundles }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: |
+            src-tauri/target/release/bundle/**/*.deb
+            src-tauri/target/release/bundle/**/*.AppImage
+            src-tauri/target/release/bundle/**/*.exe
+          if-no-files-found: error
+
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    concurrency:
+      group: rolling-test-release
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+          merge-multiple: true
+      - name: Publish testing release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view test-build >/dev/null 2>&1; then
+            gh release create test-build --target "$GITHUB_SHA" --title "Latest test build" --notes "Automatically built from commit $GITHUB_SHA." --prerelease
+          fi
+          gh release edit test-build --notes "Automatically built from commit $GITHUB_SHA."
+          find release-assets -type f -print0 | xargs -0 gh release upload test-build --clobber

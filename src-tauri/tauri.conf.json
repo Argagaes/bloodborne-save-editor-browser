@@ -1,0 +1,40 @@
+{
+  "productName": "Bloodborne Save Editor",
+  "version": "1.0.0",
+  "identifier": "com.argagaes.bloodbornesaveeditor",
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:5176",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Bloodborne Save Editor",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 900,
+        "minHeight": 650
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "appimage",
+      "deb",
+      "nsis"
+    ],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

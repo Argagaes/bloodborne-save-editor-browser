@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import {quests} from './quest-data.js';
-import {flagAddress, inferFlagGroups, questFlags, questStateRanges, readQuestFlag, writeQuestFlag} from './quest-flags.js';
+import {flagAddress, inferQuestFlagGroups, questFlags, questStateRanges, readQuestFlag, writeQuestFlag} from './quest-flags.js';
 import eventIndex from './npc-event-index.json';
 
 export default function QuestResearch({editor, act, revision}) {
   const [search, setSearch] = useState('');
   const [offsets, setOffsets] = useState({});
   const [customFlag, setCustomFlag] = useState('');
-  const inferred = {1:1002, ...inferFlagGroups([...(editor.data.shortcuts || []), ...(editor.data['shortcut-auxiliary'] || []), ...(editor.data.lamps || [])])};
+  const inferred = inferQuestFlagGroups(editor.data);
   function groupBase(id) {
     const group = Math.floor(id / 1000);
     if (Object.hasOwn(offsets, group)) {
@@ -24,11 +24,11 @@ export default function QuestResearch({editor, act, revision}) {
     return <div key={id}><label className="quest-flag">
       <input type="checkbox" disabled={!address} checked={checked} onChange={event=>act(`Set NPC flag ${id} ${event.target.checked ? 'on' : 'off'}`,()=>writeQuestFlag(editor,id,base,event.target.checked))}/>
       <span><strong>{id}</strong> · {note}<small>{address ? `Save offset +${address.offset-editor.flagOffset}, mask 0x${address.mask.toString(16).padStart(2,'0')} · ${Object.hasOwn(offsets, Math.floor(id/1000)) ? 'manual mapping' : 'inferred mapping'}` : `Set group ${Math.floor(id/1000)} offset below to enable`}</small></span>
-    </label>{writes.length>0&&<details className="quest-script-refs"><summary>Script write sites ({writes.length})</summary><ul>{writes.map((site,i)=><li key={i}>{site.map} · event {site.event} · instruction {site.instruction} · {site.action}</li>)}</ul><small>Literal writes in installed scripts; parameterized events and dialogue scripts are not indexed. A write site does not describe its conditions.</small></details>}</div>;
+    </label>{writes.length>0&&<details className="quest-script-refs"><summary>Script write sites ({writes.length})</summary><ul>{writes.map((site,i)=>{const checks=eventIndex.checks?.[site.checksKey];return <li key={i}>{site.map} · event {site.event} · instruction {site.instruction} · {site.action}{site.caller != null && ` · called by ${site.caller}, slot ${site.slot}`}{!!checks?.flags?.length&&<div>Flags checked somewhere in event: {checks.flags.map(([flag,state])=>`${flag} ${state?'on':'off'}`).join(', ')}</div>}{!!checks?.characters?.length&&<div>Characters checked somewhere in event: {checks.characters.map(([id,state])=>`${id} ${state?'dead':'alive'}`).join(', ')}</div>}</li>;})}</ul><small>Installed scripts: literal writes and parameters resolved from same-file calls. Checks may belong to different branches, not necessarily the selected write. Unresolved calls, common-event calls and dialogue are not indexed.</small></details>}</div>;
   }
   function controlsFor(quest) {
     const flags = questFlags[quest.name];
-    if (!flags) return <p className="panel-note">Quest flag mapping not researched yet.</p>;
+    if (!flags) return <p className="panel-note">{quest.name === 'Blood Minister' ? 'Opening-cutscene character. No persistent NPC quest or revival flag has been established in the inspected map events; the clinic window character is Iosefka, not the minister.' : 'No supported flag association found in the inspected scripts.'}</p>;
     const sections = [...new Set(flags.map(flag=>flag.section || 'Related flags'))];
     const stateRange = questStateRanges[quest.name];
     let active = [];

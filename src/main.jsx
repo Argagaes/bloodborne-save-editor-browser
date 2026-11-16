@@ -6,7 +6,6 @@ import { SaveEditor, SHAPES, integer } from './save-engine.js';
 
 import { gemVisual, gemDisplayName } from './gem-icons.js';
 import { normalizeGemEffectUnits } from './gem-effect-units.js';
-import { shouldShowInformation, informationCookie } from './information-version.js';
 import { runeIconFile } from './rune-icons.js';
 
 import './style.css';
@@ -14,7 +13,7 @@ import './themes.css';
 import Altars from './altars.jsx';
 import ShortcutMap from './ShortcutMap.jsx';
 import GemBuilder from './GemBuilder.jsx';
-import QuestResearch from './QuestResearch.jsx';
+const QuestResearch = React.lazy(() => import('./QuestResearch.jsx'));
 
 
 
@@ -161,8 +160,6 @@ export default function App(){
   }, [theme]);
   const [informationOpen, setInformationOpen] = useState(false);
   const [saveError, setSaveError] = useState('');
-  const [questsUnlocked, setQuestsUnlocked] = useState(false);
-  const versionClicks = useRef(0);
 
   const [data,setData]=useState(null),[loadError,setLoadError]=useState(''),[editor,setEditor]=useState(null),[page,setPage]=useState('Overview'),[revision,render]=useState(0),[busy,setBusy]=useState(false),[notice,setNotice]=useState(null),[demo,setDemo]=useState(false),[modal,setModal]=useState(null),[search,setSearch]=useState(''),[category,setCategory]=useState('all'),[selected,setSelected]=useState(null),[upgradeKind,setUpgradeKind]=useState(1),[upgradeLocation,setUpgradeLocation]=useState('all');
 
@@ -180,7 +177,7 @@ export default function App(){
 
   function navigate(p){setInformationOpen(false);setPage(p);setSearch('');setCategory('all');setSelected(null);}
 
-  async function openFile(file,isDemo=false){if(!file)return;if(!data){setSaveError(loadError || 'Editor data is still loading. Please try again.');return;}setBusy(true);setSaveError('');try{const bytes=new Uint8Array(await file.arrayBuffer());const next=new SaveEditor(bytes,data,file.name);setEditor(next);setDemo(isDemo);navigate('Overview');if(isDemo){setInformationOpen(true);}else if(shouldShowInformation(document.cookie,__APP_VERSION__)){setInformationOpen(true);try{const cookiePath=new URL(base,window.location.href).pathname;document.cookie=informationCookie(__APP_VERSION__,cookiePath);}catch{} }setModal(null);}catch(e){setSaveError(`Could not open ${file.name}: ${e?.message || 'The file could not be read or is not a supported save.'}`);}finally{setBusy(false);if(fileInput.current)fileInput.current.value='';}}
+  async function openFile(file,isDemo=false){if(!file)return;if(!data){setSaveError(loadError || 'Editor data is still loading. Please try again.');return;}setBusy(true);setSaveError('');try{const bytes=new Uint8Array(await file.arrayBuffer());const next=new SaveEditor(bytes,data,file.name);setEditor(next);setDemo(isDemo);navigate('Overview');setModal(null);}catch(e){setSaveError(`Could not open ${file.name}: ${e?.message || 'The file could not be read or is not a supported save.'}`);}finally{setBusy(false);if(fileInput.current)fileInput.current.value='';}}
 
   async function example(){try{setBusy(true);const name='userdata0000';const r=await fetch(`${base}${name}`);if(!r.ok)throw Error('Example save unavailable.');await openFile(new File([await r.arrayBuffer()],name),true);}catch(e){notify(e.message,true);}finally{setBusy(false);}}
 
@@ -225,10 +222,10 @@ export default function App(){
       {editor&&<><button className="icon-button" aria-label="Undo" title="Undo (Ctrl+Z)" disabled={!editor.history.length} onClick={()=>{editor.undo();update();}}><Icon name="undo" size={17}/></button><button className="icon-button" aria-label="Redo" title="Redo (Ctrl+Shift+Z)" disabled={!editor.redoHistory.length} onClick={()=>{editor.redo();update();}}><Icon name="redo" size={17}/></button><div className="toolbar-divider"/></>}<button className="button secondary" disabled={!data||busy} onClick={pickFile}>Open save</button>{editor&&<button className="button primary" onClick={exportSave}>Download save</button>}</div></header>
 
     {editor && <nav className="section-tabs" aria-label="Editor sections">
-      {Object.entries(questsUnlocked ? {...titles, Quests:'NPC quests'} : titles).map(([value, label]) => {
+      {Object.entries({...titles, Experimental:'Experimental'}).map(([value, label]) => {
         const active = !informationOpen && page === value;
         return <button key={value} className={active ? 'active' : ''} aria-current={active ? 'page' : undefined} onClick={() => navigate(value)}>
-          <span className="section-icon"><Icon name={{Overview:'grid',Inventory:'bag',Storage:'box',Upgrades:'gem',Bosses:'boss',Character:'user',Altars:'altar',Lamps:'lamp',Shortcuts:'flag',WorldFlags:'flag',Changes:'history',Quests:'user'}[value]} size={18}/></span>
+          <span className="section-icon"><Icon name={{Overview:'grid',Inventory:'bag',Storage:'box',Upgrades:'gem',Bosses:'boss',Character:'user',Altars:'altar',Lamps:'lamp',Shortcuts:'flag',WorldFlags:'flag',Changes:'history',Experimental:'user'}[value]} size={18}/></span>
           {label}{value === 'Changes' && editor.history.length > 0 && <span className="nav-count">{editor.history.length}</span>}
         </button>;
       })}
@@ -253,7 +250,7 @@ export default function App(){
           <li><a href="https://gist.github.com/Noxde/a29f699f4175bf315d9bd4baeebefb66" target="_blank" rel="noopener noreferrer">Noxde’s dungeon catalog on GitHub Gist</a></li>
           <li><a href="https://github.com/Amanises-Yharnam-Together/BBSC-Yharnam-Together" target="_blank" rel="noopener noreferrer">Yharnam Together</a> — map renderer and map data</li>
         </ul>
-        <p className="panel-note">Licensed under GPL-3.0. <button className="version-button" onClick={()=>{if(!questsUnlocked && ++versionClicks.current >= 5){setQuestsUnlocked(true);notify('Experimental NPC quests tab unlocked.');if(editor)navigate('Quests');}}}>Version {__APP_VERSION__}</button>.</p>
+        <p className="panel-note">Licensed under GPL-3.0. Version {__APP_VERSION__}.</p>
       </div>
     </section>}
 
@@ -274,7 +271,7 @@ export default function App(){
 
       {demo&&<div className="demo-banner"><span>Example save loaded.</span><button className="text-button" onClick={pickFile}>Open your save</button></div>}
 
-      <div className="page-heading"><h1>{titles[page]}</h1><span className={`save-status ${changed?'pending':''}`}>{changed?`${changed.toLocaleString()} ${changed===1?'byte':'bytes'} changed`:'No changes'}</span></div>
+      <div className="page-heading"><h1>{page==='Experimental'?'Experimental':titles[page]}</h1><span className={`save-status ${changed?'pending':''}`}>{changed?`${changed.toLocaleString()} ${changed===1?'byte':'bytes'} changed`:'No changes'}</span></div>
 
       {page==='Overview'&&<>
 
@@ -304,7 +301,7 @@ export default function App(){
         <ShortcutSettings shortcuts={data.shortcuts} charts={data['maps/manifest']} editor={editor} act={act}/>
       </Panel>}
 
-      {page==='Quests'&&questsUnlocked&&<QuestResearch editor={editor} act={act} revision={revision}/>}
+      {page==='Experimental'&&<><div className="segmented" aria-label="Experimental categories"><button className="selected" aria-current="page">NPC quests</button></div><React.Suspense fallback={<p>Loading NPC research…</p>}><QuestResearch editor={editor} act={act} revision={revision}/></React.Suspense></>}
 
       {page==='WorldFlags'&&<Panel title="World settings">
         <div className="world-action">

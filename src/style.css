@@ -126,7 +126,8 @@ footer { font-size: 11px; color: var(--muted); padding-top: 16px; margin-top: 26
 .quest-entry summary span { color: var(--muted); font-size: 12px; }
 .quest-entry p { margin: 12px 0 0; line-height: 1.6; }
 .quest-flag { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid var(--border); }
-.quest-flag input { margin-top: 4px; }
+.quest-flag input[type=checkbox] { width: 16px; height: 16px; flex: 0 0 16px; margin: 4px 0 0; padding: 0; }
+.quest-flag > span { flex: 1; min-width: 0; }
 .quest-flag-sections h4 { margin: 18px 0 4px; }
 .quest-flag small { display: block; color: var(--muted); margin-top: 3px; }
 .quest-script-refs { margin: 0 0 10px 26px; color: var(--muted); font-size: 12px; }
