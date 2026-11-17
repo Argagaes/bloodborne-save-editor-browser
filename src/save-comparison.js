@@ -1,4 +1,4 @@
-import { compareQuestFlags } from './quest-comparison.js';
+import { compareQuestFlags, compareCharacterCandidates } from './quest-comparison.js';
 
 export function compareSaves(current, other, data) {
   const groups = [];
@@ -22,5 +22,6 @@ export function compareSaves(current, other, data) {
   flags('Lamps unlocked', data.lamps, (e, x) => e.lampEnabled(x.eventFlag), x => `${x.area} — ${x.name}`);
   flags('Shortcuts open', data.shortcuts, (e, x) => e.shortcutEnabled(x.eventFlag), x => `${x.area} — ${x.name}`);
   add('NPC quest and related flags (inferred)', compareQuestFlags(current, other, data).rows);
+  add('NPC character-state candidates (unverified)', compareCharacterCandidates(current, other));
   return groups;
 }

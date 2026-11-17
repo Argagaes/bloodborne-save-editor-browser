@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { CATEGORY_NAMES, parseCatalog } from './chalice-engine.mjs';
+import { CATEGORY_NAMES, parseCatalog, parseHexRecord } from './chalice-engine.mjs';
 import './chalice.css';
 import ChaliceBuilder from './ChaliceBuilder.jsx';
+import GemPoolCalculator from './GemPoolCalculator.jsx';
 
 const catalogUrl = `${import.meta.env.BASE_URL}data/dungeons.json`;
 const categoryName = key => CATEGORY_NAMES[key] || key;
@@ -15,6 +16,7 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
   const [category, setCategory] = useState('all');
   const [selected, setSelected] = useState(null);
   const [builder, setBuilder] = useState(null);
+  const [draftRecord,setDraftRecord] = useState(null);
   const catalogInput = useRef(null);
   const loadRequest = useRef(0);
 
@@ -77,6 +79,10 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
     && `${dungeon.glyph} ${dungeon.desc}`.toLowerCase().includes(search)
   );
 
+  let poolRecord=builder ? (builder.template?.bytes || altars[slot-1].bytes) : selected?.bytes || (altars[slot-1].empty ? null : altars[slot-1].bytes);
+  if(builder && draftRecord!==null) { try {poolRecord=parseHexRecord(draftRecord);} catch {poolRecord=null;} }
+  const poolPanel = onPoolChange => <section className="builder-gem-pool"><h3>Gem pool calculator</h3><p className="panel-note">{builder ? `Source: ${builder.template ? `builder started from ${builder.template.glyph}` : `builder started from altar ${slot}`}${draftRecord !== null ? ' · record edited' : ''}.` : selected ? `Source: selected dungeon ${selected.glyph}.` : `Source: altar ${slot} · ${altarName(altars[slot-1])}.`} Categories are read from the effect bytes and update as the record changes.</p><GemPoolCalculator record={poolRecord} onRecordChange={onPoolChange} key={`${builder?.key || 'view'}-${selected?.id || ''}-${slot}`} /></section>;
+
   return <>
     <input type="file" className="sr-only" accept=".json,application/json" ref={catalogInput} aria-label="Import dungeon catalog" onChange={importCatalog} />
     <div className="altar-grid" aria-label="Chalice altars">
@@ -90,8 +96,8 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
         {slot === altar.slot && <Icon name="check" size={16} />}
       </button>)}
     </div>
-    <div className="button-row"><button type="button" className="button secondary" onClick={() => setBuilder({template:null, key:Date.now()})}>Build from altar {slot}</button>{selected&&<button type="button" className="button secondary" onClick={() => setBuilder({template:selected, key:Date.now()})}>Build from {selected.glyph}</button>}</div>
-    {builder&&<ChaliceBuilder key={builder.key} altar={altars[slot-1]} template={builder.template} editor={editor} act={act} notify={notify} onClose={()=>setBuilder(null)}/>}
+    <div className="button-row altar-build-actions"><button type="button" className="button secondary" onClick={() => {setDraftRecord(null);setBuilder({template:null, key:Date.now()});}}>Build from altar {slot}</button>{selected&&<button type="button" className="button secondary" onClick={() => {setDraftRecord(null);setBuilder({template:selected, key:Date.now()});}}>Build from {selected.glyph}</button>}</div>
+    {builder&&<ChaliceBuilder key={builder.key} altar={altars[slot-1]} template={builder.template} editor={editor} act={act} notify={notify} onClose={()=>{setBuilder(null);setDraftRecord(null);}} onRecordChange={setDraftRecord} poolPanel={poolPanel}/>}
     <div className="catalog-heading">
       <h2>Choose a dungeon</h2>
       <span className="muted">Selected: altar {slot} · {altarName(altars[slot - 1])}</span>

@@ -1,0 +1,1629 @@
+{
+  "Iosefka and the Impostor": [
+    {
+      "sheet": "Gems & Runes",
+      "id": "6070",
+      "name": "Imposter Iosefka",
+      "status": "Normal",
+      "location": "Iosefka's Clinic",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Adds slow poison effect (+7)"
+        },
+        {
+          "label": "Rune #1",
+          "value": "Add slow poison RES +100"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6060",
+      "name": "Iosefka",
+      "status": "Normal",
+      "location": "Iosefka's Clinic",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6070",
+      "name": "Imposter Iosefka",
+      "status": "Normal",
+      "location": "Iosefka's Clinic",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "1,560000004768360"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "3,0"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6070",
+      "name": "Imposter Iosefka",
+      "status": "Normal",
+      "location": "Iosefka's Clinic",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.100000023841858"
+        }
+      ]
+    }
+  ],
+  "Alfred": [
+    {
+      "sheet": "Gems & Runes",
+      "id": "6150",
+      "name": "Alfred",
+      "status": "Normal",
+      "location": "Queen's Chamber",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Phys, UP near death (+18%)"
+        },
+        {
+          "label": "Gem #2",
+          "value": "Reduces stamina costs (4,5%)"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6151",
+      "name": "Alfred",
+      "status": "Normal",
+      "location": "Cathedral Ward",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Charge ATKs UP (+4%)"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6152",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Central Yharnam",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Charge ATKs UP (+4%)"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6153",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Old Yharnam",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Charge ATKs UP (+4%)"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6150",
+      "name": "Alfred",
+      "status": "Normal",
+      "location": "Queen's Chamber",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2,33999985218048"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.799999952316284"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6151",
+      "name": "Alfred",
+      "status": "Normal",
+      "location": "Cathedral Ward",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "1,56000000476836"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.799999952316284"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6152",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Central Yharnam",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2.5"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.799999952316284"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6153",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Old Yharnam",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2.5"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.799999952316284"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6150",
+      "name": "Alfred",
+      "status": "Normal",
+      "location": "Queen's Chamber",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.2999999523162842"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6151",
+      "name": "Alfred",
+      "status": "Normal",
+      "location": "Cathedral Ward",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.2999999523162842"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6152",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Central Yharnam",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "0.5"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.5"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.5"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.5"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6153",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Old Yharnam",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "0.5"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.5"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.5"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.5"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6152",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Central Yharnam",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.6000000238418579"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6153",
+      "name": "Alfred",
+      "status": "Cooperator",
+      "location": "Old Yharnam",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.6000000238418579"
+        }
+      ]
+    }
+  ],
+  "Eileen the Crow": [
+    {
+      "sheet": "Gems & Runes",
+      "id": "6160",
+      "name": "Eileen",
+      "status": "Normal",
+      "location": "Central Yharnam",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Adds rapid poison effect (+4)"
+        },
+        {
+          "label": "Gem #2",
+          "value": "Reduces stamina costs (1,5%)"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6161",
+      "name": "Eileen",
+      "status": "Normal",
+      "location": "Cathedral Ward",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Adds rapid poison effect (+12)"
+        },
+        {
+          "label": "Gem #2",
+          "value": "Reduces stamina costs (5%)"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6160",
+      "name": "Eileen",
+      "status": "Normal",
+      "location": "Central Yharnam",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "1,2999999523162842"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "3.0"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6161",
+      "name": "Eileen",
+      "status": "Normal",
+      "location": "Cathedral Ward",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2,33999985218048"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.799999952316284"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6160",
+      "name": "Eileen",
+      "status": "Normal",
+      "location": "Central Yharnam",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.100000023841858"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6161",
+      "name": "Eileen",
+      "status": "Normal",
+      "location": "Cathedral Ward",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.2999999523162842"
+        }
+      ]
+    }
+  ],
+  "Valtr, Master of the League": [
+    {
+      "sheet": "Gems & Runes",
+      "id": "6501",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "Rune #1",
+          "value": "Boosts max HP +15%"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6502",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "Rune #1",
+          "value": "Boosts max HP +20%"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6503",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "Rune #1",
+          "value": "Boosts max HP +15%"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6504",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "Rune #1",
+          "value": "Boosts max HP +20%"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6500",
+      "name": "Valtr",
+      "status": "Normal",
+      "location": "Forbidden Woods",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2.72999977588653"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.0999999046325684"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6501",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.2000000476837158"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6502",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.2000000476837158"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6503",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.2000000476837158"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6504",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.2000000476837158"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6500",
+      "name": "Valtr",
+      "status": "Normal",
+      "location": "Forbidden Woods",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6501",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.5199999809265137"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.800000011920929"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6502",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.6430000066757202"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.6000000238418579"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6503",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.5199999809265137"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.800000011920929"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6504",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.6430000066757202"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.6000000238418579"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.6000000238418579"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6501",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.4000000059604645"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6502",
+      "name": "Valtr",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.25"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6503",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.4000000059604645"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.4000000059604645"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6504",
+      "name": "Valtr (no helmet)",
+      "status": "Cooperator",
+      "location": "Nightmare Cathedral",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.25"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.25"
+        }
+      ]
+    }
+  ],
+  "Yamamura the Wanderer": [
+    {
+      "sheet": "Gems & Runes",
+      "id": "6530",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Graveyard of the Darkbeast",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Physical ATK UP (+4,5%)"
+        },
+        {
+          "label": "Gem #2",
+          "value": "Physical ATK UP (+4,5%)"
+        },
+        {
+          "label": "Rune #1",
+          "value": "Increase HP +10%"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6531",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Yahar'gul",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Physical ATK UP (+12%)"
+        },
+        {
+          "label": "Gem #2",
+          "value": "Physical ATK UP (+12%)"
+        },
+        {
+          "label": "Gem #3",
+          "value": "Physical ATK UP (+12%)"
+        },
+        {
+          "label": "Rune #1",
+          "value": "Increase HP +15%"
+        }
+      ]
+    },
+    {
+      "sheet": "Gems & Runes",
+      "id": "6533",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Research Hall",
+      "values": [
+        {
+          "label": "Gem #1",
+          "value": "Physical ATK UP (+18%)"
+        },
+        {
+          "label": "Gem #2",
+          "value": "Physical ATK UP (+18%)"
+        },
+        {
+          "label": "Gem #3",
+          "value": "Physical ATK UP (+18%)"
+        },
+        {
+          "label": "Rune #1",
+          "value": "Increase HP +20%"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6530",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Graveyard of the Darkbeast",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.7999999523162842"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6531",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Yahar'gul",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.600000023841858"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6533",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Research Hall",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.600000023841858"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6590",
+      "name": "Yamamura",
+      "status": "Normal",
+      "location": "Underground Corpse Pile",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2,33999985218048"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6530",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Graveyard of the Darkbeast",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.2000000476837158"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.2000000476837158"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.2000000476837158"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.2000000476837158"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6531",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Yahar'gul",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "0.699999988079071"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.699999988079071"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.699999988079071"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.699999988079071"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6533",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Research Hall",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.0"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "0.75"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "0.75"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "0.75"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6590",
+      "name": "Yamamura",
+      "status": "Normal",
+      "location": "Underground Corpse Pile",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6530",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Graveyard of the Darkbeast",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.44999998807907104"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.44999998807907104"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.44999998807907104"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.44999998807907104"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.44999998807907104"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.44999998807907104"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.44999998807907104"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6531",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Yahar'gul",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.800000011920929"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.800000011920929"
+        }
+      ]
+    },
+    {
+      "sheet": "DMG reduction modifiers",
+      "id": "6533",
+      "name": "Yamamura",
+      "status": "Cooperator",
+      "location": "Research Hall",
+      "values": [
+        {
+          "label": "Normal DMG red.",
+          "value": "0.30000001192092896"
+        },
+        {
+          "label": "Blunt DMG red.",
+          "value": "0.30000001192092896"
+        },
+        {
+          "label": "Thrust DMG red.",
+          "value": "0.30000001192092896"
+        },
+        {
+          "label": "Blood DMG red.",
+          "value": "0.30000001192092896"
+        },
+        {
+          "label": "Arcane DMG red.",
+          "value": "0.30000001192092896"
+        },
+        {
+          "label": "Fire DMG red.",
+          "value": "0.30000001192092896"
+        },
+        {
+          "label": "Bolt DMG red.",
+          "value": "0.30000001192092896"
+        }
+      ]
+    }
+  ],
+  "Annalise, Queen of the Vilebloods": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6040",
+      "name": "Annalise",
+      "status": "Normal",
+      "location": "Queen's Chamber",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    }
+  ],
+  "Skeptical Man": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6080",
+      "name": "Skeptical Man",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    }
+  ],
+  "Lonely Old Woman": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6090",
+      "name": "Lonely Old Dear",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    }
+  ],
+  "Afflicted Beggar": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6100",
+      "name": "Suspecious Beggar",
+      "status": "Normal",
+      "location": "Forbidden Woods",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    }
+  ],
+  "Arianna": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6110",
+      "name": "Arianna",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6111",
+      "name": "Arianna (beginning of pregnancy)",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6112",
+      "name": "Arianna (pregnant)",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6113",
+      "name": "Arianna (after giving birth)",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    }
+  ],
+  "Adella": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6140",
+      "name": "Adella",
+      "status": "Normal",
+      "location": "Yahar'gul",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6141",
+      "name": "Adella",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6142",
+      "name": "Adella",
+      "status": "Mad",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6143",
+      "name": "Adella (killed Arianna)",
+      "status": "Normal",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6144",
+      "name": "Adella (killed Arianna)",
+      "status": "Mad",
+      "location": "Oedon's Chapel",
+      "values": [
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2,5"
+        }
+      ]
+    }
+  ],
+  "Djura": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6300",
+      "name": "Djura",
+      "status": "Normal",
+      "location": "Old Yharnam",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "1,2999999523162842"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6300",
+      "name": "Djura",
+      "status": "Normal",
+      "location": "Old Yharnam",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.100000023841858"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.100000023841858"
+        }
+      ]
+    }
+  ],
+  "Simon": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6510 to 6512",
+      "name": "Simon",
+      "status": "Normal",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "1,949999928"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "1.7999999523162842"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6513",
+      "name": "Simon",
+      "status": "Dying",
+      "location": "Fishing Hamlet",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2,33999985218048"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6510 to 6512",
+      "name": "Simon",
+      "status": "Normal",
+      "location": "Hunter's Nightmare",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.2999999523162842"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6513",
+      "name": "Simon",
+      "status": "Dying",
+      "location": "Fishing Hamlet",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.2999999523162842"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.2999999523162842"
+        }
+      ]
+    }
+  ],
+  "Brador": [
+    {
+      "sheet": "HP modifiers",
+      "id": "6520 and 6522 to 6524",
+      "name": "Brador",
+      "status": "Invader",
+      "location": "Fishing Hamlet",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2,33999985218048"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "sheet": "HP modifiers",
+      "id": "6521",
+      "name": "Brador",
+      "status": "Normal",
+      "location": "Underground Corpse Pile",
+      "values": [
+        {
+          "label": "HP multiplier",
+          "value": "2,33999985218048"
+        },
+        {
+          "label": "HP multiplier for NG+",
+          "value": "2.5"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6520 and 6522 to 6524",
+      "name": "Brador",
+      "status": "Invader",
+      "location": "Fishing Hamlet",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "sheet": "ATK modifiers",
+      "id": "6521",
+      "name": "Brador",
+      "status": "Normal",
+      "location": "Underground Corpse Pile",
+      "values": [
+        {
+          "label": "Physical ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Arcane ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Fire ATK UP",
+          "value": "1.5"
+        },
+        {
+          "label": "Bolt ATK UP",
+          "value": "1.5"
+        }
+      ]
+    }
+  ]
+}

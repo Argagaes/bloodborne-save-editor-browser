@@ -79,3 +79,47 @@ No persistent state association established. Entity 2410700, NPC 6060, is explic
 Map dialogue/request groups now reuse the same inferred map-group layout as lamp relighting: the group start is the corresponding availability group start minus 92000 bytes. This is supported by Central Yharnam lamp tests, not by in-game tests of every NPC or map. Unknown groups remain disabled or require manual calibration. No revival presets were added. `npc-additional-evidence.json` preserves raw instruction arguments, event parameters, and relevant call sites for the above installed-event traces. The existing event index records source hashes.
 
 Character identity cross-check: https://www.bloodborne-wiki.com/2020/02/datamined-npcs-stats-equipment.html and https://soulsmodding.com/doku.php?id=bb-refmat:character-list . The installed MSB descriptions and event calls are the primary local evidence.
+
+## Eileen first-encounter save comparison
+
+Four user-provided snapshots, in order: after first conversation, hostile, killed with the drop on the ground, and badge collected. The flag pool was compared by group and bit, rather than comparing whole files: the saves have substantial unrelated changes and handle churn. All findings below are observations from this one sequence; causation and revival are not established.
+
+| Flag | Conversation | Hostile | Killed | Badge collected | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| 1361 | 1 | 0 | 0 | 0 | First conversation quest state |
+| 1369 | 0 | 1 | 0 | 0 | Hostile quest state; event 12410806 |
+| 1368 | 0 | 0 | 1 | 1 | Death quest state; event 12410805 |
+| 1700 | 0 | 1 | 1 | 1 | Location marker, set in early hostility/death branches |
+| 12410805 | 0 | 0 | 1 | 1 | Death-handler completion flag |
+| 12410806 | 0 | 1 | 1 | 1 | Hostility-handler completion flag |
+| 12410807 | 0 | 1 | 1 | 1 | Attack-response event completion |
+| 72410543 | 0 | 0 | 1 | 1 | Death-associated observed signal; function unknown |
+| 72410544 | 0 | 1 | 1 | 1 | Signal checked by hostility handler |
+| 9382 | 0 | 0 | 1 | 1 | Death-associated candidate; function and causality unknown |
+| 50001900 | 0 | 0 | 0 | 1 | Item lot flag used by badge lots 35012, 35020 and 35030; common event 9910 can modify it |
+| 6643 | 0 | 0 | 0 | 1 | Common event 9910 uses it to control badge item-lot flags |
+
+Group mappings for 6, 9 and 50001 were checked against the flag-pool structure and the four snapshots. The reset control changes the 1360–1379 and 1700–1705 ranges, clears 12410805–12410807 and 72410543–72410544, and optionally clears 9382. It deliberately leaves badge flags and the inventory alone. It targets only the first encounter and is not an in-game-verified revival; persistent NPC health or other character state could explain an immediate death on reload. The four snapshots alone cannot establish which observed changes are necessary. The original save files are not included or modified.
+
+Script reference: https://github.com/Grimrukh/soulstruct-vanilla/blob/main/bloodborne/events/m24_01_00_00.evs.py (events 12410800 and 12410805–12410807); https://github.com/Grimrukh/soulstruct-vanilla/blob/main/bloodborne/events/common.evs.py (event 9910). Badge item-lot IDs were checked against the installed CUSA03173 1.09 ItemLotParam.
+
+### Fifth capture: failed reversal and character-state candidate
+
+In the fifth capture, 1361 is on, 1368/1369 and 1700 are off, 12410805–12410807 and 72410543–72410544 are off, and 9382, 6643 and 50001900 are also off. The user reports Eileen still dies on load. Thus clearing 9382 and those other flags was not sufficient in this attempt. Compared with the alive first capture, nine event-flag bytes differ; they contain 12101001, 12415233, 12415447, 12415448, 12415452–12415455, 12415457, 12415458, 12415460, 12705098, 12705301, 12705520, 12705521, 12705531 and 12705532. These changes largely appeared between captures 1 and 2, before death, and are not established as Eileen flags.
+
+The CHR world-state block has a Central Yharnam record of 182 bits and length 35 in all five captures. Exactly one bit in this block changes across the kill: the first data byte changes from 0x80 in captures 1–2 to 0x90 in captures 3–5 (mask 0x10, absolute offset 0x3ED8E in these five files). It is the only CHR byte changed from the hostile capture to the killed capture; it remains set after the unsuccessful flag reset. This is a strong correlation, not identification of the bit as Eileen's saved character state or proof of causation. A separate experimental control clears only that bit, and refuses layouts other than the observed 182-entry record; other installations can have a different count/order. The provided candidate save starts from capture 5 and differs by that one bit only. Test whether she survives load before drawing conclusions. Existing quest flags and badge state are not touched by this candidate operation.
+
+### In-game test result
+
+The user tested the candidate save made from capture 5 with only mask 0x10 cleared at the matching Central Yharnam CHR record, and reports Eileen is alive on load. This establishes the combination of the already-reset flags and this bit worked in that one first-encounter test; it does not establish that every reset flag is necessary, that the bit has the same character mapping in other data layouts, or that other quest stages are restored. The control remains limited to the observed 182-entry layout and does not touch badge pickup state.
+
+### Further character and item-lot research
+
+The map's CHR records contain packed bits per map. The reference m24_01 map has Eileen entity 2410900 at zero-based enemy-list position 4, matching the observed mask 0x10 if bits are ordered least-significant first. The user's record contains 182 entries and the inspected vanilla map 181, however, so this is an inference, not proof of a universal mapping. Reference positions for other NPC map entities are catalogued in `src/npc-character-candidates.json`, derived from the CUSA03173 1.09 MSB enemy lists. The editor exposes these as unknown character-state candidates only when the map record count matches the reference; equal counts cannot prove identical ordering. Only the separate Eileen 182-entry control has an in-game positive test. The game behavior, including whether any other bit tracks death, remains unknown. Save comparison includes available candidate bits, and skips unmatched layouts.
+
+NPC parameter death item-lot links were cross-checked against the installed ItemLotParam: Djura 33010 / flag 50001700; Alfred 34030 / 50001800; Adella 32030 / 50001610; Arianna 28010 / 50001200; Beggar 27070 / 50001100; Old Woman 26040 / 50001000; Skeptical Man 25000 / 50000900; impostor alternatives 24070 / 50000800 and 24075 / 50000805; Willem 20000 / 50000400; Adeline alternatives 43030 / 50002250 and 43040 / 50002270; Alfred (Cainhurst variant) 34040 / 50001820. These are lot pickup-state candidates, not proof of the conditions for each drop; events can reuse or rewrite flags.
+
+The event-flag pool group formula was cross-checked against 120 existing lamp and shortcut anchors and the group base against ten repository saves and the five Eileen captures. It extends read/write access to supported map, global and item-lot groups, but is still an inferred layout. The script index records literal flag writes and locally resolved event parameters; it does not establish which dialogue branches or conditional paths fire in game. Further captures at each NPC conversation, hostility, death and pickup are needed to distinguish correlation from causation.
+
+
+NPCs SpEffects.xlsx cross-check: the installed m25_00 map assigns entity 2500600 parameter 6040 (Annalise) and 2500790 parameter 6150 (Alfred). The previous association of parameter 6150 and item lot 34040 with Annalise was incorrect; flag 50001820 is now listed under Alfred. The workbook provides NPC parameter effect and modifier descriptions, not save flags. Values are transcribed as reference and are not verified in-game; variants and multipliers are not automatically editable.

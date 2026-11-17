@@ -1,7 +1,12 @@
 import React, {useState} from 'react';
 import {quests} from './quest-data.js';
+import {inferredFlagGroupOffset} from './flag-group-layout.js';
+import {resetEileenFirstEncounterAlive, eileenCharacterCandidate, setEileenCharacterCandidate} from './eileen-research.js';
 import {flagAddress, inferQuestFlagGroups, questFlags, questStateRanges, readQuestFlag, writeQuestFlag} from './quest-flags.js';
 import eventIndex from './npc-event-index.json';
+import characterCandidates from './npc-character-candidates.json';
+import npcEffects from './npc-speffects.json';
+import {characterCandidate, writeCharacterCandidate} from './npc-character-state.js';
 
 export default function QuestResearch({editor, act, revision}) {
   const [search, setSearch] = useState('');
@@ -14,7 +19,7 @@ export default function QuestResearch({editor, act, revision}) {
       const value = offsets[group].trim();
       return /^\d+$/.test(value) ? Number(value) : null;
     }
-    return inferred[group] ?? null;
+    return Object.hasOwn(inferred,group) ? inferred[group] : inferredFlagGroupOffset(group);
   }
   function control({id, note}) {
     const base = groupBase(id);
@@ -26,9 +31,12 @@ export default function QuestResearch({editor, act, revision}) {
       <span><strong>{id}</strong> · {note}<small>{address ? `Save offset +${address.offset-editor.flagOffset}, mask 0x${address.mask.toString(16).padStart(2,'0')} · ${Object.hasOwn(offsets, Math.floor(id/1000)) ? 'manual mapping' : 'inferred mapping'}` : `Set group ${Math.floor(id/1000)} offset below to enable`}</small></span>
     </label>{writes.length>0&&<details className="quest-script-refs"><summary>Script write sites ({writes.length})</summary><ul>{writes.map((site,i)=>{const checks=eventIndex.checks?.[site.checksKey];return <li key={i}>{site.map} · event {site.event} · instruction {site.instruction} · {site.action}{site.caller != null && ` · called by ${site.caller}, slot ${site.slot}`}{!!checks?.flags?.length&&<div>Flags checked somewhere in event: {checks.flags.map(([flag,state])=>`${flag} ${state?'on':'off'}`).join(', ')}</div>}{!!checks?.characters?.length&&<div>Characters checked somewhere in event: {checks.characters.map(([id,state])=>`${id} ${state?'dead':'alive'}`).join(', ')}</div>}</li>;})}</ul><small>Installed scripts: literal writes and parameters resolved from same-file calls. Checks may belong to different branches, not necessarily the selected write. Unresolved calls, common-event calls and dialogue are not indexed.</small></details>}</div>;
   }
+  let eileenCharacter=null, eileenCharacterError='';
+  try { eileenCharacter=eileenCharacterCandidate(editor); } catch (error) { eileenCharacterError=error.message; }
   function controlsFor(quest) {
     const flags = questFlags[quest.name];
     if (!flags) return <p className="panel-note">{quest.name === 'Blood Minister' ? 'Opening-cutscene character. No persistent NPC quest or revival flag has been established in the inspected map events; the clinic window character is Iosefka, not the minister.' : 'No supported flag association found in the inspected scripts.'}</p>;
+    const candidates=characterCandidates.filter(candidate=>candidate.npc===quest.name);
     const sections = [...new Set(flags.map(flag=>flag.section || 'Related flags'))];
     const stateRange = questStateRanges[quest.name];
     let active = [];
@@ -36,8 +44,11 @@ export default function QuestResearch({editor, act, revision}) {
       try { active = flags.filter(flag=>!flag.marker && flag.id>=stateRange[0] && flag.id<=stateRange[1] && readQuestFlag(editor,flag.id,groupBase(flag.id))); } catch {}
     }
     return <div className="quest-flag-sections">
+      {quest.name==='Eileen the Crow'&&<section className="eileen-research"><h4>Central Yharnam first encounter reset · experimental</h4><p>Restores the first-conversation quest state, clears observed hostility and death-handler flags, and clears the tested character-state bit. This combination revived Eileen in one first-encounter test. The badge and pickup flags are preserved; uncertain flag 9382 is left unchanged. Use a backup.</p><button type="button" className="button secondary" disabled={!eileenCharacter} onClick={()=>act('Reset Eileen first encounter and character state',()=>resetEileenFirstEncounterAlive(editor,groupBase))}>Reset Eileen to first encounter</button>{!eileenCharacter&&<p>Reset unavailable: {eileenCharacterError}</p>}</section>}
+      {!!npcEffects[quest.name]?.length&&<details className="quest-entry"><summary><strong>NPC parameter effects (reference)</strong></summary><p>Transcribed from NPCs SpEffects.xlsx. IDs are NPC parameter IDs, not save flags or editable gems. Values describe game-data variants and have not been independently tested in game.</p>{npcEffects[quest.name].map((entry,i)=><div key={i}><strong>{entry.name} · {entry.status} · {entry.location}</strong><small> Parameter {entry.id} · {entry.sheet}</small><p>{entry.values.map(x=>`${x.label}: ${x.value}`).join(' · ')}</p></div>)}</details>}
+      {candidates.length>0&&<details className="quest-entry"><summary><strong>Candidate character-state bits ({candidates.length})</strong></summary><p>These positions are inferred from the installed vanilla map character lists and the observed Eileen bit. Their meaning and ordering for other characters are unknown. A matching character count does not prove the layout matches. Each switch changes only one bit; use a backup and investigate on a disposable save.</p>{candidates.map(candidate=>{let address=null,error='';try{address=characterCandidate(editor,candidate);}catch(e){error=e.message;}return <label className="quest-flag" key={`${candidate.map}-${candidate.entity}`}><input type="checkbox" disabled={!address} checked={address?.enabled || false} onChange={event=>act(`Set candidate character bit ${candidate.entity}`,()=>writeCharacterCandidate(editor,candidate,event.target.checked))}/><span><strong>{candidate.label}</strong> · {candidate.map} · entity {candidate.entity}<small>{address ? `Candidate index ${candidate.index} / ${candidate.count} · byte 0x${address.offset.toString(16).toUpperCase()} · mask 0x${address.mask.toString(16).padStart(2,'0')} · meaning unknown` : `Unavailable: ${error}`}</small></span></label>;})}</details>}
       {stateRange && <p>The state range {stateRange[0]}–{stateRange[1]} is associated with this NPC from script evidence. Many individual meanings remain unknown. The game often clears the range before setting another state; these checkboxes change one bit at a time.{active.length>1 && ` Multiple state flags are currently on (${active.map(flag=>flag.id).join(', ')}).`}</p>}
-      {sections.map(section=><div key={section}><h4>{section}</h4>{flags.filter(flag=>(flag.section || 'Related flags') === section).map(control)}</div>)}
+      {sections.map(section=><div key={section}><h4>{section}</h4>{quest.name==='Eileen the Crow' && section==='First encounter death research' && <label className="quest-flag"><input type="checkbox" disabled={!eileenCharacter} checked={eileenCharacter?.enabled || false} onChange={event=>act(`Set Eileen character-state bit ${event.target.checked?'on':'off'}`,()=>setEileenCharacterCandidate(editor,event.target.checked))}/><span><strong>Central Yharnam character-state bit</strong> · Set after death; clearing it after the flag reset revived Eileen in one test.<small>{eileenCharacter ? `Save byte 0x${eileenCharacter.offset.toString(16).toUpperCase()} · mask 0x10 · 0x3ED8E in the supplied captures; address may vary` : `Unavailable: ${eileenCharacterError}`}</small></span></label>}{flags.filter(flag=>(flag.section || 'Related flags') === section).map(control)}</div>)}
     </div>;
   }
   const filtered = quests.filter(quest => `${quest.name} ${quest.area} ${quest.route} ${quest.flags || ''} ${JSON.stringify(questFlags[quest.name] || [])}`.toLowerCase().includes(search.toLowerCase()));
@@ -55,7 +66,7 @@ export default function QuestResearch({editor, act, revision}) {
       {[...Array.from({length:14},(_,i)=>[1000+i*20,1019+i*20]),[1280,1289],[1290,1299],...Array.from({length:8},(_,i)=>[1300+i*20,1319+i*20]),[1700,1719],[1720,1739],[1740,1759],[1760,1779],[1780,1799],[1800,1819]].map(([start,end])=><details key={start} className="quest-entry"><summary><strong>{start}–{end}</strong><span>{Object.entries(questStateRanges).filter(([,range])=>range[0]===start).map(([name])=>name).join(', ') || 'Unassigned'}</span></summary>{Array.from({length:end-start+1},(_,i)=>control({id:start+i,note:'Raw state bit; meaning may be unknown'}))}</details>)}
     </details>
     <details className="quest-entry"><summary><strong>Flag group calibration and custom flag</strong></summary>
-      <p>Unknown groups have no verified save address. Enter the byte offset of the start of that 1,000-flag group relative to the editor’s flag base (username + 68545). Leave blank to disable the group. Do not enter an absolute file offset.</p>
+      <p>Group addresses are inferred from the flag-pool layout and can still be wrong. Unsupported or conflicting groups have no address. Enter the byte offset of the start of that 1,000-flag group relative to the editor’s flag base (username + 68545). Leave blank to disable the group. Do not enter an absolute file offset.</p>
       {calibrationGroups.map(group=><label className="field quest-calibration" key={group}><span className="field-label">Group {group} ({group*1000}–{group*1000+999}) {inferred[group] != null ? `· inferred +${inferred[group]}` : '· unknown'}</span><input type="number" min="0" step="1" placeholder={inferred[group] != null ? `Inferred: ${inferred[group]}` : 'Relative group offset'} value={offsets[group] ?? ''} onChange={event=>{const value=event.target.value;setOffsets(previous=>({...previous,[group]:value}));}}/><button type="button" className="text-button" onClick={()=>setOffsets(previous=>{const next={...previous};delete next[group];return next;})}>Use default</button></label>)}
       <label className="field"><span className="field-label">Custom event flag ID</span><input type="number" min="0" step="1" value={customFlag} onChange={event=>setCustomFlag(event.target.value)} placeholder="Event flag ID"/></label>
       {Number.isSafeInteger(numericFlag) && numericFlag >= 0 && control({id:numericFlag,note:'Custom flag'})}

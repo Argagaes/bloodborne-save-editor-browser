@@ -27,7 +27,7 @@ test('compares mapped NPC death and unassigned state flags without modifying sav
   const before=a.bytes.slice(), result=compareQuestFlags(a,b,data);
   assert.ok(result.rows.some(x=>x.label.includes('Flag 1368')&&x.label.includes('Eileen')&&x.label.includes('death')));
   assert.ok(result.rows.some(x=>x.label.includes('Flag 1290')&&x.label.includes('Unassigned')));
-  assert.ok(result.unavailable>0);assert.ok(result.compared>0);
+  assert.equal(result.unavailable,0);assert.ok(result.compared>0);
   assert.ok(compareSaves(a,b,data).some(group=>group.title==='NPC quest and related flags (inferred)'));
   assert.deepEqual(a.bytes,before);assert.deepEqual(b.bytes,new Uint8Array(bytes));
 });

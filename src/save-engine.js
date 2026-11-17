@@ -1,6 +1,6 @@
 // Binary layouts ported from src-tauri/src/data_handling. All writes are local.
 import { readAltars, writeAltar } from './chalice-engine.mjs';
-import { SPECIAL_GEMS } from './gem-special.js';
+import { SPECIAL_GEMS, isCurseEffect, defaultCurse } from './gem-special.js';
 
 export const SHAPES = { 2147483648: 'Closed', 1: 'Radial', 2: 'Triangle', 4: 'Waning', 8: 'Circle', 63: 'Droplet' };
 export function integer(value, max = 0xffffffff) {
@@ -79,7 +79,9 @@ export class SaveEditor {
           slots:ga===undefined?[]:Array.from({length:5},(_,j)=>({offset:ga+20+j*8,shape:this.u32(ga+20+j*8),gem:this.u32(ga+24+j*8)}))});
       }
     }
-    for(const u of this.upgrades) if(!u.location) u.location='equipped';
+    const equippedIds=new Set();
+    for(const offset of this.equipment.values()) for(let i=0;i<5;i++) { const id=this.u32(offset+24+i*8); if(id) equippedIds.add(id); }
+    for(const u of this.upgrades) if(!u.location) u.location=equippedIds.has(u.id)?'equipped':'unreferenced';
   }
   transaction(label, action) {
     const before = this.bytes.slice();
@@ -177,6 +179,33 @@ export class SaveEditor {
     const record=new Uint8Array(40),v=new DataView(record.buffer);
     [id,source,template.kind,template.shape,...template.effects].forEach((n,j)=>v.setUint32(j*4,integer(n),true));
     const next=new Uint8Array(this.bytes.length); next.set(this.bytes.subarray(0,empty)); next.set(record,empty); next.set(this.bytes.subarray(empty+8,this.bytes.length-32),empty+40); this.bytes=next;
+  }
+  removeUpgrade(upgrade) {
+    const current=this.upgrades.find(u=>u.id===upgrade?.id && u.offset===upgrade.offset);
+    if(!current || !['inventory','storage'].includes(current.location) || current.inventoryOffset===undefined) throw Error('Only loose gems and runes in inventory or storage can be removed.');
+    for(const offset of this.equipment.values()) for(let i=0;i<5;i++) if(this.u32(offset+24+i*8)===current.id) throw Error('This upgrade is still equipped. Unequip it before removing it.');
+    const slot=current.inventoryOffset;
+    if(this.u32(slot+4)!==current.id || this.u32(slot+8)!==current.source) throw Error('The inventory entry changed; select it again.');
+    this.put(slot+4,0);this.put(slot+8,0xffffffff);this.put(slot+12,0);
+  }
+  removeArticle(article) {
+    const current=this.articles.find(a=>a.offset===article?.offset && a.first===article.first && a.second===article.second);
+    if(!current) throw Error('The inventory entry changed; select it again.');
+    if(current.family==='weapon') for(const slot of current.slots) if(slot.gem) { if(!this.upgrades.some(u=>u.id===slot.gem && u.kind===1)) throw Error('A socketed gem could not be identified; the weapon was not removed.'); this.unequip(slot,current.location==='storage'?'storage':'inventory'); }
+    this.put(current.offset+4,0);this.put(current.offset+8,0xffffffff);this.put(current.offset+12,0);
+  }
+  setGemCursed(upgrade,enabled) {
+    if(upgrade?.kind!==1 || typeof enabled!=='boolean') throw Error('Choose a blood gem.');
+    const effects=this.data.upgrades.gemEffects, curse=id=>isCurseEffect(effects[id]);
+    if(curse(upgrade.effects[0])) throw Error('The primary effect is itself a negative effect. Choose a different primary effect first.');
+    const indexes=upgrade.effects.map((id,i)=>i>0&&curse(id)?i:-1).filter(i=>i>0);
+    if(enabled && !indexes.length) {
+      const slot=upgrade.effects.lastIndexOf(0xffffffff);
+      if(slot<1) throw Error('No empty effect slot. Clear an effect before adding a curse.');
+      const id=defaultCurse(effects,upgrade.effects[0]);
+      if(id===0xffffffff) throw Error('No suitable curse effect is available.');
+      this.setEffect(upgrade,slot,id);
+    } else if(!enabled) for(const index of indexes) this.setEffect(upgrade,index,0xffffffff);
   }
   slotShape(slot,shape) { shape=integer(shape); if(!SHAPES[shape]) throw Error('Invalid shape.'); if(shape===0x80000000 && slot.gem) throw Error('Unequip the gem before closing this slot.'); this.put(slot.offset,shape); }
   equip(slot,upgrade) {

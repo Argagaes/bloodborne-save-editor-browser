@@ -1,0 +1,494 @@
+[
+  {
+    "name": "Adept - Blunt ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        11,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Adept - Thrust ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        11,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Arcane ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        45,
+        0.35
+      ]
+    ]
+  },
+  {
+    "name": "Beasthunters - ATK vs beasts UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        22,
+        0.01
+      ],
+      [
+        34,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Blood ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        0,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Bolt ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        34,
+        0.2
+      ],
+      [
+        45,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Cold - Arcane scaling",
+    "kind": "primary",
+    "weights": [
+      [
+        45,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Dirty - Add rapid poison effect",
+    "kind": "primary",
+    "weights": [
+      [
+        22,
+        0.03
+      ],
+      [
+        34,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Fire ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        34,
+        0.4
+      ],
+      [
+        45,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Fools - ATK UP at full HP %",
+    "kind": "primary",
+    "weights": [
+      [
+        45,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Fools - Phys. UP at full HP %",
+    "kind": "primary",
+    "weights": [
+      [
+        11,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Heavy - STR scaling",
+    "kind": "primary",
+    "weights": [
+      [
+        14,
+        0.03
+      ],
+      [
+        22,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Kinhunters - ATK vs the kin UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        22,
+        0.01
+      ],
+      [
+        34,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Murky - Add slow poison effect",
+    "kind": "primary",
+    "weights": [
+      [
+        22,
+        0.03
+      ],
+      [
+        34,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Nourishing - ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        45,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Poormans - ATK UP near death %",
+    "kind": "primary",
+    "weights": [
+      [
+        45,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Poormans - Phys. UP near death %",
+    "kind": "primary",
+    "weights": [
+      [
+        14,
+        0.01
+      ],
+      [
+        23,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Pulsing - HP continues to recover",
+    "kind": "primary",
+    "weights": [
+      [
+        35,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Radiant - Reduces stamina costs",
+    "kind": "primary",
+    "weights": [
+      [
+        12,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Sharp - SKL scaling",
+    "kind": "primary",
+    "weights": [
+      [
+        14,
+        0.03
+      ],
+      [
+        22,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Striking - Charge ATKs UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        13,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Tempering - Physical ATK UP %",
+    "kind": "primary",
+    "weights": [
+      [
+        11,
+        0.9
+      ],
+      [
+        22,
+        0.75
+      ],
+      [
+        34,
+        0.3
+      ],
+      [
+        45,
+        0.5
+      ]
+    ]
+  },
+  {
+    "name": "Warm - Bloodtinge scaling",
+    "kind": "primary",
+    "weights": [
+      [
+        0,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Add arcane ATK",
+    "kind": "secondary",
+    "weights": [
+      [
+        45,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Add blood ATK",
+    "kind": "secondary",
+    "weights": [
+      [
+        0,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Add bolt ATK",
+    "kind": "secondary",
+    "weights": [
+      [
+        34,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Add fire ATK",
+    "kind": "secondary",
+    "weights": [
+      [
+        34,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Add physical ATK",
+    "kind": "secondary",
+    "weights": [
+      [
+        11,
+        0.1
+      ],
+      [
+        22,
+        0.1
+      ]
+    ]
+  },
+  {
+    "name": "Beasthunters - ATK vs beasts UP %",
+    "kind": "secondary",
+    "weights": [
+      [
+        22,
+        0.01
+      ],
+      [
+        34,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Dense - WPN durability UP",
+    "kind": "secondary",
+    "weights": [
+      [
+        12,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Dirty - Add rapid poison effect",
+    "kind": "secondary",
+    "weights": [
+      [
+        22,
+        0.03
+      ],
+      [
+        34,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Finestrike - ATK vs open foes UP %",
+    "kind": "secondary",
+    "weights": [
+      [
+        14,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Fools - ATK UP at full HP %",
+    "kind": "secondary",
+    "weights": [
+      [
+        45,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Fools - Phys. UP at full HP %",
+    "kind": "secondary",
+    "weights": [
+      [
+        11,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Kinhunters - ATK vs the kin UP %",
+    "kind": "secondary",
+    "weights": [
+      [
+        22,
+        0.01
+      ],
+      [
+        34,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Lethal - Boosts rally potential",
+    "kind": "secondary",
+    "weights": [
+      [
+        34,
+        0.05
+      ]
+    ]
+  },
+  {
+    "name": "Murky - Add slow poison effect",
+    "kind": "secondary",
+    "weights": [
+      [
+        22,
+        0.03
+      ],
+      [
+        34,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Poormans - ATK UP near death %",
+    "kind": "secondary",
+    "weights": [
+      [
+        45,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Poormans - Phys. UP near death %",
+    "kind": "secondary",
+    "weights": [
+      [
+        14,
+        0.01
+      ],
+      [
+        23,
+        0.01
+      ]
+    ]
+  },
+  {
+    "name": "Pulsing - HP continues to recover",
+    "kind": "secondary",
+    "weights": [
+      [
+        34,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Radiant - Reduces stamina costs",
+    "kind": "secondary",
+    "weights": [
+      [
+        12,
+        0.03
+      ]
+    ]
+  },
+  {
+    "name": "Striking - Charge ATKs UP %",
+    "kind": "secondary",
+    "weights": [
+      [
+        13,
+        0.03
+      ]
+    ]
+  }
+]

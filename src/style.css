@@ -409,3 +409,19 @@ main{ grid-column: 2; padding: 28px; min-width: 0; }
 .experimental-items .inventory-tools { padding-left: 0; padding-right: 0; }
 .experimental-items .research-items-list .picker-row { width: 100%; }
 .experimental-items .research-items-list .picker-row.selected { background: var(--selection); box-shadow: inset 2px 0 var(--accent); }
+.upgrade-row { align-items: flex-start; }
+.upgrade-row-content { min-width: 0; flex: 1; }
+.upgrade-row-effects { display: block; margin-top: 7px; }
+.upgrade-row-effects small { margin: 1px 0; }
+.upgrade-row-effects b { color: var(--panel-muted); font-weight: 600; }
+.gem-properties .lamp-checkbox { margin-top: 12px; }
+.eileen-research { padding: 14px; margin: 14px 0; border: 1px solid var(--border); background: var(--selection); }
+.eileen-research p { margin: 8px 0; line-height: 1.6; }
+
+.gem-filter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0 12px 12px; }
+.gem-filter-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+.gem-filter-grid input, .gem-filter-grid select { width: 100%; min-width: 0; }
+.gem-filter-grid .panel-note { grid-column: 1 / -1; margin: 0; }
+
+.builder-gem-pool { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
+.builder-gem-pool h3 { margin: 0 0 8px; }

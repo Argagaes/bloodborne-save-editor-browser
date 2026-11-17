@@ -1,4 +1,8 @@
 import { inferQuestFlagGroups, questFlags, readQuestFlag } from './quest-flags.js';
+import { inferredFlagGroupOffset } from './flag-group-layout.js';
+import candidates from './npc-character-candidates.json' with { type: 'json' };
+import { characterCandidate } from './npc-character-state.js';
+import { eileenCharacterCandidate } from './eileen-research.js';
 
 // Match the named controls and the raw candidate ranges in NPC quest research.
 export function compareQuestFlags(current, other, data) {
@@ -15,7 +19,7 @@ export function compareQuestFlags(current, other, data) {
   const leftGroups=inferQuestFlagGroups(current.data || data), rightGroups=inferQuestFlagGroups(other.data || data);
   const rows=[]; let unavailable=0, compared=0;
   for(const flag of [...flags.values()].sort((a,b)=>a.id-b.id)) {
-    const leftBase=leftGroups[Math.floor(flag.id/1000)], rightBase=rightGroups[Math.floor(flag.id/1000)];
+    const group=Math.floor(flag.id/1000), leftBase=Object.hasOwn(leftGroups,group)?leftGroups[group]:inferredFlagGroupOffset(group), rightBase=Object.hasOwn(rightGroups,group)?rightGroups[group]:inferredFlagGroupOffset(group);
     if(leftBase==null || rightBase==null){unavailable++;continue;}
     try {
       const left=readQuestFlag(current,flag.id,leftBase), right=readQuestFlag(other,flag.id,rightBase);
@@ -24,4 +28,14 @@ export function compareQuestFlags(current, other, data) {
     } catch {unavailable++;}
   }
   return {rows,unavailable,compared};
+}
+
+export function compareCharacterCandidates(current,other) {
+  const rows=[];
+  for(const candidate of candidates) try {
+    const left=characterCandidate(current,candidate),right=characterCandidate(other,candidate);
+    if(left.enabled!==right.enabled) rows.push({label:`${candidate.npc} · ${candidate.label} · ${candidate.map} · entity ${candidate.entity} · candidate bit (meaning unknown)`,left:left.enabled?'On':'Off',right:right.enabled?'On':'Off'});
+  } catch {}
+  try {const left=eileenCharacterCandidate(current),right=eileenCharacterCandidate(other);if(left.enabled!==right.enabled) rows.push({label:'Eileen · Central Yharnam · observed 182-entry character bit',left:left.enabled?'On':'Off',right:right.enabled?'On':'Off'});} catch {}
+  return rows;
 }
