@@ -4,6 +4,15 @@ Open a decrypted Bloodborne character file such as `userdata0000`. Edit the hunt
 
 Use **Download original backup** to keep a copy of your save before replacing it. **Use example save** opens a bundled public test fixture.
 
+## Download and run
+
+Download the latest build from [Releases](https://github.com/Argagaes/bloodborne-save-editor-tool/releases).
+
+- **Windows:** Download the `.exe` and run it; no installer is needed. WebView2 is required.
+- **Linux:** Download the `.AppImage`, make it executable in its file properties, then run it. Alternatively, in a terminal run `chmod +x <filename>.AppImage` followed by `./<filename>.AppImage` (replace `<filename>` with the downloaded name). Some Linux systems require FUSE to run AppImages.
+
+Open a decrypted Bloodborne character save, make your edits, and download the edited file. Keep a backup before replacing your save.
+
 ## Run locally
 
 Use Node.js 22.12 or newer in this folder.

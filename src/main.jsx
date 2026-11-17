@@ -242,6 +242,8 @@ export default function App(){
     {informationOpen && <section className="information-page" aria-labelledby="information-title">
       <div className="page-heading"><h1 id="information-title">Information</h1></div>
       <div className="panel">
+        <p><strong>Windows:</strong> Download and run the portable .exe. WebView2 is required.</p>
+        <p><strong>Linux:</strong> Download the AppImage, make it executable in its file properties, and run it. Some systems require FUSE.</p>
         <p>This standalone editor is based on Noxde’s Bloodborne Save Editor and Chalice Editor. The dungeon catalog comes from Noxde’s dungeon list.</p>
         <p>Standalone editor, tool integration, lamps and shortcuts by <strong>Argagaes</strong>, who also hosts the editor.</p>
         <ul>
