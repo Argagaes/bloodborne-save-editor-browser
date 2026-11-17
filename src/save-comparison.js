@@ -1,3 +1,5 @@
+import { compareQuestFlags } from './quest-comparison.js';
+
 export function compareSaves(current, other, data) {
   const groups = [];
   const add = (title, rows) => { if (rows.length) groups.push({title, rows}); };
@@ -19,5 +21,6 @@ export function compareSaves(current, other, data) {
   flags('Bosses defeated', data.bosses, (e, x) => e.bossDead(x), x => x.name);
   flags('Lamps unlocked', data.lamps, (e, x) => e.lampEnabled(x.eventFlag), x => `${x.area} — ${x.name}`);
   flags('Shortcuts open', data.shortcuts, (e, x) => e.shortcutEnabled(x.eventFlag), x => `${x.area} — ${x.name}`);
+  add('NPC quest and related flags (inferred)', compareQuestFlags(current, other, data).rows);
   return groups;
 }
