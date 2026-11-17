@@ -63,12 +63,14 @@ jobs:
         with:
           path: release-assets
           merge-multiple: true
+      - name: Prepare release files
+        run: python3 .github/scripts/package-release.py release-assets release-files
       - name: Publish release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           tag="build-${GITHUB_RUN_NUMBER}"
-          mapfile -d '' files < <(find release-assets -type f -print0)
+          mapfile -d '' files < <(find release-files -type f -print0)
           if ! gh release view "$tag" >/dev/null 2>&1; then
             gh release create "$tag" --target "$GITHUB_SHA" --title "Build ${GITHUB_RUN_NUMBER}" --notes "Built from commit ${GITHUB_SHA}." --draft
           fi
