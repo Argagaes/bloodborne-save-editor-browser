@@ -405,3 +405,7 @@ main{ grid-column: 2; padding: 28px; min-width: 0; }
 .cut-status-tabs button.selected { box-shadow: inset 0 -2px var(--accent); }
 .cut-nav-secondary { padding-left: 24px; border-left: 1px solid var(--border); }
 @media (max-width: 640px) { .cut-nav-secondary { padding-left: 0; border-left: 0; } }
+.research-items-list { max-height: 520px; overflow: auto; border: 1px solid var(--border); }
+.experimental-items .inventory-tools { padding-left: 0; padding-right: 0; }
+.experimental-items .research-items-list .picker-row { width: 100%; }
+.experimental-items .research-items-list .picker-row.selected { background: var(--selection); box-shadow: inset 2px 0 var(--accent); }

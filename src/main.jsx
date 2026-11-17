@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 
 import { SaveEditor, SHAPES, integer } from './save-engine.js';
 import { registerExperimentalEffects } from './experimental-effects.js';
+import { registerExperimentalItems } from './experimental-items.js';
 
 import { gemVisual, gemDisplayName } from './gem-icons.js';
 import { normalizeGemEffectUnits } from './gem-effect-units.js';
@@ -18,6 +19,7 @@ const QuestResearch = React.lazy(() => import('./QuestResearch.jsx'));
 const SaveComparison = React.lazy(() => import('./SaveComparison.jsx'));
 const ExperimentalEffects = React.lazy(() => import('./ExperimentalEffects.jsx'));
 const HexEditor = React.lazy(() => import('./HexEditor.jsx'));
+const ExperimentalItems = React.lazy(() => import('./ExperimentalItems.jsx'));
 
 
 
@@ -45,7 +47,7 @@ const base = import.meta.env.BASE_URL;
 
 const asset = path => `${base}assets/${path}`;
 
-const categories = {all:'All items',consumable:'Consumables',material:'Materials',rightHand:'Trick weapons',leftHand:'Firearms',armor:'Attire',key:'Key items',chalice:'Chalices'};
+const categories = {all:'All items',consumable:'Consumables',material:'Materials',rightHand:'Trick weapons',leftHand:'Firearms',armor:'Attire',key:'Key items',chalice:'Chalices',research:'Research items'};
 
 const filterIcons = {consumable:'consumables',material:'materials',rightHand:'right_hand',leftHand:'left_hand',armor:'armor',key:'key',chalice:'chalices'};
 
@@ -173,7 +175,7 @@ export default function App(){
 
   const fileInput=useRef(),appearanceInput=useRef(),noticeTimer=useRef();
 
-  useEffect(()=>{Promise.all(['items','weapons','armors','bosses','upgrades','gem-sources','rune-templates','experimental-effects','offsets','locations','lamps','shortcuts','shortcut-auxiliary','maps/manifest'].map(async n=>{const r=await fetch(`${base}data/${n}.json`);if(!r.ok)throw Error(`Could not load ${n}. Reload the page to retry.`);const value=await r.json();return [n,n==='upgrades'?normalizeGemEffectUnits(value):value];})).then(x=>setData(registerExperimentalEffects(Object.fromEntries(x)))).catch(e=>setLoadError(e.message));return()=>clearTimeout(noticeTimer.current);},[]);
+  useEffect(()=>{Promise.all(['items','weapons','armors','bosses','upgrades','gem-sources','rune-templates','experimental-effects','experimental-items','offsets','locations','lamps','shortcuts','shortcut-auxiliary','maps/manifest'].map(async n=>{const r=await fetch(`${base}data/${n}.json`);if(!r.ok)throw Error(`Could not load ${n}. Reload the page to retry.`);const value=await r.json();return [n,n==='upgrades'?normalizeGemEffectUnits(value):value];})).then(x=>setData(registerExperimentalItems(registerExperimentalEffects(Object.fromEntries(x))))).catch(e=>setLoadError(e.message));return()=>clearTimeout(noticeTimer.current);},[]);
 
   const notify=(text,error=false)=>{setNotice({text,error});clearTimeout(noticeTimer.current);noticeTimer.current=setTimeout(()=>setNotice(null),5500);};
 
@@ -310,7 +312,7 @@ export default function App(){
         <ShortcutSettings shortcuts={data.shortcuts} charts={data['maps/manifest']} editor={editor} act={act}/>
       </Panel>}
 
-      {page==='Experimental'&&<><div className="segmented" aria-label="Experimental categories"><button className={experimentalTab==='quests'?'selected':''} aria-pressed={experimentalTab==='quests'} onClick={()=>setExperimentalTab('quests')}>NPC quests</button><button className={experimentalTab==='effects'?'selected':''} aria-pressed={experimentalTab==='effects'} onClick={()=>setExperimentalTab('effects')}>Cut effects</button><button className={experimentalTab==='hex'?'selected':''} aria-pressed={experimentalTab==='hex'} onClick={()=>setExperimentalTab('hex')}>Byte editor</button><button className={experimentalTab==='comparison'?'selected':''} aria-pressed={experimentalTab==='comparison'} onClick={()=>setExperimentalTab('comparison')}>Save comparison</button></div><React.Suspense fallback={<p>Loading…</p>}>{experimentalTab==='quests'?<QuestResearch editor={editor} act={act} revision={revision}/>:experimentalTab==='effects'?<ExperimentalEffects data={data} editor={editor} act={act} notify={notify}/>:experimentalTab==='hex'?<HexEditor editor={editor} data={data} act={act} revision={revision}/>:<SaveComparison key={editor.name} editor={editor} data={data} revision={revision}/>}</React.Suspense></>}
+      {page==='Experimental'&&<><div className="segmented" aria-label="Experimental categories"><button className={experimentalTab==='quests'?'selected':''} aria-pressed={experimentalTab==='quests'} onClick={()=>setExperimentalTab('quests')}>NPC quests</button><button className={experimentalTab==='effects'?'selected':''} aria-pressed={experimentalTab==='effects'} onClick={()=>setExperimentalTab('effects')}>Cut effects</button><button className={experimentalTab==='items'?'selected':''} aria-pressed={experimentalTab==='items'} onClick={()=>setExperimentalTab('items')}>Item research</button><button className={experimentalTab==='hex'?'selected':''} aria-pressed={experimentalTab==='hex'} onClick={()=>setExperimentalTab('hex')}>Byte editor</button><button className={experimentalTab==='comparison'?'selected':''} aria-pressed={experimentalTab==='comparison'} onClick={()=>setExperimentalTab('comparison')}>Save comparison</button></div><React.Suspense fallback={<p>Loading…</p>}>{experimentalTab==='quests'?<QuestResearch editor={editor} act={act} revision={revision}/>:experimentalTab==='effects'?<ExperimentalEffects data={data} editor={editor} act={act} notify={notify}/>:experimentalTab==='items'?<ExperimentalItems data={data} editor={editor} act={act} notify={notify}/>:experimentalTab==='hex'?<HexEditor editor={editor} data={data} act={act} revision={revision}/>:<SaveComparison key={editor.name} editor={editor} data={data} revision={revision}/>}</React.Suspense></>}
 
       {page==='WorldFlags'&&<Panel title="World settings">
         <div className="world-action">
@@ -370,7 +372,7 @@ function Picker({modal,data,editor,onApply}){
   }
   else if(modal.type==='equip')options=editor.upgrades.filter(u=>u.kind===1&&u.location===(modal.location==='storage'?'storage':'inventory')&&(u.shape===63||u.shape===modal.slot.shape)).map(u=>({...u,info:{item_name:upgradeName(u,data),item_desc:`${editor.effectInfo(u.effects[0]).effect}${gemVisual(u,data.upgrades)?' · '+gemVisual(u,data.upgrades).description:''}`}}));
 
-  else {for(const [category,items] of Object.entries(data.items))for(const [id,info]of Object.entries(items))options.push({id:Number(id),category,info,family:'item'});for(const[category,items]of Object.entries(data.weapons))for(const[id,info]of Object.entries(items))options.push({id:Number(id),category,info,family:'weapon'});for(const[id,info]of Object.entries(data.armors))options.push({id:Number(id),category:'armor',info,family:'armor'});if(modal.type==='transform')options=options.filter(o=>o.family===modal.article.family);}
+  else {for(const [category,items] of Object.entries(data.items))if(category!=='research')for(const [id,info]of Object.entries(items))options.push({id:Number(id),category,info,family:'item'});for(const[category,items]of Object.entries(data.weapons))for(const[id,info]of Object.entries(items))options.push({id:Number(id),category,info,family:'weapon'});for(const[id,info]of Object.entries(data.armors))options.push({id:Number(id),category:'armor',info,family:'armor'});if(modal.type==='transform')options=options.filter(o=>o.family===modal.article.family);}
 
   const filtered=options.filter(o=>(filter==='all'||o.category===filter)&&`${o.info.item_name} ${o.info.item_desc} ${o.id}`.toLowerCase().includes(query.toLowerCase()));
 
