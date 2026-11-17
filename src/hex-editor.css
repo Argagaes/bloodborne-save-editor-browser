@@ -1,0 +1,29 @@
+.hex-editor { margin-top: 12px; }
+.hex-intro { color: var(--panel-muted); line-height: 1.6; }
+.hex-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin: 18px 0; }
+.hex-controls > .field { flex: 1 1 220px; }
+.hex-jump { display: flex; gap: 8px; align-items: end; flex: 1 1 220px; }
+.hex-jump .field { flex: 1; }
+.hex-description, .hex-detail { padding: 10px 12px; background: var(--selection); border: 1px solid var(--border); font-size: 12px; line-height: 1.6; }
+.hex-page-nav { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 0; color: var(--panel-muted); font-size: 12px; }
+.hex-table-wrap { overflow: auto; height: 480px; max-height: 60vh; border: 1px solid var(--border); }
+.hex-scroll-hint { color: var(--panel-muted); font-size: 12px; margin: 12px 0 8px; }
+.hex-table thead { position: sticky; top: 0; background: var(--input); z-index: 1; }
+.hex-data-row { height: 30px; }
+.hex-spacer td { padding: 0; border: 0; }
+.hex-table { border-collapse: collapse; width: 100%; font-family: monospace; font-size: 12px; white-space: nowrap; }
+.hex-table th { color: var(--panel-muted); font-weight: 500; padding: 4px; }
+.hex-table td { padding: 0; }
+.hex-table tbody tr:nth-child(even) { background: var(--selection); }
+.hex-byte { font: inherit; color: var(--panel-text); background: transparent; border: 1px solid transparent; padding: 0 4px; height: 30px; }
+.hex-byte.highlighted { background: var(--accent); color: var(--bg); font-weight: 700; }
+.hex-byte.selected { outline: 2px solid var(--accent); outline-offset: -2px; }
+.hex-byte.highlighted.selected { outline-color: var(--panel-text); }
+.hex-ascii { padding-left: 12px !important; color: var(--panel-muted); letter-spacing: 1px; }
+.hex-detail { margin-top: 12px; }
+.hex-detail p { margin: 4px 0 0; }
+.hex-edit { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+.hex-edit .field { flex: 1 1 300px; }
+.hex-edit small { color: var(--panel-muted); }
+.hex-byte.in-region { background: var(--selection); }
+.hex-byte.in-region.highlighted { background: var(--accent); }

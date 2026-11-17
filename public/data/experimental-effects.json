@@ -1,0 +1,8789 @@
+[
+  {
+    "label": "Add slashing ATK",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 110101,
+        "spEffect": 10101,
+        "rank": 1
+      },
+      {
+        "id": 110102,
+        "spEffect": 10102,
+        "rank": 2
+      },
+      {
+        "id": 110103,
+        "spEffect": 10103,
+        "rank": 3
+      },
+      {
+        "id": 110104,
+        "spEffect": 10104,
+        "rank": 4
+      },
+      {
+        "id": 110105,
+        "spEffect": 10105,
+        "rank": 5
+      },
+      {
+        "id": 110106,
+        "spEffect": 10106,
+        "rank": 6
+      },
+      {
+        "id": 110107,
+        "spEffect": 10107,
+        "rank": 7
+      },
+      {
+        "id": 110108,
+        "spEffect": 10108,
+        "rank": 8
+      },
+      {
+        "id": 110109,
+        "spEffect": 10109,
+        "rank": 9
+      },
+      {
+        "id": 110110,
+        "spEffect": 10110,
+        "rank": 10
+      },
+      {
+        "id": 110111,
+        "spEffect": 10111,
+        "rank": 11
+      },
+      {
+        "id": 110112,
+        "spEffect": 10112,
+        "rank": 12
+      },
+      {
+        "id": 110113,
+        "spEffect": 10113,
+        "rank": 13
+      },
+      {
+        "id": 110114,
+        "spEffect": 10114,
+        "rank": 14
+      },
+      {
+        "id": 110115,
+        "spEffect": 10115,
+        "rank": 15
+      },
+      {
+        "id": 110116,
+        "spEffect": 10116,
+        "rank": 16
+      },
+      {
+        "id": 110117,
+        "spEffect": 10117,
+        "rank": 17
+      },
+      {
+        "id": 110118,
+        "spEffect": 10118,
+        "rank": 18
+      },
+      {
+        "id": 110119,
+        "spEffect": 10119,
+        "rank": 19
+      },
+      {
+        "id": 110120,
+        "spEffect": 10120,
+        "rank": 20
+      },
+      {
+        "id": 110201,
+        "spEffect": 10201,
+        "rank": 1
+      },
+      {
+        "id": 110202,
+        "spEffect": 10202,
+        "rank": 2
+      },
+      {
+        "id": 110203,
+        "spEffect": 10203,
+        "rank": 3
+      },
+      {
+        "id": 110204,
+        "spEffect": 10204,
+        "rank": 4
+      },
+      {
+        "id": 110205,
+        "spEffect": 10205,
+        "rank": 5
+      },
+      {
+        "id": 110206,
+        "spEffect": 10206,
+        "rank": 6
+      },
+      {
+        "id": 110207,
+        "spEffect": 10207,
+        "rank": 7
+      },
+      {
+        "id": 110208,
+        "spEffect": 10208,
+        "rank": 8
+      },
+      {
+        "id": 110209,
+        "spEffect": 10209,
+        "rank": 9
+      },
+      {
+        "id": 110210,
+        "spEffect": 10210,
+        "rank": 10
+      },
+      {
+        "id": 110211,
+        "spEffect": 10211,
+        "rank": 11
+      },
+      {
+        "id": 110212,
+        "spEffect": 10212,
+        "rank": 12
+      },
+      {
+        "id": 110213,
+        "spEffect": 10213,
+        "rank": 13
+      },
+      {
+        "id": 110214,
+        "spEffect": 10214,
+        "rank": 14
+      },
+      {
+        "id": 110215,
+        "spEffect": 10215,
+        "rank": 15
+      },
+      {
+        "id": 110216,
+        "spEffect": 10216,
+        "rank": 16
+      },
+      {
+        "id": 110217,
+        "spEffect": 10217,
+        "rank": 17
+      },
+      {
+        "id": 110218,
+        "spEffect": 10218,
+        "rank": 18
+      },
+      {
+        "id": 110219,
+        "spEffect": 10219,
+        "rank": 19
+      },
+      {
+        "id": 110220,
+        "spEffect": 10220,
+        "rank": 20
+      },
+      {
+        "id": 110301,
+        "spEffect": 10301,
+        "rank": 1
+      },
+      {
+        "id": 110302,
+        "spEffect": 10302,
+        "rank": 2
+      },
+      {
+        "id": 110303,
+        "spEffect": 10303,
+        "rank": 3
+      },
+      {
+        "id": 110304,
+        "spEffect": 10304,
+        "rank": 4
+      },
+      {
+        "id": 110305,
+        "spEffect": 10305,
+        "rank": 5
+      },
+      {
+        "id": 110306,
+        "spEffect": 10306,
+        "rank": 6
+      },
+      {
+        "id": 110307,
+        "spEffect": 10307,
+        "rank": 7
+      },
+      {
+        "id": 110308,
+        "spEffect": 10308,
+        "rank": 8
+      },
+      {
+        "id": 110309,
+        "spEffect": 10309,
+        "rank": 9
+      },
+      {
+        "id": 110310,
+        "spEffect": 10310,
+        "rank": 10
+      },
+      {
+        "id": 110311,
+        "spEffect": 10311,
+        "rank": 11
+      },
+      {
+        "id": 110312,
+        "spEffect": 10312,
+        "rank": 12
+      },
+      {
+        "id": 110313,
+        "spEffect": 10313,
+        "rank": 13
+      },
+      {
+        "id": 110314,
+        "spEffect": 10314,
+        "rank": 14
+      },
+      {
+        "id": 110315,
+        "spEffect": 10315,
+        "rank": 15
+      },
+      {
+        "id": 110316,
+        "spEffect": 10316,
+        "rank": 16
+      },
+      {
+        "id": 110317,
+        "spEffect": 10317,
+        "rank": 17
+      },
+      {
+        "id": 110318,
+        "spEffect": 10318,
+        "rank": 18
+      },
+      {
+        "id": 110319,
+        "spEffect": 10319,
+        "rank": 19
+      },
+      {
+        "id": 110320,
+        "spEffect": 10320,
+        "rank": 20
+      },
+      {
+        "id": 110401,
+        "spEffect": 10401,
+        "rank": 1
+      },
+      {
+        "id": 110402,
+        "spEffect": 10402,
+        "rank": 2
+      },
+      {
+        "id": 110403,
+        "spEffect": 10403,
+        "rank": 3
+      },
+      {
+        "id": 110404,
+        "spEffect": 10404,
+        "rank": 4
+      },
+      {
+        "id": 110405,
+        "spEffect": 10405,
+        "rank": 5
+      },
+      {
+        "id": 110406,
+        "spEffect": 10406,
+        "rank": 6
+      },
+      {
+        "id": 110407,
+        "spEffect": 10407,
+        "rank": 7
+      },
+      {
+        "id": 110408,
+        "spEffect": 10408,
+        "rank": 8
+      },
+      {
+        "id": 110409,
+        "spEffect": 10409,
+        "rank": 9
+      },
+      {
+        "id": 110410,
+        "spEffect": 10410,
+        "rank": 10
+      },
+      {
+        "id": 110411,
+        "spEffect": 10411,
+        "rank": 11
+      },
+      {
+        "id": 110412,
+        "spEffect": 10412,
+        "rank": 12
+      },
+      {
+        "id": 110413,
+        "spEffect": 10413,
+        "rank": 13
+      },
+      {
+        "id": 110414,
+        "spEffect": 10414,
+        "rank": 14
+      },
+      {
+        "id": 110415,
+        "spEffect": 10415,
+        "rank": 15
+      },
+      {
+        "id": 110416,
+        "spEffect": 10416,
+        "rank": 16
+      },
+      {
+        "id": 110417,
+        "spEffect": 10417,
+        "rank": 17
+      },
+      {
+        "id": 110418,
+        "spEffect": 10418,
+        "rank": 18
+      },
+      {
+        "id": 110419,
+        "spEffect": 10419,
+        "rank": 19
+      },
+      {
+        "id": 110420,
+        "spEffect": 10420,
+        "rank": 20
+      },
+      {
+        "id": 110501,
+        "spEffect": 10501,
+        "rank": 1
+      },
+      {
+        "id": 110502,
+        "spEffect": 10502,
+        "rank": 2
+      },
+      {
+        "id": 110503,
+        "spEffect": 10503,
+        "rank": 3
+      },
+      {
+        "id": 110504,
+        "spEffect": 10504,
+        "rank": 4
+      },
+      {
+        "id": 110505,
+        "spEffect": 10505,
+        "rank": 5
+      },
+      {
+        "id": 110506,
+        "spEffect": 10506,
+        "rank": 6
+      },
+      {
+        "id": 110507,
+        "spEffect": 10507,
+        "rank": 7
+      },
+      {
+        "id": 110508,
+        "spEffect": 10508,
+        "rank": 8
+      },
+      {
+        "id": 110509,
+        "spEffect": 10509,
+        "rank": 9
+      },
+      {
+        "id": 110510,
+        "spEffect": 10510,
+        "rank": 10
+      },
+      {
+        "id": 110511,
+        "spEffect": 10511,
+        "rank": 11
+      },
+      {
+        "id": 110512,
+        "spEffect": 10512,
+        "rank": 12
+      },
+      {
+        "id": 110513,
+        "spEffect": 10513,
+        "rank": 13
+      },
+      {
+        "id": 110514,
+        "spEffect": 10514,
+        "rank": 14
+      },
+      {
+        "id": 110515,
+        "spEffect": 10515,
+        "rank": 15
+      },
+      {
+        "id": 110516,
+        "spEffect": 10516,
+        "rank": 16
+      },
+      {
+        "id": 110517,
+        "spEffect": 10517,
+        "rank": 17
+      },
+      {
+        "id": 110518,
+        "spEffect": 10518,
+        "rank": 18
+      },
+      {
+        "id": 110519,
+        "spEffect": 10519,
+        "rank": 19
+      },
+      {
+        "id": 110520,
+        "spEffect": 10520,
+        "rank": 20
+      },
+      {
+        "id": 110601,
+        "spEffect": 10601,
+        "rank": 1
+      },
+      {
+        "id": 110602,
+        "spEffect": 10602,
+        "rank": 2
+      },
+      {
+        "id": 110603,
+        "spEffect": 10603,
+        "rank": 3
+      },
+      {
+        "id": 110604,
+        "spEffect": 10604,
+        "rank": 4
+      },
+      {
+        "id": 110605,
+        "spEffect": 10605,
+        "rank": 5
+      },
+      {
+        "id": 110606,
+        "spEffect": 10606,
+        "rank": 6
+      },
+      {
+        "id": 110607,
+        "spEffect": 10607,
+        "rank": 7
+      },
+      {
+        "id": 110608,
+        "spEffect": 10608,
+        "rank": 8
+      },
+      {
+        "id": 110609,
+        "spEffect": 10609,
+        "rank": 9
+      },
+      {
+        "id": 110610,
+        "spEffect": 10610,
+        "rank": 10
+      },
+      {
+        "id": 110611,
+        "spEffect": 10611,
+        "rank": 11
+      },
+      {
+        "id": 110612,
+        "spEffect": 10612,
+        "rank": 12
+      },
+      {
+        "id": 110613,
+        "spEffect": 10613,
+        "rank": 13
+      },
+      {
+        "id": 110614,
+        "spEffect": 10614,
+        "rank": 14
+      },
+      {
+        "id": 110615,
+        "spEffect": 10615,
+        "rank": 15
+      },
+      {
+        "id": 110616,
+        "spEffect": 10616,
+        "rank": 16
+      },
+      {
+        "id": 110617,
+        "spEffect": 10617,
+        "rank": 17
+      },
+      {
+        "id": 110618,
+        "spEffect": 10618,
+        "rank": 18
+      },
+      {
+        "id": 110619,
+        "spEffect": 10619,
+        "rank": 19
+      },
+      {
+        "id": 110620,
+        "spEffect": 10620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Add blunt ATK",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 111101,
+        "spEffect": 11101,
+        "rank": 1
+      },
+      {
+        "id": 111102,
+        "spEffect": 11102,
+        "rank": 2
+      },
+      {
+        "id": 111103,
+        "spEffect": 11103,
+        "rank": 3
+      },
+      {
+        "id": 111104,
+        "spEffect": 11104,
+        "rank": 4
+      },
+      {
+        "id": 111105,
+        "spEffect": 11105,
+        "rank": 5
+      },
+      {
+        "id": 111106,
+        "spEffect": 11106,
+        "rank": 6
+      },
+      {
+        "id": 111107,
+        "spEffect": 11107,
+        "rank": 7
+      },
+      {
+        "id": 111108,
+        "spEffect": 11108,
+        "rank": 8
+      },
+      {
+        "id": 111109,
+        "spEffect": 11109,
+        "rank": 9
+      },
+      {
+        "id": 111110,
+        "spEffect": 11110,
+        "rank": 10
+      },
+      {
+        "id": 111111,
+        "spEffect": 11111,
+        "rank": 11
+      },
+      {
+        "id": 111112,
+        "spEffect": 11112,
+        "rank": 12
+      },
+      {
+        "id": 111113,
+        "spEffect": 11113,
+        "rank": 13
+      },
+      {
+        "id": 111114,
+        "spEffect": 11114,
+        "rank": 14
+      },
+      {
+        "id": 111115,
+        "spEffect": 11115,
+        "rank": 15
+      },
+      {
+        "id": 111116,
+        "spEffect": 11116,
+        "rank": 16
+      },
+      {
+        "id": 111117,
+        "spEffect": 11117,
+        "rank": 17
+      },
+      {
+        "id": 111118,
+        "spEffect": 11118,
+        "rank": 18
+      },
+      {
+        "id": 111119,
+        "spEffect": 11119,
+        "rank": 19
+      },
+      {
+        "id": 111120,
+        "spEffect": 11120,
+        "rank": 20
+      },
+      {
+        "id": 111201,
+        "spEffect": 11201,
+        "rank": 1
+      },
+      {
+        "id": 111202,
+        "spEffect": 11202,
+        "rank": 2
+      },
+      {
+        "id": 111203,
+        "spEffect": 11203,
+        "rank": 3
+      },
+      {
+        "id": 111204,
+        "spEffect": 11204,
+        "rank": 4
+      },
+      {
+        "id": 111205,
+        "spEffect": 11205,
+        "rank": 5
+      },
+      {
+        "id": 111206,
+        "spEffect": 11206,
+        "rank": 6
+      },
+      {
+        "id": 111207,
+        "spEffect": 11207,
+        "rank": 7
+      },
+      {
+        "id": 111208,
+        "spEffect": 11208,
+        "rank": 8
+      },
+      {
+        "id": 111209,
+        "spEffect": 11209,
+        "rank": 9
+      },
+      {
+        "id": 111210,
+        "spEffect": 11210,
+        "rank": 10
+      },
+      {
+        "id": 111211,
+        "spEffect": 11211,
+        "rank": 11
+      },
+      {
+        "id": 111212,
+        "spEffect": 11212,
+        "rank": 12
+      },
+      {
+        "id": 111213,
+        "spEffect": 11213,
+        "rank": 13
+      },
+      {
+        "id": 111214,
+        "spEffect": 11214,
+        "rank": 14
+      },
+      {
+        "id": 111215,
+        "spEffect": 11215,
+        "rank": 15
+      },
+      {
+        "id": 111216,
+        "spEffect": 11216,
+        "rank": 16
+      },
+      {
+        "id": 111217,
+        "spEffect": 11217,
+        "rank": 17
+      },
+      {
+        "id": 111218,
+        "spEffect": 11218,
+        "rank": 18
+      },
+      {
+        "id": 111219,
+        "spEffect": 11219,
+        "rank": 19
+      },
+      {
+        "id": 111220,
+        "spEffect": 11220,
+        "rank": 20
+      },
+      {
+        "id": 111301,
+        "spEffect": 11301,
+        "rank": 1
+      },
+      {
+        "id": 111302,
+        "spEffect": 11302,
+        "rank": 2
+      },
+      {
+        "id": 111303,
+        "spEffect": 11303,
+        "rank": 3
+      },
+      {
+        "id": 111304,
+        "spEffect": 11304,
+        "rank": 4
+      },
+      {
+        "id": 111305,
+        "spEffect": 11305,
+        "rank": 5
+      },
+      {
+        "id": 111306,
+        "spEffect": 11306,
+        "rank": 6
+      },
+      {
+        "id": 111307,
+        "spEffect": 11307,
+        "rank": 7
+      },
+      {
+        "id": 111308,
+        "spEffect": 11308,
+        "rank": 8
+      },
+      {
+        "id": 111309,
+        "spEffect": 11309,
+        "rank": 9
+      },
+      {
+        "id": 111310,
+        "spEffect": 11310,
+        "rank": 10
+      },
+      {
+        "id": 111311,
+        "spEffect": 11311,
+        "rank": 11
+      },
+      {
+        "id": 111312,
+        "spEffect": 11312,
+        "rank": 12
+      },
+      {
+        "id": 111313,
+        "spEffect": 11313,
+        "rank": 13
+      },
+      {
+        "id": 111314,
+        "spEffect": 11314,
+        "rank": 14
+      },
+      {
+        "id": 111315,
+        "spEffect": 11315,
+        "rank": 15
+      },
+      {
+        "id": 111316,
+        "spEffect": 11316,
+        "rank": 16
+      },
+      {
+        "id": 111317,
+        "spEffect": 11317,
+        "rank": 17
+      },
+      {
+        "id": 111318,
+        "spEffect": 11318,
+        "rank": 18
+      },
+      {
+        "id": 111319,
+        "spEffect": 11319,
+        "rank": 19
+      },
+      {
+        "id": 111320,
+        "spEffect": 11320,
+        "rank": 20
+      },
+      {
+        "id": 111401,
+        "spEffect": 11401,
+        "rank": 1
+      },
+      {
+        "id": 111402,
+        "spEffect": 11402,
+        "rank": 2
+      },
+      {
+        "id": 111403,
+        "spEffect": 11403,
+        "rank": 3
+      },
+      {
+        "id": 111404,
+        "spEffect": 11404,
+        "rank": 4
+      },
+      {
+        "id": 111405,
+        "spEffect": 11405,
+        "rank": 5
+      },
+      {
+        "id": 111406,
+        "spEffect": 11406,
+        "rank": 6
+      },
+      {
+        "id": 111407,
+        "spEffect": 11407,
+        "rank": 7
+      },
+      {
+        "id": 111408,
+        "spEffect": 11408,
+        "rank": 8
+      },
+      {
+        "id": 111409,
+        "spEffect": 11409,
+        "rank": 9
+      },
+      {
+        "id": 111410,
+        "spEffect": 11410,
+        "rank": 10
+      },
+      {
+        "id": 111411,
+        "spEffect": 11411,
+        "rank": 11
+      },
+      {
+        "id": 111412,
+        "spEffect": 11412,
+        "rank": 12
+      },
+      {
+        "id": 111413,
+        "spEffect": 11413,
+        "rank": 13
+      },
+      {
+        "id": 111414,
+        "spEffect": 11414,
+        "rank": 14
+      },
+      {
+        "id": 111415,
+        "spEffect": 11415,
+        "rank": 15
+      },
+      {
+        "id": 111416,
+        "spEffect": 11416,
+        "rank": 16
+      },
+      {
+        "id": 111417,
+        "spEffect": 11417,
+        "rank": 17
+      },
+      {
+        "id": 111418,
+        "spEffect": 11418,
+        "rank": 18
+      },
+      {
+        "id": 111419,
+        "spEffect": 11419,
+        "rank": 19
+      },
+      {
+        "id": 111420,
+        "spEffect": 11420,
+        "rank": 20
+      },
+      {
+        "id": 111501,
+        "spEffect": 11501,
+        "rank": 1
+      },
+      {
+        "id": 111502,
+        "spEffect": 11502,
+        "rank": 2
+      },
+      {
+        "id": 111503,
+        "spEffect": 11503,
+        "rank": 3
+      },
+      {
+        "id": 111504,
+        "spEffect": 11504,
+        "rank": 4
+      },
+      {
+        "id": 111505,
+        "spEffect": 11505,
+        "rank": 5
+      },
+      {
+        "id": 111506,
+        "spEffect": 11506,
+        "rank": 6
+      },
+      {
+        "id": 111507,
+        "spEffect": 11507,
+        "rank": 7
+      },
+      {
+        "id": 111508,
+        "spEffect": 11508,
+        "rank": 8
+      },
+      {
+        "id": 111509,
+        "spEffect": 11509,
+        "rank": 9
+      },
+      {
+        "id": 111510,
+        "spEffect": 11510,
+        "rank": 10
+      },
+      {
+        "id": 111511,
+        "spEffect": 11511,
+        "rank": 11
+      },
+      {
+        "id": 111512,
+        "spEffect": 11512,
+        "rank": 12
+      },
+      {
+        "id": 111513,
+        "spEffect": 11513,
+        "rank": 13
+      },
+      {
+        "id": 111514,
+        "spEffect": 11514,
+        "rank": 14
+      },
+      {
+        "id": 111515,
+        "spEffect": 11515,
+        "rank": 15
+      },
+      {
+        "id": 111516,
+        "spEffect": 11516,
+        "rank": 16
+      },
+      {
+        "id": 111517,
+        "spEffect": 11517,
+        "rank": 17
+      },
+      {
+        "id": 111518,
+        "spEffect": 11518,
+        "rank": 18
+      },
+      {
+        "id": 111519,
+        "spEffect": 11519,
+        "rank": 19
+      },
+      {
+        "id": 111520,
+        "spEffect": 11520,
+        "rank": 20
+      },
+      {
+        "id": 111601,
+        "spEffect": 11601,
+        "rank": 1
+      },
+      {
+        "id": 111602,
+        "spEffect": 11602,
+        "rank": 2
+      },
+      {
+        "id": 111603,
+        "spEffect": 11603,
+        "rank": 3
+      },
+      {
+        "id": 111604,
+        "spEffect": 11604,
+        "rank": 4
+      },
+      {
+        "id": 111605,
+        "spEffect": 11605,
+        "rank": 5
+      },
+      {
+        "id": 111606,
+        "spEffect": 11606,
+        "rank": 6
+      },
+      {
+        "id": 111607,
+        "spEffect": 11607,
+        "rank": 7
+      },
+      {
+        "id": 111608,
+        "spEffect": 11608,
+        "rank": 8
+      },
+      {
+        "id": 111609,
+        "spEffect": 11609,
+        "rank": 9
+      },
+      {
+        "id": 111610,
+        "spEffect": 11610,
+        "rank": 10
+      },
+      {
+        "id": 111611,
+        "spEffect": 11611,
+        "rank": 11
+      },
+      {
+        "id": 111612,
+        "spEffect": 11612,
+        "rank": 12
+      },
+      {
+        "id": 111613,
+        "spEffect": 11613,
+        "rank": 13
+      },
+      {
+        "id": 111614,
+        "spEffect": 11614,
+        "rank": 14
+      },
+      {
+        "id": 111615,
+        "spEffect": 11615,
+        "rank": 15
+      },
+      {
+        "id": 111616,
+        "spEffect": 11616,
+        "rank": 16
+      },
+      {
+        "id": 111617,
+        "spEffect": 11617,
+        "rank": 17
+      },
+      {
+        "id": 111618,
+        "spEffect": 11618,
+        "rank": 18
+      },
+      {
+        "id": 111619,
+        "spEffect": 11619,
+        "rank": 19
+      },
+      {
+        "id": 111620,
+        "spEffect": 11620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Add thrust ATK",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 112101,
+        "spEffect": 12101,
+        "rank": 1
+      },
+      {
+        "id": 112102,
+        "spEffect": 12102,
+        "rank": 2
+      },
+      {
+        "id": 112103,
+        "spEffect": 12103,
+        "rank": 3
+      },
+      {
+        "id": 112104,
+        "spEffect": 12104,
+        "rank": 4
+      },
+      {
+        "id": 112105,
+        "spEffect": 12105,
+        "rank": 5
+      },
+      {
+        "id": 112106,
+        "spEffect": 12106,
+        "rank": 6
+      },
+      {
+        "id": 112107,
+        "spEffect": 12107,
+        "rank": 7
+      },
+      {
+        "id": 112108,
+        "spEffect": 12108,
+        "rank": 8
+      },
+      {
+        "id": 112109,
+        "spEffect": 12109,
+        "rank": 9
+      },
+      {
+        "id": 112110,
+        "spEffect": 12110,
+        "rank": 10
+      },
+      {
+        "id": 112111,
+        "spEffect": 12111,
+        "rank": 11
+      },
+      {
+        "id": 112112,
+        "spEffect": 12112,
+        "rank": 12
+      },
+      {
+        "id": 112113,
+        "spEffect": 12113,
+        "rank": 13
+      },
+      {
+        "id": 112114,
+        "spEffect": 12114,
+        "rank": 14
+      },
+      {
+        "id": 112115,
+        "spEffect": 12115,
+        "rank": 15
+      },
+      {
+        "id": 112116,
+        "spEffect": 12116,
+        "rank": 16
+      },
+      {
+        "id": 112117,
+        "spEffect": 12117,
+        "rank": 17
+      },
+      {
+        "id": 112118,
+        "spEffect": 12118,
+        "rank": 18
+      },
+      {
+        "id": 112119,
+        "spEffect": 12119,
+        "rank": 19
+      },
+      {
+        "id": 112120,
+        "spEffect": 12120,
+        "rank": 20
+      },
+      {
+        "id": 112201,
+        "spEffect": 12201,
+        "rank": 1
+      },
+      {
+        "id": 112202,
+        "spEffect": 12202,
+        "rank": 2
+      },
+      {
+        "id": 112203,
+        "spEffect": 12203,
+        "rank": 3
+      },
+      {
+        "id": 112204,
+        "spEffect": 12204,
+        "rank": 4
+      },
+      {
+        "id": 112205,
+        "spEffect": 12205,
+        "rank": 5
+      },
+      {
+        "id": 112206,
+        "spEffect": 12206,
+        "rank": 6
+      },
+      {
+        "id": 112207,
+        "spEffect": 12207,
+        "rank": 7
+      },
+      {
+        "id": 112208,
+        "spEffect": 12208,
+        "rank": 8
+      },
+      {
+        "id": 112209,
+        "spEffect": 12209,
+        "rank": 9
+      },
+      {
+        "id": 112210,
+        "spEffect": 12210,
+        "rank": 10
+      },
+      {
+        "id": 112211,
+        "spEffect": 12211,
+        "rank": 11
+      },
+      {
+        "id": 112212,
+        "spEffect": 12212,
+        "rank": 12
+      },
+      {
+        "id": 112213,
+        "spEffect": 12213,
+        "rank": 13
+      },
+      {
+        "id": 112214,
+        "spEffect": 12214,
+        "rank": 14
+      },
+      {
+        "id": 112215,
+        "spEffect": 12215,
+        "rank": 15
+      },
+      {
+        "id": 112216,
+        "spEffect": 12216,
+        "rank": 16
+      },
+      {
+        "id": 112217,
+        "spEffect": 12217,
+        "rank": 17
+      },
+      {
+        "id": 112218,
+        "spEffect": 12218,
+        "rank": 18
+      },
+      {
+        "id": 112219,
+        "spEffect": 12219,
+        "rank": 19
+      },
+      {
+        "id": 112220,
+        "spEffect": 12220,
+        "rank": 20
+      },
+      {
+        "id": 112301,
+        "spEffect": 12301,
+        "rank": 1
+      },
+      {
+        "id": 112302,
+        "spEffect": 12302,
+        "rank": 2
+      },
+      {
+        "id": 112303,
+        "spEffect": 12303,
+        "rank": 3
+      },
+      {
+        "id": 112304,
+        "spEffect": 12304,
+        "rank": 4
+      },
+      {
+        "id": 112305,
+        "spEffect": 12305,
+        "rank": 5
+      },
+      {
+        "id": 112306,
+        "spEffect": 12306,
+        "rank": 6
+      },
+      {
+        "id": 112307,
+        "spEffect": 12307,
+        "rank": 7
+      },
+      {
+        "id": 112308,
+        "spEffect": 12308,
+        "rank": 8
+      },
+      {
+        "id": 112309,
+        "spEffect": 12309,
+        "rank": 9
+      },
+      {
+        "id": 112310,
+        "spEffect": 12310,
+        "rank": 10
+      },
+      {
+        "id": 112311,
+        "spEffect": 12311,
+        "rank": 11
+      },
+      {
+        "id": 112312,
+        "spEffect": 12312,
+        "rank": 12
+      },
+      {
+        "id": 112313,
+        "spEffect": 12313,
+        "rank": 13
+      },
+      {
+        "id": 112314,
+        "spEffect": 12314,
+        "rank": 14
+      },
+      {
+        "id": 112315,
+        "spEffect": 12315,
+        "rank": 15
+      },
+      {
+        "id": 112316,
+        "spEffect": 12316,
+        "rank": 16
+      },
+      {
+        "id": 112317,
+        "spEffect": 12317,
+        "rank": 17
+      },
+      {
+        "id": 112318,
+        "spEffect": 12318,
+        "rank": 18
+      },
+      {
+        "id": 112319,
+        "spEffect": 12319,
+        "rank": 19
+      },
+      {
+        "id": 112320,
+        "spEffect": 12320,
+        "rank": 20
+      },
+      {
+        "id": 112401,
+        "spEffect": 12401,
+        "rank": 1
+      },
+      {
+        "id": 112402,
+        "spEffect": 12402,
+        "rank": 2
+      },
+      {
+        "id": 112403,
+        "spEffect": 12403,
+        "rank": 3
+      },
+      {
+        "id": 112404,
+        "spEffect": 12404,
+        "rank": 4
+      },
+      {
+        "id": 112405,
+        "spEffect": 12405,
+        "rank": 5
+      },
+      {
+        "id": 112406,
+        "spEffect": 12406,
+        "rank": 6
+      },
+      {
+        "id": 112407,
+        "spEffect": 12407,
+        "rank": 7
+      },
+      {
+        "id": 112408,
+        "spEffect": 12408,
+        "rank": 8
+      },
+      {
+        "id": 112409,
+        "spEffect": 12409,
+        "rank": 9
+      },
+      {
+        "id": 112410,
+        "spEffect": 12410,
+        "rank": 10
+      },
+      {
+        "id": 112411,
+        "spEffect": 12411,
+        "rank": 11
+      },
+      {
+        "id": 112412,
+        "spEffect": 12412,
+        "rank": 12
+      },
+      {
+        "id": 112413,
+        "spEffect": 12413,
+        "rank": 13
+      },
+      {
+        "id": 112414,
+        "spEffect": 12414,
+        "rank": 14
+      },
+      {
+        "id": 112415,
+        "spEffect": 12415,
+        "rank": 15
+      },
+      {
+        "id": 112416,
+        "spEffect": 12416,
+        "rank": 16
+      },
+      {
+        "id": 112417,
+        "spEffect": 12417,
+        "rank": 17
+      },
+      {
+        "id": 112418,
+        "spEffect": 12418,
+        "rank": 18
+      },
+      {
+        "id": 112419,
+        "spEffect": 12419,
+        "rank": 19
+      },
+      {
+        "id": 112420,
+        "spEffect": 12420,
+        "rank": 20
+      },
+      {
+        "id": 112501,
+        "spEffect": 12501,
+        "rank": 1
+      },
+      {
+        "id": 112502,
+        "spEffect": 12502,
+        "rank": 2
+      },
+      {
+        "id": 112503,
+        "spEffect": 12503,
+        "rank": 3
+      },
+      {
+        "id": 112504,
+        "spEffect": 12504,
+        "rank": 4
+      },
+      {
+        "id": 112505,
+        "spEffect": 12505,
+        "rank": 5
+      },
+      {
+        "id": 112506,
+        "spEffect": 12506,
+        "rank": 6
+      },
+      {
+        "id": 112507,
+        "spEffect": 12507,
+        "rank": 7
+      },
+      {
+        "id": 112508,
+        "spEffect": 12508,
+        "rank": 8
+      },
+      {
+        "id": 112509,
+        "spEffect": 12509,
+        "rank": 9
+      },
+      {
+        "id": 112510,
+        "spEffect": 12510,
+        "rank": 10
+      },
+      {
+        "id": 112511,
+        "spEffect": 12511,
+        "rank": 11
+      },
+      {
+        "id": 112512,
+        "spEffect": 12512,
+        "rank": 12
+      },
+      {
+        "id": 112513,
+        "spEffect": 12513,
+        "rank": 13
+      },
+      {
+        "id": 112514,
+        "spEffect": 12514,
+        "rank": 14
+      },
+      {
+        "id": 112515,
+        "spEffect": 12515,
+        "rank": 15
+      },
+      {
+        "id": 112516,
+        "spEffect": 12516,
+        "rank": 16
+      },
+      {
+        "id": 112517,
+        "spEffect": 12517,
+        "rank": 17
+      },
+      {
+        "id": 112518,
+        "spEffect": 12518,
+        "rank": 18
+      },
+      {
+        "id": 112519,
+        "spEffect": 12519,
+        "rank": 19
+      },
+      {
+        "id": 112520,
+        "spEffect": 12520,
+        "rank": 20
+      },
+      {
+        "id": 112601,
+        "spEffect": 12601,
+        "rank": 1
+      },
+      {
+        "id": 112602,
+        "spEffect": 12602,
+        "rank": 2
+      },
+      {
+        "id": 112603,
+        "spEffect": 12603,
+        "rank": 3
+      },
+      {
+        "id": 112604,
+        "spEffect": 12604,
+        "rank": 4
+      },
+      {
+        "id": 112605,
+        "spEffect": 12605,
+        "rank": 5
+      },
+      {
+        "id": 112606,
+        "spEffect": 12606,
+        "rank": 6
+      },
+      {
+        "id": 112607,
+        "spEffect": 12607,
+        "rank": 7
+      },
+      {
+        "id": 112608,
+        "spEffect": 12608,
+        "rank": 8
+      },
+      {
+        "id": 112609,
+        "spEffect": 12609,
+        "rank": 9
+      },
+      {
+        "id": 112610,
+        "spEffect": 12610,
+        "rank": 10
+      },
+      {
+        "id": 112611,
+        "spEffect": 12611,
+        "rank": 11
+      },
+      {
+        "id": 112612,
+        "spEffect": 12612,
+        "rank": 12
+      },
+      {
+        "id": 112613,
+        "spEffect": 12613,
+        "rank": 13
+      },
+      {
+        "id": 112614,
+        "spEffect": 12614,
+        "rank": 14
+      },
+      {
+        "id": 112615,
+        "spEffect": 12615,
+        "rank": 15
+      },
+      {
+        "id": 112616,
+        "spEffect": 12616,
+        "rank": 16
+      },
+      {
+        "id": 112617,
+        "spEffect": 12617,
+        "rank": 17
+      },
+      {
+        "id": 112618,
+        "spEffect": 12618,
+        "rank": 18
+      },
+      {
+        "id": 112619,
+        "spEffect": 12619,
+        "rank": 19
+      },
+      {
+        "id": 112620,
+        "spEffect": 12620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Add all ATK",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 118101,
+        "spEffect": 18101,
+        "rank": 1
+      },
+      {
+        "id": 118102,
+        "spEffect": 18102,
+        "rank": 2
+      },
+      {
+        "id": 118103,
+        "spEffect": 18103,
+        "rank": 3
+      },
+      {
+        "id": 118104,
+        "spEffect": 18104,
+        "rank": 4
+      },
+      {
+        "id": 118105,
+        "spEffect": 18105,
+        "rank": 5
+      },
+      {
+        "id": 118106,
+        "spEffect": 18106,
+        "rank": 6
+      },
+      {
+        "id": 118107,
+        "spEffect": 18107,
+        "rank": 7
+      },
+      {
+        "id": 118108,
+        "spEffect": 18108,
+        "rank": 8
+      },
+      {
+        "id": 118109,
+        "spEffect": 18109,
+        "rank": 9
+      },
+      {
+        "id": 118110,
+        "spEffect": 18110,
+        "rank": 10
+      },
+      {
+        "id": 118111,
+        "spEffect": 18111,
+        "rank": 11
+      },
+      {
+        "id": 118112,
+        "spEffect": 18112,
+        "rank": 12
+      },
+      {
+        "id": 118113,
+        "spEffect": 18113,
+        "rank": 13
+      },
+      {
+        "id": 118114,
+        "spEffect": 18114,
+        "rank": 14
+      },
+      {
+        "id": 118115,
+        "spEffect": 18115,
+        "rank": 15
+      },
+      {
+        "id": 118116,
+        "spEffect": 18116,
+        "rank": 16
+      },
+      {
+        "id": 118117,
+        "spEffect": 18117,
+        "rank": 17
+      },
+      {
+        "id": 118118,
+        "spEffect": 18118,
+        "rank": 18
+      },
+      {
+        "id": 118119,
+        "spEffect": 18119,
+        "rank": 19
+      },
+      {
+        "id": 118120,
+        "spEffect": 18120,
+        "rank": 20
+      },
+      {
+        "id": 118201,
+        "spEffect": 18201,
+        "rank": 1
+      },
+      {
+        "id": 118202,
+        "spEffect": 18202,
+        "rank": 2
+      },
+      {
+        "id": 118203,
+        "spEffect": 18203,
+        "rank": 3
+      },
+      {
+        "id": 118204,
+        "spEffect": 18204,
+        "rank": 4
+      },
+      {
+        "id": 118205,
+        "spEffect": 18205,
+        "rank": 5
+      },
+      {
+        "id": 118206,
+        "spEffect": 18206,
+        "rank": 6
+      },
+      {
+        "id": 118207,
+        "spEffect": 18207,
+        "rank": 7
+      },
+      {
+        "id": 118208,
+        "spEffect": 18208,
+        "rank": 8
+      },
+      {
+        "id": 118209,
+        "spEffect": 18209,
+        "rank": 9
+      },
+      {
+        "id": 118210,
+        "spEffect": 18210,
+        "rank": 10
+      },
+      {
+        "id": 118211,
+        "spEffect": 18211,
+        "rank": 11
+      },
+      {
+        "id": 118212,
+        "spEffect": 18212,
+        "rank": 12
+      },
+      {
+        "id": 118213,
+        "spEffect": 18213,
+        "rank": 13
+      },
+      {
+        "id": 118214,
+        "spEffect": 18214,
+        "rank": 14
+      },
+      {
+        "id": 118215,
+        "spEffect": 18215,
+        "rank": 15
+      },
+      {
+        "id": 118216,
+        "spEffect": 18216,
+        "rank": 16
+      },
+      {
+        "id": 118217,
+        "spEffect": 18217,
+        "rank": 17
+      },
+      {
+        "id": 118218,
+        "spEffect": 18218,
+        "rank": 18
+      },
+      {
+        "id": 118219,
+        "spEffect": 18219,
+        "rank": 19
+      },
+      {
+        "id": 118220,
+        "spEffect": 18220,
+        "rank": 20
+      },
+      {
+        "id": 118301,
+        "spEffect": 18301,
+        "rank": 1
+      },
+      {
+        "id": 118302,
+        "spEffect": 18302,
+        "rank": 2
+      },
+      {
+        "id": 118303,
+        "spEffect": 18303,
+        "rank": 3
+      },
+      {
+        "id": 118304,
+        "spEffect": 18304,
+        "rank": 4
+      },
+      {
+        "id": 118305,
+        "spEffect": 18305,
+        "rank": 5
+      },
+      {
+        "id": 118306,
+        "spEffect": 18306,
+        "rank": 6
+      },
+      {
+        "id": 118307,
+        "spEffect": 18307,
+        "rank": 7
+      },
+      {
+        "id": 118308,
+        "spEffect": 18308,
+        "rank": 8
+      },
+      {
+        "id": 118309,
+        "spEffect": 18309,
+        "rank": 9
+      },
+      {
+        "id": 118310,
+        "spEffect": 18310,
+        "rank": 10
+      },
+      {
+        "id": 118311,
+        "spEffect": 18311,
+        "rank": 11
+      },
+      {
+        "id": 118312,
+        "spEffect": 18312,
+        "rank": 12
+      },
+      {
+        "id": 118313,
+        "spEffect": 18313,
+        "rank": 13
+      },
+      {
+        "id": 118314,
+        "spEffect": 18314,
+        "rank": 14
+      },
+      {
+        "id": 118315,
+        "spEffect": 18315,
+        "rank": 15
+      },
+      {
+        "id": 118316,
+        "spEffect": 18316,
+        "rank": 16
+      },
+      {
+        "id": 118317,
+        "spEffect": 18317,
+        "rank": 17
+      },
+      {
+        "id": 118318,
+        "spEffect": 18318,
+        "rank": 18
+      },
+      {
+        "id": 118319,
+        "spEffect": 18319,
+        "rank": 19
+      },
+      {
+        "id": 118320,
+        "spEffect": 18320,
+        "rank": 20
+      },
+      {
+        "id": 118401,
+        "spEffect": 18401,
+        "rank": 1
+      },
+      {
+        "id": 118402,
+        "spEffect": 18402,
+        "rank": 2
+      },
+      {
+        "id": 118403,
+        "spEffect": 18403,
+        "rank": 3
+      },
+      {
+        "id": 118404,
+        "spEffect": 18404,
+        "rank": 4
+      },
+      {
+        "id": 118405,
+        "spEffect": 18405,
+        "rank": 5
+      },
+      {
+        "id": 118406,
+        "spEffect": 18406,
+        "rank": 6
+      },
+      {
+        "id": 118407,
+        "spEffect": 18407,
+        "rank": 7
+      },
+      {
+        "id": 118408,
+        "spEffect": 18408,
+        "rank": 8
+      },
+      {
+        "id": 118409,
+        "spEffect": 18409,
+        "rank": 9
+      },
+      {
+        "id": 118410,
+        "spEffect": 18410,
+        "rank": 10
+      },
+      {
+        "id": 118411,
+        "spEffect": 18411,
+        "rank": 11
+      },
+      {
+        "id": 118412,
+        "spEffect": 18412,
+        "rank": 12
+      },
+      {
+        "id": 118413,
+        "spEffect": 18413,
+        "rank": 13
+      },
+      {
+        "id": 118414,
+        "spEffect": 18414,
+        "rank": 14
+      },
+      {
+        "id": 118415,
+        "spEffect": 18415,
+        "rank": 15
+      },
+      {
+        "id": 118416,
+        "spEffect": 18416,
+        "rank": 16
+      },
+      {
+        "id": 118417,
+        "spEffect": 18417,
+        "rank": 17
+      },
+      {
+        "id": 118418,
+        "spEffect": 18418,
+        "rank": 18
+      },
+      {
+        "id": 118419,
+        "spEffect": 18419,
+        "rank": 19
+      },
+      {
+        "id": 118420,
+        "spEffect": 18420,
+        "rank": 20
+      },
+      {
+        "id": 118501,
+        "spEffect": 18501,
+        "rank": 1
+      },
+      {
+        "id": 118502,
+        "spEffect": 18502,
+        "rank": 2
+      },
+      {
+        "id": 118503,
+        "spEffect": 18503,
+        "rank": 3
+      },
+      {
+        "id": 118504,
+        "spEffect": 18504,
+        "rank": 4
+      },
+      {
+        "id": 118505,
+        "spEffect": 18505,
+        "rank": 5
+      },
+      {
+        "id": 118506,
+        "spEffect": 18506,
+        "rank": 6
+      },
+      {
+        "id": 118507,
+        "spEffect": 18507,
+        "rank": 7
+      },
+      {
+        "id": 118508,
+        "spEffect": 18508,
+        "rank": 8
+      },
+      {
+        "id": 118509,
+        "spEffect": 18509,
+        "rank": 9
+      },
+      {
+        "id": 118510,
+        "spEffect": 18510,
+        "rank": 10
+      },
+      {
+        "id": 118511,
+        "spEffect": 18511,
+        "rank": 11
+      },
+      {
+        "id": 118512,
+        "spEffect": 18512,
+        "rank": 12
+      },
+      {
+        "id": 118513,
+        "spEffect": 18513,
+        "rank": 13
+      },
+      {
+        "id": 118514,
+        "spEffect": 18514,
+        "rank": 14
+      },
+      {
+        "id": 118515,
+        "spEffect": 18515,
+        "rank": 15
+      },
+      {
+        "id": 118516,
+        "spEffect": 18516,
+        "rank": 16
+      },
+      {
+        "id": 118517,
+        "spEffect": 18517,
+        "rank": 17
+      },
+      {
+        "id": 118518,
+        "spEffect": 18518,
+        "rank": 18
+      },
+      {
+        "id": 118519,
+        "spEffect": 18519,
+        "rank": 19
+      },
+      {
+        "id": 118520,
+        "spEffect": 18520,
+        "rank": 20
+      },
+      {
+        "id": 118601,
+        "spEffect": 18601,
+        "rank": 1
+      },
+      {
+        "id": 118602,
+        "spEffect": 18602,
+        "rank": 2
+      },
+      {
+        "id": 118603,
+        "spEffect": 18603,
+        "rank": 3
+      },
+      {
+        "id": 118604,
+        "spEffect": 18604,
+        "rank": 4
+      },
+      {
+        "id": 118605,
+        "spEffect": 18605,
+        "rank": 5
+      },
+      {
+        "id": 118606,
+        "spEffect": 18606,
+        "rank": 6
+      },
+      {
+        "id": 118607,
+        "spEffect": 18607,
+        "rank": 7
+      },
+      {
+        "id": 118608,
+        "spEffect": 18608,
+        "rank": 8
+      },
+      {
+        "id": 118609,
+        "spEffect": 18609,
+        "rank": 9
+      },
+      {
+        "id": 118610,
+        "spEffect": 18610,
+        "rank": 10
+      },
+      {
+        "id": 118611,
+        "spEffect": 18611,
+        "rank": 11
+      },
+      {
+        "id": 118612,
+        "spEffect": 18612,
+        "rank": 12
+      },
+      {
+        "id": 118613,
+        "spEffect": 18613,
+        "rank": 13
+      },
+      {
+        "id": 118614,
+        "spEffect": 18614,
+        "rank": 14
+      },
+      {
+        "id": 118615,
+        "spEffect": 18615,
+        "rank": 15
+      },
+      {
+        "id": 118616,
+        "spEffect": 18616,
+        "rank": 16
+      },
+      {
+        "id": 118617,
+        "spEffect": 18617,
+        "rank": 17
+      },
+      {
+        "id": 118618,
+        "spEffect": 18618,
+        "rank": 18
+      },
+      {
+        "id": 118619,
+        "spEffect": 18619,
+        "rank": 19
+      },
+      {
+        "id": 118620,
+        "spEffect": 18620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Slashing ATK up",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 119101,
+        "spEffect": 19101,
+        "rank": 1
+      },
+      {
+        "id": 119102,
+        "spEffect": 19102,
+        "rank": 2
+      },
+      {
+        "id": 119103,
+        "spEffect": 19103,
+        "rank": 3
+      },
+      {
+        "id": 119104,
+        "spEffect": 19104,
+        "rank": 4
+      },
+      {
+        "id": 119105,
+        "spEffect": 19105,
+        "rank": 5
+      },
+      {
+        "id": 119106,
+        "spEffect": 19106,
+        "rank": 6
+      },
+      {
+        "id": 119107,
+        "spEffect": 19107,
+        "rank": 7
+      },
+      {
+        "id": 119108,
+        "spEffect": 19108,
+        "rank": 8
+      },
+      {
+        "id": 119109,
+        "spEffect": 19109,
+        "rank": 9
+      },
+      {
+        "id": 119110,
+        "spEffect": 19110,
+        "rank": 10
+      },
+      {
+        "id": 119111,
+        "spEffect": 19111,
+        "rank": 11
+      },
+      {
+        "id": 119112,
+        "spEffect": 19112,
+        "rank": 12
+      },
+      {
+        "id": 119113,
+        "spEffect": 19113,
+        "rank": 13
+      },
+      {
+        "id": 119114,
+        "spEffect": 19114,
+        "rank": 14
+      },
+      {
+        "id": 119115,
+        "spEffect": 19115,
+        "rank": 15
+      },
+      {
+        "id": 119116,
+        "spEffect": 19116,
+        "rank": 16
+      },
+      {
+        "id": 119117,
+        "spEffect": 19117,
+        "rank": 17
+      },
+      {
+        "id": 119118,
+        "spEffect": 19118,
+        "rank": 18
+      },
+      {
+        "id": 119119,
+        "spEffect": 19119,
+        "rank": 19
+      },
+      {
+        "id": 119120,
+        "spEffect": 19120,
+        "rank": 20
+      },
+      {
+        "id": 119201,
+        "spEffect": 19201,
+        "rank": 1
+      },
+      {
+        "id": 119202,
+        "spEffect": 19202,
+        "rank": 2
+      },
+      {
+        "id": 119203,
+        "spEffect": 19203,
+        "rank": 3
+      },
+      {
+        "id": 119204,
+        "spEffect": 19204,
+        "rank": 4
+      },
+      {
+        "id": 119205,
+        "spEffect": 19205,
+        "rank": 5
+      },
+      {
+        "id": 119206,
+        "spEffect": 19206,
+        "rank": 6
+      },
+      {
+        "id": 119207,
+        "spEffect": 19207,
+        "rank": 7
+      },
+      {
+        "id": 119208,
+        "spEffect": 19208,
+        "rank": 8
+      },
+      {
+        "id": 119209,
+        "spEffect": 19209,
+        "rank": 9
+      },
+      {
+        "id": 119210,
+        "spEffect": 19210,
+        "rank": 10
+      },
+      {
+        "id": 119211,
+        "spEffect": 19211,
+        "rank": 11
+      },
+      {
+        "id": 119212,
+        "spEffect": 19212,
+        "rank": 12
+      },
+      {
+        "id": 119213,
+        "spEffect": 19213,
+        "rank": 13
+      },
+      {
+        "id": 119214,
+        "spEffect": 19214,
+        "rank": 14
+      },
+      {
+        "id": 119215,
+        "spEffect": 19215,
+        "rank": 15
+      },
+      {
+        "id": 119216,
+        "spEffect": 19216,
+        "rank": 16
+      },
+      {
+        "id": 119217,
+        "spEffect": 19217,
+        "rank": 17
+      },
+      {
+        "id": 119218,
+        "spEffect": 19218,
+        "rank": 18
+      },
+      {
+        "id": 119219,
+        "spEffect": 19219,
+        "rank": 19
+      },
+      {
+        "id": 119220,
+        "spEffect": 19220,
+        "rank": 20
+      },
+      {
+        "id": 119301,
+        "spEffect": 19301,
+        "rank": 1
+      },
+      {
+        "id": 119302,
+        "spEffect": 19302,
+        "rank": 2
+      },
+      {
+        "id": 119303,
+        "spEffect": 19303,
+        "rank": 3
+      },
+      {
+        "id": 119304,
+        "spEffect": 19304,
+        "rank": 4
+      },
+      {
+        "id": 119305,
+        "spEffect": 19305,
+        "rank": 5
+      },
+      {
+        "id": 119306,
+        "spEffect": 19306,
+        "rank": 6
+      },
+      {
+        "id": 119307,
+        "spEffect": 19307,
+        "rank": 7
+      },
+      {
+        "id": 119308,
+        "spEffect": 19308,
+        "rank": 8
+      },
+      {
+        "id": 119309,
+        "spEffect": 19309,
+        "rank": 9
+      },
+      {
+        "id": 119310,
+        "spEffect": 19310,
+        "rank": 10
+      },
+      {
+        "id": 119311,
+        "spEffect": 19311,
+        "rank": 11
+      },
+      {
+        "id": 119312,
+        "spEffect": 19312,
+        "rank": 12
+      },
+      {
+        "id": 119313,
+        "spEffect": 19313,
+        "rank": 13
+      },
+      {
+        "id": 119314,
+        "spEffect": 19314,
+        "rank": 14
+      },
+      {
+        "id": 119315,
+        "spEffect": 19315,
+        "rank": 15
+      },
+      {
+        "id": 119316,
+        "spEffect": 19316,
+        "rank": 16
+      },
+      {
+        "id": 119317,
+        "spEffect": 19317,
+        "rank": 17
+      },
+      {
+        "id": 119318,
+        "spEffect": 19318,
+        "rank": 18
+      },
+      {
+        "id": 119319,
+        "spEffect": 19319,
+        "rank": 19
+      },
+      {
+        "id": 119320,
+        "spEffect": 19320,
+        "rank": 20
+      },
+      {
+        "id": 119401,
+        "spEffect": 19401,
+        "rank": 1
+      },
+      {
+        "id": 119402,
+        "spEffect": 19402,
+        "rank": 2
+      },
+      {
+        "id": 119403,
+        "spEffect": 19403,
+        "rank": 3
+      },
+      {
+        "id": 119404,
+        "spEffect": 19404,
+        "rank": 4
+      },
+      {
+        "id": 119405,
+        "spEffect": 19405,
+        "rank": 5
+      },
+      {
+        "id": 119406,
+        "spEffect": 19406,
+        "rank": 6
+      },
+      {
+        "id": 119407,
+        "spEffect": 19407,
+        "rank": 7
+      },
+      {
+        "id": 119408,
+        "spEffect": 19408,
+        "rank": 8
+      },
+      {
+        "id": 119409,
+        "spEffect": 19409,
+        "rank": 9
+      },
+      {
+        "id": 119410,
+        "spEffect": 19410,
+        "rank": 10
+      },
+      {
+        "id": 119411,
+        "spEffect": 19411,
+        "rank": 11
+      },
+      {
+        "id": 119412,
+        "spEffect": 19412,
+        "rank": 12
+      },
+      {
+        "id": 119413,
+        "spEffect": 19413,
+        "rank": 13
+      },
+      {
+        "id": 119414,
+        "spEffect": 19414,
+        "rank": 14
+      },
+      {
+        "id": 119415,
+        "spEffect": 19415,
+        "rank": 15
+      },
+      {
+        "id": 119416,
+        "spEffect": 19416,
+        "rank": 16
+      },
+      {
+        "id": 119417,
+        "spEffect": 19417,
+        "rank": 17
+      },
+      {
+        "id": 119418,
+        "spEffect": 19418,
+        "rank": 18
+      },
+      {
+        "id": 119419,
+        "spEffect": 19419,
+        "rank": 19
+      },
+      {
+        "id": 119420,
+        "spEffect": 19420,
+        "rank": 20
+      },
+      {
+        "id": 119501,
+        "spEffect": 19501,
+        "rank": 1
+      },
+      {
+        "id": 119502,
+        "spEffect": 19502,
+        "rank": 2
+      },
+      {
+        "id": 119503,
+        "spEffect": 19503,
+        "rank": 3
+      },
+      {
+        "id": 119504,
+        "spEffect": 19504,
+        "rank": 4
+      },
+      {
+        "id": 119505,
+        "spEffect": 19505,
+        "rank": 5
+      },
+      {
+        "id": 119506,
+        "spEffect": 19506,
+        "rank": 6
+      },
+      {
+        "id": 119507,
+        "spEffect": 19507,
+        "rank": 7
+      },
+      {
+        "id": 119508,
+        "spEffect": 19508,
+        "rank": 8
+      },
+      {
+        "id": 119509,
+        "spEffect": 19509,
+        "rank": 9
+      },
+      {
+        "id": 119510,
+        "spEffect": 19510,
+        "rank": 10
+      },
+      {
+        "id": 119511,
+        "spEffect": 19511,
+        "rank": 11
+      },
+      {
+        "id": 119512,
+        "spEffect": 19512,
+        "rank": 12
+      },
+      {
+        "id": 119513,
+        "spEffect": 19513,
+        "rank": 13
+      },
+      {
+        "id": 119514,
+        "spEffect": 19514,
+        "rank": 14
+      },
+      {
+        "id": 119515,
+        "spEffect": 19515,
+        "rank": 15
+      },
+      {
+        "id": 119516,
+        "spEffect": 19516,
+        "rank": 16
+      },
+      {
+        "id": 119517,
+        "spEffect": 19517,
+        "rank": 17
+      },
+      {
+        "id": 119518,
+        "spEffect": 19518,
+        "rank": 18
+      },
+      {
+        "id": 119519,
+        "spEffect": 19519,
+        "rank": 19
+      },
+      {
+        "id": 119520,
+        "spEffect": 19520,
+        "rank": 20
+      },
+      {
+        "id": 119601,
+        "spEffect": 19601,
+        "rank": 1
+      },
+      {
+        "id": 119602,
+        "spEffect": 19602,
+        "rank": 2
+      },
+      {
+        "id": 119603,
+        "spEffect": 19603,
+        "rank": 3
+      },
+      {
+        "id": 119604,
+        "spEffect": 19604,
+        "rank": 4
+      },
+      {
+        "id": 119605,
+        "spEffect": 19605,
+        "rank": 5
+      },
+      {
+        "id": 119606,
+        "spEffect": 19606,
+        "rank": 6
+      },
+      {
+        "id": 119607,
+        "spEffect": 19607,
+        "rank": 7
+      },
+      {
+        "id": 119608,
+        "spEffect": 19608,
+        "rank": 8
+      },
+      {
+        "id": 119609,
+        "spEffect": 19609,
+        "rank": 9
+      },
+      {
+        "id": 119610,
+        "spEffect": 19610,
+        "rank": 10
+      },
+      {
+        "id": 119611,
+        "spEffect": 19611,
+        "rank": 11
+      },
+      {
+        "id": 119612,
+        "spEffect": 19612,
+        "rank": 12
+      },
+      {
+        "id": 119613,
+        "spEffect": 19613,
+        "rank": 13
+      },
+      {
+        "id": 119614,
+        "spEffect": 19614,
+        "rank": 14
+      },
+      {
+        "id": 119615,
+        "spEffect": 19615,
+        "rank": 15
+      },
+      {
+        "id": 119616,
+        "spEffect": 19616,
+        "rank": 16
+      },
+      {
+        "id": 119617,
+        "spEffect": 19617,
+        "rank": 17
+      },
+      {
+        "id": 119618,
+        "spEffect": 19618,
+        "rank": 18
+      },
+      {
+        "id": 119619,
+        "spEffect": 19619,
+        "rank": 19
+      },
+      {
+        "id": 119620,
+        "spEffect": 19620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Physical ATK after boss defeat",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 150101,
+        "spEffect": 50101,
+        "rank": 1
+      },
+      {
+        "id": 150102,
+        "spEffect": 50102,
+        "rank": 2
+      },
+      {
+        "id": 150103,
+        "spEffect": 50103,
+        "rank": 3
+      },
+      {
+        "id": 150104,
+        "spEffect": 50104,
+        "rank": 4
+      },
+      {
+        "id": 150105,
+        "spEffect": 50105,
+        "rank": 5
+      },
+      {
+        "id": 150106,
+        "spEffect": 50106,
+        "rank": 6
+      },
+      {
+        "id": 150107,
+        "spEffect": 50107,
+        "rank": 7
+      },
+      {
+        "id": 150108,
+        "spEffect": 50108,
+        "rank": 8
+      },
+      {
+        "id": 150109,
+        "spEffect": 50109,
+        "rank": 9
+      },
+      {
+        "id": 150110,
+        "spEffect": 50110,
+        "rank": 10
+      },
+      {
+        "id": 150111,
+        "spEffect": 50111,
+        "rank": 11
+      },
+      {
+        "id": 150112,
+        "spEffect": 50112,
+        "rank": 12
+      },
+      {
+        "id": 150113,
+        "spEffect": 50113,
+        "rank": 13
+      },
+      {
+        "id": 150114,
+        "spEffect": 50114,
+        "rank": 14
+      },
+      {
+        "id": 150115,
+        "spEffect": 50115,
+        "rank": 15
+      },
+      {
+        "id": 150116,
+        "spEffect": 50116,
+        "rank": 16
+      },
+      {
+        "id": 150117,
+        "spEffect": 50117,
+        "rank": 17
+      },
+      {
+        "id": 150118,
+        "spEffect": 50118,
+        "rank": 18
+      },
+      {
+        "id": 150119,
+        "spEffect": 50119,
+        "rank": 19
+      },
+      {
+        "id": 150120,
+        "spEffect": 50120,
+        "rank": 20
+      },
+      {
+        "id": 150201,
+        "spEffect": 50201,
+        "rank": 1
+      },
+      {
+        "id": 150202,
+        "spEffect": 50202,
+        "rank": 2
+      },
+      {
+        "id": 150203,
+        "spEffect": 50203,
+        "rank": 3
+      },
+      {
+        "id": 150204,
+        "spEffect": 50204,
+        "rank": 4
+      },
+      {
+        "id": 150205,
+        "spEffect": 50205,
+        "rank": 5
+      },
+      {
+        "id": 150206,
+        "spEffect": 50206,
+        "rank": 6
+      },
+      {
+        "id": 150207,
+        "spEffect": 50207,
+        "rank": 7
+      },
+      {
+        "id": 150208,
+        "spEffect": 50208,
+        "rank": 8
+      },
+      {
+        "id": 150209,
+        "spEffect": 50209,
+        "rank": 9
+      },
+      {
+        "id": 150210,
+        "spEffect": 50210,
+        "rank": 10
+      },
+      {
+        "id": 150211,
+        "spEffect": 50211,
+        "rank": 11
+      },
+      {
+        "id": 150212,
+        "spEffect": 50212,
+        "rank": 12
+      },
+      {
+        "id": 150213,
+        "spEffect": 50213,
+        "rank": 13
+      },
+      {
+        "id": 150214,
+        "spEffect": 50214,
+        "rank": 14
+      },
+      {
+        "id": 150215,
+        "spEffect": 50215,
+        "rank": 15
+      },
+      {
+        "id": 150216,
+        "spEffect": 50216,
+        "rank": 16
+      },
+      {
+        "id": 150217,
+        "spEffect": 50217,
+        "rank": 17
+      },
+      {
+        "id": 150218,
+        "spEffect": 50218,
+        "rank": 18
+      },
+      {
+        "id": 150219,
+        "spEffect": 50219,
+        "rank": 19
+      },
+      {
+        "id": 150220,
+        "spEffect": 50220,
+        "rank": 20
+      },
+      {
+        "id": 150301,
+        "spEffect": 50301,
+        "rank": 1
+      },
+      {
+        "id": 150302,
+        "spEffect": 50302,
+        "rank": 2
+      },
+      {
+        "id": 150303,
+        "spEffect": 50303,
+        "rank": 3
+      },
+      {
+        "id": 150304,
+        "spEffect": 50304,
+        "rank": 4
+      },
+      {
+        "id": 150305,
+        "spEffect": 50305,
+        "rank": 5
+      },
+      {
+        "id": 150306,
+        "spEffect": 50306,
+        "rank": 6
+      },
+      {
+        "id": 150307,
+        "spEffect": 50307,
+        "rank": 7
+      },
+      {
+        "id": 150308,
+        "spEffect": 50308,
+        "rank": 8
+      },
+      {
+        "id": 150309,
+        "spEffect": 50309,
+        "rank": 9
+      },
+      {
+        "id": 150310,
+        "spEffect": 50310,
+        "rank": 10
+      },
+      {
+        "id": 150311,
+        "spEffect": 50311,
+        "rank": 11
+      },
+      {
+        "id": 150312,
+        "spEffect": 50312,
+        "rank": 12
+      },
+      {
+        "id": 150313,
+        "spEffect": 50313,
+        "rank": 13
+      },
+      {
+        "id": 150314,
+        "spEffect": 50314,
+        "rank": 14
+      },
+      {
+        "id": 150315,
+        "spEffect": 50315,
+        "rank": 15
+      },
+      {
+        "id": 150316,
+        "spEffect": 50316,
+        "rank": 16
+      },
+      {
+        "id": 150317,
+        "spEffect": 50317,
+        "rank": 17
+      },
+      {
+        "id": 150318,
+        "spEffect": 50318,
+        "rank": 18
+      },
+      {
+        "id": 150319,
+        "spEffect": 50319,
+        "rank": 19
+      },
+      {
+        "id": 150320,
+        "spEffect": 50320,
+        "rank": 20
+      },
+      {
+        "id": 150401,
+        "spEffect": 50401,
+        "rank": 1
+      },
+      {
+        "id": 150402,
+        "spEffect": 50402,
+        "rank": 2
+      },
+      {
+        "id": 150403,
+        "spEffect": 50403,
+        "rank": 3
+      },
+      {
+        "id": 150404,
+        "spEffect": 50404,
+        "rank": 4
+      },
+      {
+        "id": 150405,
+        "spEffect": 50405,
+        "rank": 5
+      },
+      {
+        "id": 150406,
+        "spEffect": 50406,
+        "rank": 6
+      },
+      {
+        "id": 150407,
+        "spEffect": 50407,
+        "rank": 7
+      },
+      {
+        "id": 150408,
+        "spEffect": 50408,
+        "rank": 8
+      },
+      {
+        "id": 150409,
+        "spEffect": 50409,
+        "rank": 9
+      },
+      {
+        "id": 150410,
+        "spEffect": 50410,
+        "rank": 10
+      },
+      {
+        "id": 150411,
+        "spEffect": 50411,
+        "rank": 11
+      },
+      {
+        "id": 150412,
+        "spEffect": 50412,
+        "rank": 12
+      },
+      {
+        "id": 150413,
+        "spEffect": 50413,
+        "rank": 13
+      },
+      {
+        "id": 150414,
+        "spEffect": 50414,
+        "rank": 14
+      },
+      {
+        "id": 150415,
+        "spEffect": 50415,
+        "rank": 15
+      },
+      {
+        "id": 150416,
+        "spEffect": 50416,
+        "rank": 16
+      },
+      {
+        "id": 150417,
+        "spEffect": 50417,
+        "rank": 17
+      },
+      {
+        "id": 150418,
+        "spEffect": 50418,
+        "rank": 18
+      },
+      {
+        "id": 150419,
+        "spEffect": 50419,
+        "rank": 19
+      },
+      {
+        "id": 150420,
+        "spEffect": 50420,
+        "rank": 20
+      },
+      {
+        "id": 150501,
+        "spEffect": 50501,
+        "rank": 1
+      },
+      {
+        "id": 150502,
+        "spEffect": 50502,
+        "rank": 2
+      },
+      {
+        "id": 150503,
+        "spEffect": 50503,
+        "rank": 3
+      },
+      {
+        "id": 150504,
+        "spEffect": 50504,
+        "rank": 4
+      },
+      {
+        "id": 150505,
+        "spEffect": 50505,
+        "rank": 5
+      },
+      {
+        "id": 150506,
+        "spEffect": 50506,
+        "rank": 6
+      },
+      {
+        "id": 150507,
+        "spEffect": 50507,
+        "rank": 7
+      },
+      {
+        "id": 150508,
+        "spEffect": 50508,
+        "rank": 8
+      },
+      {
+        "id": 150509,
+        "spEffect": 50509,
+        "rank": 9
+      },
+      {
+        "id": 150510,
+        "spEffect": 50510,
+        "rank": 10
+      },
+      {
+        "id": 150511,
+        "spEffect": 50511,
+        "rank": 11
+      },
+      {
+        "id": 150512,
+        "spEffect": 50512,
+        "rank": 12
+      },
+      {
+        "id": 150513,
+        "spEffect": 50513,
+        "rank": 13
+      },
+      {
+        "id": 150514,
+        "spEffect": 50514,
+        "rank": 14
+      },
+      {
+        "id": 150515,
+        "spEffect": 50515,
+        "rank": 15
+      },
+      {
+        "id": 150516,
+        "spEffect": 50516,
+        "rank": 16
+      },
+      {
+        "id": 150517,
+        "spEffect": 50517,
+        "rank": 17
+      },
+      {
+        "id": 150518,
+        "spEffect": 50518,
+        "rank": 18
+      },
+      {
+        "id": 150519,
+        "spEffect": 50519,
+        "rank": 19
+      },
+      {
+        "id": 150520,
+        "spEffect": 50520,
+        "rank": 20
+      },
+      {
+        "id": 150601,
+        "spEffect": 50601,
+        "rank": 1
+      },
+      {
+        "id": 150602,
+        "spEffect": 50602,
+        "rank": 2
+      },
+      {
+        "id": 150603,
+        "spEffect": 50603,
+        "rank": 3
+      },
+      {
+        "id": 150604,
+        "spEffect": 50604,
+        "rank": 4
+      },
+      {
+        "id": 150605,
+        "spEffect": 50605,
+        "rank": 5
+      },
+      {
+        "id": 150606,
+        "spEffect": 50606,
+        "rank": 6
+      },
+      {
+        "id": 150607,
+        "spEffect": 50607,
+        "rank": 7
+      },
+      {
+        "id": 150608,
+        "spEffect": 50608,
+        "rank": 8
+      },
+      {
+        "id": 150609,
+        "spEffect": 50609,
+        "rank": 9
+      },
+      {
+        "id": 150610,
+        "spEffect": 50610,
+        "rank": 10
+      },
+      {
+        "id": 150611,
+        "spEffect": 50611,
+        "rank": 11
+      },
+      {
+        "id": 150612,
+        "spEffect": 50612,
+        "rank": 12
+      },
+      {
+        "id": 150613,
+        "spEffect": 50613,
+        "rank": 13
+      },
+      {
+        "id": 150614,
+        "spEffect": 50614,
+        "rank": 14
+      },
+      {
+        "id": 150615,
+        "spEffect": 50615,
+        "rank": 15
+      },
+      {
+        "id": 150616,
+        "spEffect": 50616,
+        "rank": 16
+      },
+      {
+        "id": 150617,
+        "spEffect": 50617,
+        "rank": 17
+      },
+      {
+        "id": 150618,
+        "spEffect": 50618,
+        "rank": 18
+      },
+      {
+        "id": 150619,
+        "spEffect": 50619,
+        "rank": 19
+      },
+      {
+        "id": 150620,
+        "spEffect": 50620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "All ATK after boss defeat (Forlorn)",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 153101,
+        "spEffect": 53101,
+        "rank": 1
+      },
+      {
+        "id": 153102,
+        "spEffect": 53102,
+        "rank": 2
+      },
+      {
+        "id": 153103,
+        "spEffect": 53103,
+        "rank": 3
+      },
+      {
+        "id": 153104,
+        "spEffect": 53104,
+        "rank": 4
+      },
+      {
+        "id": 153105,
+        "spEffect": 53105,
+        "rank": 5
+      },
+      {
+        "id": 153106,
+        "spEffect": 53106,
+        "rank": 6
+      },
+      {
+        "id": 153107,
+        "spEffect": 53107,
+        "rank": 7
+      },
+      {
+        "id": 153108,
+        "spEffect": 53108,
+        "rank": 8
+      },
+      {
+        "id": 153109,
+        "spEffect": 53109,
+        "rank": 9
+      },
+      {
+        "id": 153110,
+        "spEffect": 53110,
+        "rank": 10
+      },
+      {
+        "id": 153111,
+        "spEffect": 53111,
+        "rank": 11
+      },
+      {
+        "id": 153112,
+        "spEffect": 53112,
+        "rank": 12
+      },
+      {
+        "id": 153113,
+        "spEffect": 53113,
+        "rank": 13
+      },
+      {
+        "id": 153114,
+        "spEffect": 53114,
+        "rank": 14
+      },
+      {
+        "id": 153115,
+        "spEffect": 53115,
+        "rank": 15
+      },
+      {
+        "id": 153116,
+        "spEffect": 53116,
+        "rank": 16
+      },
+      {
+        "id": 153117,
+        "spEffect": 53117,
+        "rank": 17
+      },
+      {
+        "id": 153118,
+        "spEffect": 53118,
+        "rank": 18
+      },
+      {
+        "id": 153119,
+        "spEffect": 53119,
+        "rank": 19
+      },
+      {
+        "id": 153120,
+        "spEffect": 53120,
+        "rank": 20
+      },
+      {
+        "id": 153201,
+        "spEffect": 53201,
+        "rank": 1
+      },
+      {
+        "id": 153202,
+        "spEffect": 53202,
+        "rank": 2
+      },
+      {
+        "id": 153203,
+        "spEffect": 53203,
+        "rank": 3
+      },
+      {
+        "id": 153204,
+        "spEffect": 53204,
+        "rank": 4
+      },
+      {
+        "id": 153205,
+        "spEffect": 53205,
+        "rank": 5
+      },
+      {
+        "id": 153206,
+        "spEffect": 53206,
+        "rank": 6
+      },
+      {
+        "id": 153207,
+        "spEffect": 53207,
+        "rank": 7
+      },
+      {
+        "id": 153208,
+        "spEffect": 53208,
+        "rank": 8
+      },
+      {
+        "id": 153209,
+        "spEffect": 53209,
+        "rank": 9
+      },
+      {
+        "id": 153210,
+        "spEffect": 53210,
+        "rank": 10
+      },
+      {
+        "id": 153211,
+        "spEffect": 53211,
+        "rank": 11
+      },
+      {
+        "id": 153212,
+        "spEffect": 53212,
+        "rank": 12
+      },
+      {
+        "id": 153213,
+        "spEffect": 53213,
+        "rank": 13
+      },
+      {
+        "id": 153214,
+        "spEffect": 53214,
+        "rank": 14
+      },
+      {
+        "id": 153215,
+        "spEffect": 53215,
+        "rank": 15
+      },
+      {
+        "id": 153216,
+        "spEffect": 53216,
+        "rank": 16
+      },
+      {
+        "id": 153217,
+        "spEffect": 53217,
+        "rank": 17
+      },
+      {
+        "id": 153218,
+        "spEffect": 53218,
+        "rank": 18
+      },
+      {
+        "id": 153219,
+        "spEffect": 53219,
+        "rank": 19
+      },
+      {
+        "id": 153220,
+        "spEffect": 53220,
+        "rank": 20
+      },
+      {
+        "id": 153301,
+        "spEffect": 53301,
+        "rank": 1
+      },
+      {
+        "id": 153302,
+        "spEffect": 53302,
+        "rank": 2
+      },
+      {
+        "id": 153303,
+        "spEffect": 53303,
+        "rank": 3
+      },
+      {
+        "id": 153304,
+        "spEffect": 53304,
+        "rank": 4
+      },
+      {
+        "id": 153305,
+        "spEffect": 53305,
+        "rank": 5
+      },
+      {
+        "id": 153306,
+        "spEffect": 53306,
+        "rank": 6
+      },
+      {
+        "id": 153307,
+        "spEffect": 53307,
+        "rank": 7
+      },
+      {
+        "id": 153308,
+        "spEffect": 53308,
+        "rank": 8
+      },
+      {
+        "id": 153309,
+        "spEffect": 53309,
+        "rank": 9
+      },
+      {
+        "id": 153310,
+        "spEffect": 53310,
+        "rank": 10
+      },
+      {
+        "id": 153311,
+        "spEffect": 53311,
+        "rank": 11
+      },
+      {
+        "id": 153312,
+        "spEffect": 53312,
+        "rank": 12
+      },
+      {
+        "id": 153313,
+        "spEffect": 53313,
+        "rank": 13
+      },
+      {
+        "id": 153314,
+        "spEffect": 53314,
+        "rank": 14
+      },
+      {
+        "id": 153315,
+        "spEffect": 53315,
+        "rank": 15
+      },
+      {
+        "id": 153316,
+        "spEffect": 53316,
+        "rank": 16
+      },
+      {
+        "id": 153317,
+        "spEffect": 53317,
+        "rank": 17
+      },
+      {
+        "id": 153318,
+        "spEffect": 53318,
+        "rank": 18
+      },
+      {
+        "id": 153319,
+        "spEffect": 53319,
+        "rank": 19
+      },
+      {
+        "id": 153320,
+        "spEffect": 53320,
+        "rank": 20
+      },
+      {
+        "id": 153401,
+        "spEffect": 53401,
+        "rank": 1
+      },
+      {
+        "id": 153402,
+        "spEffect": 53402,
+        "rank": 2
+      },
+      {
+        "id": 153403,
+        "spEffect": 53403,
+        "rank": 3
+      },
+      {
+        "id": 153404,
+        "spEffect": 53404,
+        "rank": 4
+      },
+      {
+        "id": 153405,
+        "spEffect": 53405,
+        "rank": 5
+      },
+      {
+        "id": 153406,
+        "spEffect": 53406,
+        "rank": 6
+      },
+      {
+        "id": 153407,
+        "spEffect": 53407,
+        "rank": 7
+      },
+      {
+        "id": 153408,
+        "spEffect": 53408,
+        "rank": 8
+      },
+      {
+        "id": 153409,
+        "spEffect": 53409,
+        "rank": 9
+      },
+      {
+        "id": 153410,
+        "spEffect": 53410,
+        "rank": 10
+      },
+      {
+        "id": 153411,
+        "spEffect": 53411,
+        "rank": 11
+      },
+      {
+        "id": 153412,
+        "spEffect": 53412,
+        "rank": 12
+      },
+      {
+        "id": 153413,
+        "spEffect": 53413,
+        "rank": 13
+      },
+      {
+        "id": 153414,
+        "spEffect": 53414,
+        "rank": 14
+      },
+      {
+        "id": 153415,
+        "spEffect": 53415,
+        "rank": 15
+      },
+      {
+        "id": 153416,
+        "spEffect": 53416,
+        "rank": 16
+      },
+      {
+        "id": 153417,
+        "spEffect": 53417,
+        "rank": 17
+      },
+      {
+        "id": 153418,
+        "spEffect": 53418,
+        "rank": 18
+      },
+      {
+        "id": 153419,
+        "spEffect": 53419,
+        "rank": 19
+      },
+      {
+        "id": 153420,
+        "spEffect": 53420,
+        "rank": 20
+      },
+      {
+        "id": 153501,
+        "spEffect": 53501,
+        "rank": 1
+      },
+      {
+        "id": 153502,
+        "spEffect": 53502,
+        "rank": 2
+      },
+      {
+        "id": 153503,
+        "spEffect": 53503,
+        "rank": 3
+      },
+      {
+        "id": 153504,
+        "spEffect": 53504,
+        "rank": 4
+      },
+      {
+        "id": 153505,
+        "spEffect": 53505,
+        "rank": 5
+      },
+      {
+        "id": 153506,
+        "spEffect": 53506,
+        "rank": 6
+      },
+      {
+        "id": 153507,
+        "spEffect": 53507,
+        "rank": 7
+      },
+      {
+        "id": 153508,
+        "spEffect": 53508,
+        "rank": 8
+      },
+      {
+        "id": 153509,
+        "spEffect": 53509,
+        "rank": 9
+      },
+      {
+        "id": 153510,
+        "spEffect": 53510,
+        "rank": 10
+      },
+      {
+        "id": 153511,
+        "spEffect": 53511,
+        "rank": 11
+      },
+      {
+        "id": 153512,
+        "spEffect": 53512,
+        "rank": 12
+      },
+      {
+        "id": 153513,
+        "spEffect": 53513,
+        "rank": 13
+      },
+      {
+        "id": 153514,
+        "spEffect": 53514,
+        "rank": 14
+      },
+      {
+        "id": 153515,
+        "spEffect": 53515,
+        "rank": 15
+      },
+      {
+        "id": 153516,
+        "spEffect": 53516,
+        "rank": 16
+      },
+      {
+        "id": 153517,
+        "spEffect": 53517,
+        "rank": 17
+      },
+      {
+        "id": 153518,
+        "spEffect": 53518,
+        "rank": 18
+      },
+      {
+        "id": 153519,
+        "spEffect": 53519,
+        "rank": 19
+      },
+      {
+        "id": 153520,
+        "spEffect": 53520,
+        "rank": 20
+      },
+      {
+        "id": 153601,
+        "spEffect": 53601,
+        "rank": 1
+      },
+      {
+        "id": 153602,
+        "spEffect": 53602,
+        "rank": 2
+      },
+      {
+        "id": 153603,
+        "spEffect": 53603,
+        "rank": 3
+      },
+      {
+        "id": 153604,
+        "spEffect": 53604,
+        "rank": 4
+      },
+      {
+        "id": 153605,
+        "spEffect": 53605,
+        "rank": 5
+      },
+      {
+        "id": 153606,
+        "spEffect": 53606,
+        "rank": 6
+      },
+      {
+        "id": 153607,
+        "spEffect": 53607,
+        "rank": 7
+      },
+      {
+        "id": 153608,
+        "spEffect": 53608,
+        "rank": 8
+      },
+      {
+        "id": 153609,
+        "spEffect": 53609,
+        "rank": 9
+      },
+      {
+        "id": 153610,
+        "spEffect": 53610,
+        "rank": 10
+      },
+      {
+        "id": 153611,
+        "spEffect": 53611,
+        "rank": 11
+      },
+      {
+        "id": 153612,
+        "spEffect": 53612,
+        "rank": 12
+      },
+      {
+        "id": 153613,
+        "spEffect": 53613,
+        "rank": 13
+      },
+      {
+        "id": 153614,
+        "spEffect": 53614,
+        "rank": 14
+      },
+      {
+        "id": 153615,
+        "spEffect": 53615,
+        "rank": 15
+      },
+      {
+        "id": 153616,
+        "spEffect": 53616,
+        "rank": 16
+      },
+      {
+        "id": 153617,
+        "spEffect": 53617,
+        "rank": 17
+      },
+      {
+        "id": 153618,
+        "spEffect": 53618,
+        "rank": 18
+      },
+      {
+        "id": 153619,
+        "spEffect": 53619,
+        "rank": 19
+      },
+      {
+        "id": 153620,
+        "spEffect": 53620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "HP recovery at full HP",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 154101,
+        "spEffect": 54101,
+        "rank": 1
+      },
+      {
+        "id": 154102,
+        "spEffect": 54102,
+        "rank": 2
+      },
+      {
+        "id": 154103,
+        "spEffect": 54103,
+        "rank": 3
+      },
+      {
+        "id": 154104,
+        "spEffect": 54104,
+        "rank": 4
+      },
+      {
+        "id": 154105,
+        "spEffect": 54105,
+        "rank": 5
+      },
+      {
+        "id": 154106,
+        "spEffect": 54106,
+        "rank": 6
+      },
+      {
+        "id": 154107,
+        "spEffect": 54107,
+        "rank": 7
+      },
+      {
+        "id": 154108,
+        "spEffect": 54108,
+        "rank": 8
+      },
+      {
+        "id": 154109,
+        "spEffect": 54109,
+        "rank": 9
+      },
+      {
+        "id": 154110,
+        "spEffect": 54110,
+        "rank": 10
+      },
+      {
+        "id": 154111,
+        "spEffect": 54111,
+        "rank": 11
+      },
+      {
+        "id": 154112,
+        "spEffect": 54112,
+        "rank": 12
+      },
+      {
+        "id": 154113,
+        "spEffect": 54113,
+        "rank": 13
+      },
+      {
+        "id": 154114,
+        "spEffect": 54114,
+        "rank": 14
+      },
+      {
+        "id": 154115,
+        "spEffect": 54115,
+        "rank": 15
+      },
+      {
+        "id": 154116,
+        "spEffect": 54116,
+        "rank": 16
+      },
+      {
+        "id": 154117,
+        "spEffect": 54117,
+        "rank": 17
+      },
+      {
+        "id": 154118,
+        "spEffect": 54118,
+        "rank": 18
+      },
+      {
+        "id": 154119,
+        "spEffect": 54119,
+        "rank": 19
+      },
+      {
+        "id": 154120,
+        "spEffect": 54120,
+        "rank": 20
+      },
+      {
+        "id": 154201,
+        "spEffect": 54201,
+        "rank": 1
+      },
+      {
+        "id": 154202,
+        "spEffect": 54202,
+        "rank": 2
+      },
+      {
+        "id": 154203,
+        "spEffect": 54203,
+        "rank": 3
+      },
+      {
+        "id": 154204,
+        "spEffect": 54204,
+        "rank": 4
+      },
+      {
+        "id": 154205,
+        "spEffect": 54205,
+        "rank": 5
+      },
+      {
+        "id": 154206,
+        "spEffect": 54206,
+        "rank": 6
+      },
+      {
+        "id": 154207,
+        "spEffect": 54207,
+        "rank": 7
+      },
+      {
+        "id": 154208,
+        "spEffect": 54208,
+        "rank": 8
+      },
+      {
+        "id": 154209,
+        "spEffect": 54209,
+        "rank": 9
+      },
+      {
+        "id": 154210,
+        "spEffect": 54210,
+        "rank": 10
+      },
+      {
+        "id": 154211,
+        "spEffect": 54211,
+        "rank": 11
+      },
+      {
+        "id": 154212,
+        "spEffect": 54212,
+        "rank": 12
+      },
+      {
+        "id": 154213,
+        "spEffect": 54213,
+        "rank": 13
+      },
+      {
+        "id": 154214,
+        "spEffect": 54214,
+        "rank": 14
+      },
+      {
+        "id": 154215,
+        "spEffect": 54215,
+        "rank": 15
+      },
+      {
+        "id": 154216,
+        "spEffect": 54216,
+        "rank": 16
+      },
+      {
+        "id": 154217,
+        "spEffect": 54217,
+        "rank": 17
+      },
+      {
+        "id": 154218,
+        "spEffect": 54218,
+        "rank": 18
+      },
+      {
+        "id": 154219,
+        "spEffect": 54219,
+        "rank": 19
+      },
+      {
+        "id": 154220,
+        "spEffect": 54220,
+        "rank": 20
+      },
+      {
+        "id": 154301,
+        "spEffect": 54301,
+        "rank": 1
+      },
+      {
+        "id": 154302,
+        "spEffect": 54302,
+        "rank": 2
+      },
+      {
+        "id": 154303,
+        "spEffect": 54303,
+        "rank": 3
+      },
+      {
+        "id": 154304,
+        "spEffect": 54304,
+        "rank": 4
+      },
+      {
+        "id": 154305,
+        "spEffect": 54305,
+        "rank": 5
+      },
+      {
+        "id": 154306,
+        "spEffect": 54306,
+        "rank": 6
+      },
+      {
+        "id": 154307,
+        "spEffect": 54307,
+        "rank": 7
+      },
+      {
+        "id": 154308,
+        "spEffect": 54308,
+        "rank": 8
+      },
+      {
+        "id": 154309,
+        "spEffect": 54309,
+        "rank": 9
+      },
+      {
+        "id": 154310,
+        "spEffect": 54310,
+        "rank": 10
+      },
+      {
+        "id": 154311,
+        "spEffect": 54311,
+        "rank": 11
+      },
+      {
+        "id": 154312,
+        "spEffect": 54312,
+        "rank": 12
+      },
+      {
+        "id": 154313,
+        "spEffect": 54313,
+        "rank": 13
+      },
+      {
+        "id": 154314,
+        "spEffect": 54314,
+        "rank": 14
+      },
+      {
+        "id": 154315,
+        "spEffect": 54315,
+        "rank": 15
+      },
+      {
+        "id": 154316,
+        "spEffect": 54316,
+        "rank": 16
+      },
+      {
+        "id": 154317,
+        "spEffect": 54317,
+        "rank": 17
+      },
+      {
+        "id": 154318,
+        "spEffect": 54318,
+        "rank": 18
+      },
+      {
+        "id": 154319,
+        "spEffect": 54319,
+        "rank": 19
+      },
+      {
+        "id": 154320,
+        "spEffect": 54320,
+        "rank": 20
+      },
+      {
+        "id": 154401,
+        "spEffect": 54401,
+        "rank": 1
+      },
+      {
+        "id": 154402,
+        "spEffect": 54402,
+        "rank": 2
+      },
+      {
+        "id": 154403,
+        "spEffect": 54403,
+        "rank": 3
+      },
+      {
+        "id": 154404,
+        "spEffect": 54404,
+        "rank": 4
+      },
+      {
+        "id": 154405,
+        "spEffect": 54405,
+        "rank": 5
+      },
+      {
+        "id": 154406,
+        "spEffect": 54406,
+        "rank": 6
+      },
+      {
+        "id": 154407,
+        "spEffect": 54407,
+        "rank": 7
+      },
+      {
+        "id": 154408,
+        "spEffect": 54408,
+        "rank": 8
+      },
+      {
+        "id": 154409,
+        "spEffect": 54409,
+        "rank": 9
+      },
+      {
+        "id": 154410,
+        "spEffect": 54410,
+        "rank": 10
+      },
+      {
+        "id": 154411,
+        "spEffect": 54411,
+        "rank": 11
+      },
+      {
+        "id": 154412,
+        "spEffect": 54412,
+        "rank": 12
+      },
+      {
+        "id": 154413,
+        "spEffect": 54413,
+        "rank": 13
+      },
+      {
+        "id": 154414,
+        "spEffect": 54414,
+        "rank": 14
+      },
+      {
+        "id": 154415,
+        "spEffect": 54415,
+        "rank": 15
+      },
+      {
+        "id": 154416,
+        "spEffect": 54416,
+        "rank": 16
+      },
+      {
+        "id": 154417,
+        "spEffect": 54417,
+        "rank": 17
+      },
+      {
+        "id": 154418,
+        "spEffect": 54418,
+        "rank": 18
+      },
+      {
+        "id": 154419,
+        "spEffect": 54419,
+        "rank": 19
+      },
+      {
+        "id": 154420,
+        "spEffect": 54420,
+        "rank": 20
+      },
+      {
+        "id": 154501,
+        "spEffect": 54501,
+        "rank": 1
+      },
+      {
+        "id": 154502,
+        "spEffect": 54502,
+        "rank": 2
+      },
+      {
+        "id": 154503,
+        "spEffect": 54503,
+        "rank": 3
+      },
+      {
+        "id": 154504,
+        "spEffect": 54504,
+        "rank": 4
+      },
+      {
+        "id": 154505,
+        "spEffect": 54505,
+        "rank": 5
+      },
+      {
+        "id": 154506,
+        "spEffect": 54506,
+        "rank": 6
+      },
+      {
+        "id": 154507,
+        "spEffect": 54507,
+        "rank": 7
+      },
+      {
+        "id": 154508,
+        "spEffect": 54508,
+        "rank": 8
+      },
+      {
+        "id": 154509,
+        "spEffect": 54509,
+        "rank": 9
+      },
+      {
+        "id": 154510,
+        "spEffect": 54510,
+        "rank": 10
+      },
+      {
+        "id": 154511,
+        "spEffect": 54511,
+        "rank": 11
+      },
+      {
+        "id": 154512,
+        "spEffect": 54512,
+        "rank": 12
+      },
+      {
+        "id": 154513,
+        "spEffect": 54513,
+        "rank": 13
+      },
+      {
+        "id": 154514,
+        "spEffect": 54514,
+        "rank": 14
+      },
+      {
+        "id": 154515,
+        "spEffect": 54515,
+        "rank": 15
+      },
+      {
+        "id": 154516,
+        "spEffect": 54516,
+        "rank": 16
+      },
+      {
+        "id": 154517,
+        "spEffect": 54517,
+        "rank": 17
+      },
+      {
+        "id": 154518,
+        "spEffect": 54518,
+        "rank": 18
+      },
+      {
+        "id": 154519,
+        "spEffect": 54519,
+        "rank": 19
+      },
+      {
+        "id": 154520,
+        "spEffect": 54520,
+        "rank": 20
+      },
+      {
+        "id": 154601,
+        "spEffect": 54601,
+        "rank": 1
+      },
+      {
+        "id": 154602,
+        "spEffect": 54602,
+        "rank": 2
+      },
+      {
+        "id": 154603,
+        "spEffect": 54603,
+        "rank": 3
+      },
+      {
+        "id": 154604,
+        "spEffect": 54604,
+        "rank": 4
+      },
+      {
+        "id": 154605,
+        "spEffect": 54605,
+        "rank": 5
+      },
+      {
+        "id": 154606,
+        "spEffect": 54606,
+        "rank": 6
+      },
+      {
+        "id": 154607,
+        "spEffect": 54607,
+        "rank": 7
+      },
+      {
+        "id": 154608,
+        "spEffect": 54608,
+        "rank": 8
+      },
+      {
+        "id": 154609,
+        "spEffect": 54609,
+        "rank": 9
+      },
+      {
+        "id": 154610,
+        "spEffect": 54610,
+        "rank": 10
+      },
+      {
+        "id": 154611,
+        "spEffect": 54611,
+        "rank": 11
+      },
+      {
+        "id": 154612,
+        "spEffect": 54612,
+        "rank": 12
+      },
+      {
+        "id": 154613,
+        "spEffect": 54613,
+        "rank": 13
+      },
+      {
+        "id": 154614,
+        "spEffect": 54614,
+        "rank": 14
+      },
+      {
+        "id": 154615,
+        "spEffect": 54615,
+        "rank": 15
+      },
+      {
+        "id": 154616,
+        "spEffect": 54616,
+        "rank": 16
+      },
+      {
+        "id": 154617,
+        "spEffect": 54617,
+        "rank": 17
+      },
+      {
+        "id": 154618,
+        "spEffect": 54618,
+        "rank": 18
+      },
+      {
+        "id": 154619,
+        "spEffect": 54619,
+        "rank": 19
+      },
+      {
+        "id": 154620,
+        "spEffect": 54620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "HP recovery near death (Poorman)",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 155101,
+        "spEffect": 55101,
+        "rank": 1
+      },
+      {
+        "id": 155102,
+        "spEffect": 55102,
+        "rank": 2
+      },
+      {
+        "id": 155103,
+        "spEffect": 55103,
+        "rank": 3
+      },
+      {
+        "id": 155104,
+        "spEffect": 55104,
+        "rank": 4
+      },
+      {
+        "id": 155105,
+        "spEffect": 55105,
+        "rank": 5
+      },
+      {
+        "id": 155106,
+        "spEffect": 55106,
+        "rank": 6
+      },
+      {
+        "id": 155107,
+        "spEffect": 55107,
+        "rank": 7
+      },
+      {
+        "id": 155108,
+        "spEffect": 55108,
+        "rank": 8
+      },
+      {
+        "id": 155109,
+        "spEffect": 55109,
+        "rank": 9
+      },
+      {
+        "id": 155110,
+        "spEffect": 55110,
+        "rank": 10
+      },
+      {
+        "id": 155111,
+        "spEffect": 55111,
+        "rank": 11
+      },
+      {
+        "id": 155112,
+        "spEffect": 55112,
+        "rank": 12
+      },
+      {
+        "id": 155113,
+        "spEffect": 55113,
+        "rank": 13
+      },
+      {
+        "id": 155114,
+        "spEffect": 55114,
+        "rank": 14
+      },
+      {
+        "id": 155115,
+        "spEffect": 55115,
+        "rank": 15
+      },
+      {
+        "id": 155116,
+        "spEffect": 55116,
+        "rank": 16
+      },
+      {
+        "id": 155117,
+        "spEffect": 55117,
+        "rank": 17
+      },
+      {
+        "id": 155118,
+        "spEffect": 55118,
+        "rank": 18
+      },
+      {
+        "id": 155119,
+        "spEffect": 55119,
+        "rank": 19
+      },
+      {
+        "id": 155120,
+        "spEffect": 55120,
+        "rank": 20
+      },
+      {
+        "id": 155201,
+        "spEffect": 55201,
+        "rank": 1
+      },
+      {
+        "id": 155202,
+        "spEffect": 55202,
+        "rank": 2
+      },
+      {
+        "id": 155203,
+        "spEffect": 55203,
+        "rank": 3
+      },
+      {
+        "id": 155204,
+        "spEffect": 55204,
+        "rank": 4
+      },
+      {
+        "id": 155205,
+        "spEffect": 55205,
+        "rank": 5
+      },
+      {
+        "id": 155206,
+        "spEffect": 55206,
+        "rank": 6
+      },
+      {
+        "id": 155207,
+        "spEffect": 55207,
+        "rank": 7
+      },
+      {
+        "id": 155208,
+        "spEffect": 55208,
+        "rank": 8
+      },
+      {
+        "id": 155209,
+        "spEffect": 55209,
+        "rank": 9
+      },
+      {
+        "id": 155210,
+        "spEffect": 55210,
+        "rank": 10
+      },
+      {
+        "id": 155211,
+        "spEffect": 55211,
+        "rank": 11
+      },
+      {
+        "id": 155212,
+        "spEffect": 55212,
+        "rank": 12
+      },
+      {
+        "id": 155213,
+        "spEffect": 55213,
+        "rank": 13
+      },
+      {
+        "id": 155214,
+        "spEffect": 55214,
+        "rank": 14
+      },
+      {
+        "id": 155215,
+        "spEffect": 55215,
+        "rank": 15
+      },
+      {
+        "id": 155216,
+        "spEffect": 55216,
+        "rank": 16
+      },
+      {
+        "id": 155217,
+        "spEffect": 55217,
+        "rank": 17
+      },
+      {
+        "id": 155218,
+        "spEffect": 55218,
+        "rank": 18
+      },
+      {
+        "id": 155219,
+        "spEffect": 55219,
+        "rank": 19
+      },
+      {
+        "id": 155220,
+        "spEffect": 55220,
+        "rank": 20
+      },
+      {
+        "id": 155301,
+        "spEffect": 55301,
+        "rank": 1
+      },
+      {
+        "id": 155302,
+        "spEffect": 55302,
+        "rank": 2
+      },
+      {
+        "id": 155303,
+        "spEffect": 55303,
+        "rank": 3
+      },
+      {
+        "id": 155304,
+        "spEffect": 55304,
+        "rank": 4
+      },
+      {
+        "id": 155305,
+        "spEffect": 55305,
+        "rank": 5
+      },
+      {
+        "id": 155306,
+        "spEffect": 55306,
+        "rank": 6
+      },
+      {
+        "id": 155307,
+        "spEffect": 55307,
+        "rank": 7
+      },
+      {
+        "id": 155308,
+        "spEffect": 55308,
+        "rank": 8
+      },
+      {
+        "id": 155309,
+        "spEffect": 55309,
+        "rank": 9
+      },
+      {
+        "id": 155310,
+        "spEffect": 55310,
+        "rank": 10
+      },
+      {
+        "id": 155311,
+        "spEffect": 55311,
+        "rank": 11
+      },
+      {
+        "id": 155312,
+        "spEffect": 55312,
+        "rank": 12
+      },
+      {
+        "id": 155313,
+        "spEffect": 55313,
+        "rank": 13
+      },
+      {
+        "id": 155314,
+        "spEffect": 55314,
+        "rank": 14
+      },
+      {
+        "id": 155315,
+        "spEffect": 55315,
+        "rank": 15
+      },
+      {
+        "id": 155316,
+        "spEffect": 55316,
+        "rank": 16
+      },
+      {
+        "id": 155317,
+        "spEffect": 55317,
+        "rank": 17
+      },
+      {
+        "id": 155318,
+        "spEffect": 55318,
+        "rank": 18
+      },
+      {
+        "id": 155319,
+        "spEffect": 55319,
+        "rank": 19
+      },
+      {
+        "id": 155320,
+        "spEffect": 55320,
+        "rank": 20
+      },
+      {
+        "id": 155401,
+        "spEffect": 55401,
+        "rank": 1
+      },
+      {
+        "id": 155402,
+        "spEffect": 55402,
+        "rank": 2
+      },
+      {
+        "id": 155403,
+        "spEffect": 55403,
+        "rank": 3
+      },
+      {
+        "id": 155404,
+        "spEffect": 55404,
+        "rank": 4
+      },
+      {
+        "id": 155405,
+        "spEffect": 55405,
+        "rank": 5
+      },
+      {
+        "id": 155406,
+        "spEffect": 55406,
+        "rank": 6
+      },
+      {
+        "id": 155407,
+        "spEffect": 55407,
+        "rank": 7
+      },
+      {
+        "id": 155408,
+        "spEffect": 55408,
+        "rank": 8
+      },
+      {
+        "id": 155409,
+        "spEffect": 55409,
+        "rank": 9
+      },
+      {
+        "id": 155410,
+        "spEffect": 55410,
+        "rank": 10
+      },
+      {
+        "id": 155411,
+        "spEffect": 55411,
+        "rank": 11
+      },
+      {
+        "id": 155412,
+        "spEffect": 55412,
+        "rank": 12
+      },
+      {
+        "id": 155413,
+        "spEffect": 55413,
+        "rank": 13
+      },
+      {
+        "id": 155414,
+        "spEffect": 55414,
+        "rank": 14
+      },
+      {
+        "id": 155415,
+        "spEffect": 55415,
+        "rank": 15
+      },
+      {
+        "id": 155416,
+        "spEffect": 55416,
+        "rank": 16
+      },
+      {
+        "id": 155417,
+        "spEffect": 55417,
+        "rank": 17
+      },
+      {
+        "id": 155418,
+        "spEffect": 55418,
+        "rank": 18
+      },
+      {
+        "id": 155419,
+        "spEffect": 55419,
+        "rank": 19
+      },
+      {
+        "id": 155420,
+        "spEffect": 55420,
+        "rank": 20
+      },
+      {
+        "id": 155501,
+        "spEffect": 55501,
+        "rank": 1
+      },
+      {
+        "id": 155502,
+        "spEffect": 55502,
+        "rank": 2
+      },
+      {
+        "id": 155503,
+        "spEffect": 55503,
+        "rank": 3
+      },
+      {
+        "id": 155504,
+        "spEffect": 55504,
+        "rank": 4
+      },
+      {
+        "id": 155505,
+        "spEffect": 55505,
+        "rank": 5
+      },
+      {
+        "id": 155506,
+        "spEffect": 55506,
+        "rank": 6
+      },
+      {
+        "id": 155507,
+        "spEffect": 55507,
+        "rank": 7
+      },
+      {
+        "id": 155508,
+        "spEffect": 55508,
+        "rank": 8
+      },
+      {
+        "id": 155509,
+        "spEffect": 55509,
+        "rank": 9
+      },
+      {
+        "id": 155510,
+        "spEffect": 55510,
+        "rank": 10
+      },
+      {
+        "id": 155511,
+        "spEffect": 55511,
+        "rank": 11
+      },
+      {
+        "id": 155512,
+        "spEffect": 55512,
+        "rank": 12
+      },
+      {
+        "id": 155513,
+        "spEffect": 55513,
+        "rank": 13
+      },
+      {
+        "id": 155514,
+        "spEffect": 55514,
+        "rank": 14
+      },
+      {
+        "id": 155515,
+        "spEffect": 55515,
+        "rank": 15
+      },
+      {
+        "id": 155516,
+        "spEffect": 55516,
+        "rank": 16
+      },
+      {
+        "id": 155517,
+        "spEffect": 55517,
+        "rank": 17
+      },
+      {
+        "id": 155518,
+        "spEffect": 55518,
+        "rank": 18
+      },
+      {
+        "id": 155519,
+        "spEffect": 55519,
+        "rank": 19
+      },
+      {
+        "id": 155520,
+        "spEffect": 55520,
+        "rank": 20
+      },
+      {
+        "id": 155601,
+        "spEffect": 55601,
+        "rank": 1
+      },
+      {
+        "id": 155602,
+        "spEffect": 55602,
+        "rank": 2
+      },
+      {
+        "id": 155603,
+        "spEffect": 55603,
+        "rank": 3
+      },
+      {
+        "id": 155604,
+        "spEffect": 55604,
+        "rank": 4
+      },
+      {
+        "id": 155605,
+        "spEffect": 55605,
+        "rank": 5
+      },
+      {
+        "id": 155606,
+        "spEffect": 55606,
+        "rank": 6
+      },
+      {
+        "id": 155607,
+        "spEffect": 55607,
+        "rank": 7
+      },
+      {
+        "id": 155608,
+        "spEffect": 55608,
+        "rank": 8
+      },
+      {
+        "id": 155609,
+        "spEffect": 55609,
+        "rank": 9
+      },
+      {
+        "id": 155610,
+        "spEffect": 55610,
+        "rank": 10
+      },
+      {
+        "id": 155611,
+        "spEffect": 55611,
+        "rank": 11
+      },
+      {
+        "id": 155612,
+        "spEffect": 55612,
+        "rank": 12
+      },
+      {
+        "id": 155613,
+        "spEffect": 55613,
+        "rank": 13
+      },
+      {
+        "id": 155614,
+        "spEffect": 55614,
+        "rank": 14
+      },
+      {
+        "id": 155615,
+        "spEffect": 55615,
+        "rank": 15
+      },
+      {
+        "id": 155616,
+        "spEffect": 55616,
+        "rank": 16
+      },
+      {
+        "id": 155617,
+        "spEffect": 55617,
+        "rank": 17
+      },
+      {
+        "id": 155618,
+        "spEffect": 55618,
+        "rank": 18
+      },
+      {
+        "id": 155619,
+        "spEffect": 55619,
+        "rank": 19
+      },
+      {
+        "id": 155620,
+        "spEffect": 55620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "HP recovery after boss defeat (Forlorn)",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 156101,
+        "spEffect": 56101,
+        "rank": 1
+      },
+      {
+        "id": 156102,
+        "spEffect": 56102,
+        "rank": 2
+      },
+      {
+        "id": 156103,
+        "spEffect": 56103,
+        "rank": 3
+      },
+      {
+        "id": 156104,
+        "spEffect": 56104,
+        "rank": 4
+      },
+      {
+        "id": 156105,
+        "spEffect": 56105,
+        "rank": 5
+      },
+      {
+        "id": 156106,
+        "spEffect": 56106,
+        "rank": 6
+      },
+      {
+        "id": 156107,
+        "spEffect": 56107,
+        "rank": 7
+      },
+      {
+        "id": 156108,
+        "spEffect": 56108,
+        "rank": 8
+      },
+      {
+        "id": 156109,
+        "spEffect": 56109,
+        "rank": 9
+      },
+      {
+        "id": 156110,
+        "spEffect": 56110,
+        "rank": 10
+      },
+      {
+        "id": 156111,
+        "spEffect": 56111,
+        "rank": 11
+      },
+      {
+        "id": 156112,
+        "spEffect": 56112,
+        "rank": 12
+      },
+      {
+        "id": 156113,
+        "spEffect": 56113,
+        "rank": 13
+      },
+      {
+        "id": 156114,
+        "spEffect": 56114,
+        "rank": 14
+      },
+      {
+        "id": 156115,
+        "spEffect": 56115,
+        "rank": 15
+      },
+      {
+        "id": 156116,
+        "spEffect": 56116,
+        "rank": 16
+      },
+      {
+        "id": 156117,
+        "spEffect": 56117,
+        "rank": 17
+      },
+      {
+        "id": 156118,
+        "spEffect": 56118,
+        "rank": 18
+      },
+      {
+        "id": 156119,
+        "spEffect": 56119,
+        "rank": 19
+      },
+      {
+        "id": 156120,
+        "spEffect": 56120,
+        "rank": 20
+      },
+      {
+        "id": 156201,
+        "spEffect": 56201,
+        "rank": 1
+      },
+      {
+        "id": 156202,
+        "spEffect": 56202,
+        "rank": 2
+      },
+      {
+        "id": 156203,
+        "spEffect": 56203,
+        "rank": 3
+      },
+      {
+        "id": 156204,
+        "spEffect": 56204,
+        "rank": 4
+      },
+      {
+        "id": 156205,
+        "spEffect": 56205,
+        "rank": 5
+      },
+      {
+        "id": 156206,
+        "spEffect": 56206,
+        "rank": 6
+      },
+      {
+        "id": 156207,
+        "spEffect": 56207,
+        "rank": 7
+      },
+      {
+        "id": 156208,
+        "spEffect": 56208,
+        "rank": 8
+      },
+      {
+        "id": 156209,
+        "spEffect": 56209,
+        "rank": 9
+      },
+      {
+        "id": 156210,
+        "spEffect": 56210,
+        "rank": 10
+      },
+      {
+        "id": 156211,
+        "spEffect": 56211,
+        "rank": 11
+      },
+      {
+        "id": 156212,
+        "spEffect": 56212,
+        "rank": 12
+      },
+      {
+        "id": 156213,
+        "spEffect": 56213,
+        "rank": 13
+      },
+      {
+        "id": 156214,
+        "spEffect": 56214,
+        "rank": 14
+      },
+      {
+        "id": 156215,
+        "spEffect": 56215,
+        "rank": 15
+      },
+      {
+        "id": 156216,
+        "spEffect": 56216,
+        "rank": 16
+      },
+      {
+        "id": 156217,
+        "spEffect": 56217,
+        "rank": 17
+      },
+      {
+        "id": 156218,
+        "spEffect": 56218,
+        "rank": 18
+      },
+      {
+        "id": 156219,
+        "spEffect": 56219,
+        "rank": 19
+      },
+      {
+        "id": 156220,
+        "spEffect": 56220,
+        "rank": 20
+      },
+      {
+        "id": 156301,
+        "spEffect": 56301,
+        "rank": 1
+      },
+      {
+        "id": 156302,
+        "spEffect": 56302,
+        "rank": 2
+      },
+      {
+        "id": 156303,
+        "spEffect": 56303,
+        "rank": 3
+      },
+      {
+        "id": 156304,
+        "spEffect": 56304,
+        "rank": 4
+      },
+      {
+        "id": 156305,
+        "spEffect": 56305,
+        "rank": 5
+      },
+      {
+        "id": 156306,
+        "spEffect": 56306,
+        "rank": 6
+      },
+      {
+        "id": 156307,
+        "spEffect": 56307,
+        "rank": 7
+      },
+      {
+        "id": 156308,
+        "spEffect": 56308,
+        "rank": 8
+      },
+      {
+        "id": 156309,
+        "spEffect": 56309,
+        "rank": 9
+      },
+      {
+        "id": 156310,
+        "spEffect": 56310,
+        "rank": 10
+      },
+      {
+        "id": 156311,
+        "spEffect": 56311,
+        "rank": 11
+      },
+      {
+        "id": 156312,
+        "spEffect": 56312,
+        "rank": 12
+      },
+      {
+        "id": 156313,
+        "spEffect": 56313,
+        "rank": 13
+      },
+      {
+        "id": 156314,
+        "spEffect": 56314,
+        "rank": 14
+      },
+      {
+        "id": 156315,
+        "spEffect": 56315,
+        "rank": 15
+      },
+      {
+        "id": 156316,
+        "spEffect": 56316,
+        "rank": 16
+      },
+      {
+        "id": 156317,
+        "spEffect": 56317,
+        "rank": 17
+      },
+      {
+        "id": 156318,
+        "spEffect": 56318,
+        "rank": 18
+      },
+      {
+        "id": 156319,
+        "spEffect": 56319,
+        "rank": 19
+      },
+      {
+        "id": 156320,
+        "spEffect": 56320,
+        "rank": 20
+      },
+      {
+        "id": 156401,
+        "spEffect": 56401,
+        "rank": 1
+      },
+      {
+        "id": 156402,
+        "spEffect": 56402,
+        "rank": 2
+      },
+      {
+        "id": 156403,
+        "spEffect": 56403,
+        "rank": 3
+      },
+      {
+        "id": 156404,
+        "spEffect": 56404,
+        "rank": 4
+      },
+      {
+        "id": 156405,
+        "spEffect": 56405,
+        "rank": 5
+      },
+      {
+        "id": 156406,
+        "spEffect": 56406,
+        "rank": 6
+      },
+      {
+        "id": 156407,
+        "spEffect": 56407,
+        "rank": 7
+      },
+      {
+        "id": 156408,
+        "spEffect": 56408,
+        "rank": 8
+      },
+      {
+        "id": 156409,
+        "spEffect": 56409,
+        "rank": 9
+      },
+      {
+        "id": 156410,
+        "spEffect": 56410,
+        "rank": 10
+      },
+      {
+        "id": 156411,
+        "spEffect": 56411,
+        "rank": 11
+      },
+      {
+        "id": 156412,
+        "spEffect": 56412,
+        "rank": 12
+      },
+      {
+        "id": 156413,
+        "spEffect": 56413,
+        "rank": 13
+      },
+      {
+        "id": 156414,
+        "spEffect": 56414,
+        "rank": 14
+      },
+      {
+        "id": 156415,
+        "spEffect": 56415,
+        "rank": 15
+      },
+      {
+        "id": 156416,
+        "spEffect": 56416,
+        "rank": 16
+      },
+      {
+        "id": 156417,
+        "spEffect": 56417,
+        "rank": 17
+      },
+      {
+        "id": 156418,
+        "spEffect": 56418,
+        "rank": 18
+      },
+      {
+        "id": 156419,
+        "spEffect": 56419,
+        "rank": 19
+      },
+      {
+        "id": 156420,
+        "spEffect": 56420,
+        "rank": 20
+      },
+      {
+        "id": 156501,
+        "spEffect": 56501,
+        "rank": 1
+      },
+      {
+        "id": 156502,
+        "spEffect": 56502,
+        "rank": 2
+      },
+      {
+        "id": 156503,
+        "spEffect": 56503,
+        "rank": 3
+      },
+      {
+        "id": 156504,
+        "spEffect": 56504,
+        "rank": 4
+      },
+      {
+        "id": 156505,
+        "spEffect": 56505,
+        "rank": 5
+      },
+      {
+        "id": 156506,
+        "spEffect": 56506,
+        "rank": 6
+      },
+      {
+        "id": 156507,
+        "spEffect": 56507,
+        "rank": 7
+      },
+      {
+        "id": 156508,
+        "spEffect": 56508,
+        "rank": 8
+      },
+      {
+        "id": 156509,
+        "spEffect": 56509,
+        "rank": 9
+      },
+      {
+        "id": 156510,
+        "spEffect": 56510,
+        "rank": 10
+      },
+      {
+        "id": 156511,
+        "spEffect": 56511,
+        "rank": 11
+      },
+      {
+        "id": 156512,
+        "spEffect": 56512,
+        "rank": 12
+      },
+      {
+        "id": 156513,
+        "spEffect": 56513,
+        "rank": 13
+      },
+      {
+        "id": 156514,
+        "spEffect": 56514,
+        "rank": 14
+      },
+      {
+        "id": 156515,
+        "spEffect": 56515,
+        "rank": 15
+      },
+      {
+        "id": 156516,
+        "spEffect": 56516,
+        "rank": 16
+      },
+      {
+        "id": 156517,
+        "spEffect": 56517,
+        "rank": 17
+      },
+      {
+        "id": 156518,
+        "spEffect": 56518,
+        "rank": 18
+      },
+      {
+        "id": 156519,
+        "spEffect": 56519,
+        "rank": 19
+      },
+      {
+        "id": 156520,
+        "spEffect": 56520,
+        "rank": 20
+      },
+      {
+        "id": 156601,
+        "spEffect": 56601,
+        "rank": 1
+      },
+      {
+        "id": 156602,
+        "spEffect": 56602,
+        "rank": 2
+      },
+      {
+        "id": 156603,
+        "spEffect": 56603,
+        "rank": 3
+      },
+      {
+        "id": 156604,
+        "spEffect": 56604,
+        "rank": 4
+      },
+      {
+        "id": 156605,
+        "spEffect": 56605,
+        "rank": 5
+      },
+      {
+        "id": 156606,
+        "spEffect": 56606,
+        "rank": 6
+      },
+      {
+        "id": 156607,
+        "spEffect": 56607,
+        "rank": 7
+      },
+      {
+        "id": 156608,
+        "spEffect": 56608,
+        "rank": 8
+      },
+      {
+        "id": 156609,
+        "spEffect": 56609,
+        "rank": 9
+      },
+      {
+        "id": 156610,
+        "spEffect": 56610,
+        "rank": 10
+      },
+      {
+        "id": 156611,
+        "spEffect": 56611,
+        "rank": 11
+      },
+      {
+        "id": 156612,
+        "spEffect": 56612,
+        "rank": 12
+      },
+      {
+        "id": 156613,
+        "spEffect": 56613,
+        "rank": 13
+      },
+      {
+        "id": 156614,
+        "spEffect": 56614,
+        "rank": 14
+      },
+      {
+        "id": 156615,
+        "spEffect": 56615,
+        "rank": 15
+      },
+      {
+        "id": 156616,
+        "spEffect": 56616,
+        "rank": 16
+      },
+      {
+        "id": 156617,
+        "spEffect": 56617,
+        "rank": 17
+      },
+      {
+        "id": 156618,
+        "spEffect": 56618,
+        "rank": 18
+      },
+      {
+        "id": 156619,
+        "spEffect": 56619,
+        "rank": 19
+      },
+      {
+        "id": 156620,
+        "spEffect": 56620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "HP change on attack (unknown behavior)",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 157101,
+        "spEffect": 57101,
+        "rank": 1
+      },
+      {
+        "id": 157102,
+        "spEffect": 57102,
+        "rank": 2
+      },
+      {
+        "id": 157103,
+        "spEffect": 57103,
+        "rank": 3
+      },
+      {
+        "id": 157104,
+        "spEffect": 57104,
+        "rank": 4
+      },
+      {
+        "id": 157105,
+        "spEffect": 57105,
+        "rank": 5
+      },
+      {
+        "id": 157106,
+        "spEffect": 57106,
+        "rank": 6
+      },
+      {
+        "id": 157107,
+        "spEffect": 57107,
+        "rank": 7
+      },
+      {
+        "id": 157108,
+        "spEffect": 57108,
+        "rank": 8
+      },
+      {
+        "id": 157109,
+        "spEffect": 57109,
+        "rank": 9
+      },
+      {
+        "id": 157110,
+        "spEffect": 57110,
+        "rank": 10
+      },
+      {
+        "id": 157111,
+        "spEffect": 57111,
+        "rank": 11
+      },
+      {
+        "id": 157112,
+        "spEffect": 57112,
+        "rank": 12
+      },
+      {
+        "id": 157113,
+        "spEffect": 57113,
+        "rank": 13
+      },
+      {
+        "id": 157114,
+        "spEffect": 57114,
+        "rank": 14
+      },
+      {
+        "id": 157115,
+        "spEffect": 57115,
+        "rank": 15
+      },
+      {
+        "id": 157116,
+        "spEffect": 57116,
+        "rank": 16
+      },
+      {
+        "id": 157117,
+        "spEffect": 57117,
+        "rank": 17
+      },
+      {
+        "id": 157118,
+        "spEffect": 57118,
+        "rank": 18
+      },
+      {
+        "id": 157119,
+        "spEffect": 57119,
+        "rank": 19
+      },
+      {
+        "id": 157120,
+        "spEffect": 57120,
+        "rank": 20
+      },
+      {
+        "id": 157201,
+        "spEffect": 57201,
+        "rank": 1
+      },
+      {
+        "id": 157202,
+        "spEffect": 57202,
+        "rank": 2
+      },
+      {
+        "id": 157203,
+        "spEffect": 57203,
+        "rank": 3
+      },
+      {
+        "id": 157204,
+        "spEffect": 57204,
+        "rank": 4
+      },
+      {
+        "id": 157205,
+        "spEffect": 57205,
+        "rank": 5
+      },
+      {
+        "id": 157206,
+        "spEffect": 57206,
+        "rank": 6
+      },
+      {
+        "id": 157207,
+        "spEffect": 57207,
+        "rank": 7
+      },
+      {
+        "id": 157208,
+        "spEffect": 57208,
+        "rank": 8
+      },
+      {
+        "id": 157209,
+        "spEffect": 57209,
+        "rank": 9
+      },
+      {
+        "id": 157210,
+        "spEffect": 57210,
+        "rank": 10
+      },
+      {
+        "id": 157211,
+        "spEffect": 57211,
+        "rank": 11
+      },
+      {
+        "id": 157212,
+        "spEffect": 57212,
+        "rank": 12
+      },
+      {
+        "id": 157213,
+        "spEffect": 57213,
+        "rank": 13
+      },
+      {
+        "id": 157214,
+        "spEffect": 57214,
+        "rank": 14
+      },
+      {
+        "id": 157215,
+        "spEffect": 57215,
+        "rank": 15
+      },
+      {
+        "id": 157216,
+        "spEffect": 57216,
+        "rank": 16
+      },
+      {
+        "id": 157217,
+        "spEffect": 57217,
+        "rank": 17
+      },
+      {
+        "id": 157218,
+        "spEffect": 57218,
+        "rank": 18
+      },
+      {
+        "id": 157219,
+        "spEffect": 57219,
+        "rank": 19
+      },
+      {
+        "id": 157220,
+        "spEffect": 57220,
+        "rank": 20
+      },
+      {
+        "id": 157301,
+        "spEffect": 57301,
+        "rank": 1
+      },
+      {
+        "id": 157302,
+        "spEffect": 57302,
+        "rank": 2
+      },
+      {
+        "id": 157303,
+        "spEffect": 57303,
+        "rank": 3
+      },
+      {
+        "id": 157304,
+        "spEffect": 57304,
+        "rank": 4
+      },
+      {
+        "id": 157305,
+        "spEffect": 57305,
+        "rank": 5
+      },
+      {
+        "id": 157306,
+        "spEffect": 57306,
+        "rank": 6
+      },
+      {
+        "id": 157307,
+        "spEffect": 57307,
+        "rank": 7
+      },
+      {
+        "id": 157308,
+        "spEffect": 57308,
+        "rank": 8
+      },
+      {
+        "id": 157309,
+        "spEffect": 57309,
+        "rank": 9
+      },
+      {
+        "id": 157310,
+        "spEffect": 57310,
+        "rank": 10
+      },
+      {
+        "id": 157311,
+        "spEffect": 57311,
+        "rank": 11
+      },
+      {
+        "id": 157312,
+        "spEffect": 57312,
+        "rank": 12
+      },
+      {
+        "id": 157313,
+        "spEffect": 57313,
+        "rank": 13
+      },
+      {
+        "id": 157314,
+        "spEffect": 57314,
+        "rank": 14
+      },
+      {
+        "id": 157315,
+        "spEffect": 57315,
+        "rank": 15
+      },
+      {
+        "id": 157316,
+        "spEffect": 57316,
+        "rank": 16
+      },
+      {
+        "id": 157317,
+        "spEffect": 57317,
+        "rank": 17
+      },
+      {
+        "id": 157318,
+        "spEffect": 57318,
+        "rank": 18
+      },
+      {
+        "id": 157319,
+        "spEffect": 57319,
+        "rank": 19
+      },
+      {
+        "id": 157320,
+        "spEffect": 57320,
+        "rank": 20
+      },
+      {
+        "id": 157401,
+        "spEffect": 57401,
+        "rank": 1
+      },
+      {
+        "id": 157402,
+        "spEffect": 57402,
+        "rank": 2
+      },
+      {
+        "id": 157403,
+        "spEffect": 57403,
+        "rank": 3
+      },
+      {
+        "id": 157404,
+        "spEffect": 57404,
+        "rank": 4
+      },
+      {
+        "id": 157405,
+        "spEffect": 57405,
+        "rank": 5
+      },
+      {
+        "id": 157406,
+        "spEffect": 57406,
+        "rank": 6
+      },
+      {
+        "id": 157407,
+        "spEffect": 57407,
+        "rank": 7
+      },
+      {
+        "id": 157408,
+        "spEffect": 57408,
+        "rank": 8
+      },
+      {
+        "id": 157409,
+        "spEffect": 57409,
+        "rank": 9
+      },
+      {
+        "id": 157410,
+        "spEffect": 57410,
+        "rank": 10
+      },
+      {
+        "id": 157411,
+        "spEffect": 57411,
+        "rank": 11
+      },
+      {
+        "id": 157412,
+        "spEffect": 57412,
+        "rank": 12
+      },
+      {
+        "id": 157413,
+        "spEffect": 57413,
+        "rank": 13
+      },
+      {
+        "id": 157414,
+        "spEffect": 57414,
+        "rank": 14
+      },
+      {
+        "id": 157415,
+        "spEffect": 57415,
+        "rank": 15
+      },
+      {
+        "id": 157416,
+        "spEffect": 57416,
+        "rank": 16
+      },
+      {
+        "id": 157417,
+        "spEffect": 57417,
+        "rank": 17
+      },
+      {
+        "id": 157418,
+        "spEffect": 57418,
+        "rank": 18
+      },
+      {
+        "id": 157419,
+        "spEffect": 57419,
+        "rank": 19
+      },
+      {
+        "id": 157420,
+        "spEffect": 57420,
+        "rank": 20
+      },
+      {
+        "id": 157501,
+        "spEffect": 57501,
+        "rank": 1
+      },
+      {
+        "id": 157502,
+        "spEffect": 57502,
+        "rank": 2
+      },
+      {
+        "id": 157503,
+        "spEffect": 57503,
+        "rank": 3
+      },
+      {
+        "id": 157504,
+        "spEffect": 57504,
+        "rank": 4
+      },
+      {
+        "id": 157505,
+        "spEffect": 57505,
+        "rank": 5
+      },
+      {
+        "id": 157506,
+        "spEffect": 57506,
+        "rank": 6
+      },
+      {
+        "id": 157507,
+        "spEffect": 57507,
+        "rank": 7
+      },
+      {
+        "id": 157508,
+        "spEffect": 57508,
+        "rank": 8
+      },
+      {
+        "id": 157509,
+        "spEffect": 57509,
+        "rank": 9
+      },
+      {
+        "id": 157510,
+        "spEffect": 57510,
+        "rank": 10
+      },
+      {
+        "id": 157511,
+        "spEffect": 57511,
+        "rank": 11
+      },
+      {
+        "id": 157512,
+        "spEffect": 57512,
+        "rank": 12
+      },
+      {
+        "id": 157513,
+        "spEffect": 57513,
+        "rank": 13
+      },
+      {
+        "id": 157514,
+        "spEffect": 57514,
+        "rank": 14
+      },
+      {
+        "id": 157515,
+        "spEffect": 57515,
+        "rank": 15
+      },
+      {
+        "id": 157516,
+        "spEffect": 57516,
+        "rank": 16
+      },
+      {
+        "id": 157517,
+        "spEffect": 57517,
+        "rank": 17
+      },
+      {
+        "id": 157518,
+        "spEffect": 57518,
+        "rank": 18
+      },
+      {
+        "id": 157519,
+        "spEffect": 57519,
+        "rank": 19
+      },
+      {
+        "id": 157520,
+        "spEffect": 57520,
+        "rank": 20
+      },
+      {
+        "id": 157601,
+        "spEffect": 57601,
+        "rank": 1
+      },
+      {
+        "id": 157602,
+        "spEffect": 57602,
+        "rank": 2
+      },
+      {
+        "id": 157603,
+        "spEffect": 57603,
+        "rank": 3
+      },
+      {
+        "id": 157604,
+        "spEffect": 57604,
+        "rank": 4
+      },
+      {
+        "id": 157605,
+        "spEffect": 57605,
+        "rank": 5
+      },
+      {
+        "id": 157606,
+        "spEffect": 57606,
+        "rank": 6
+      },
+      {
+        "id": 157607,
+        "spEffect": 57607,
+        "rank": 7
+      },
+      {
+        "id": 157608,
+        "spEffect": 57608,
+        "rank": 8
+      },
+      {
+        "id": 157609,
+        "spEffect": 57609,
+        "rank": 9
+      },
+      {
+        "id": 157610,
+        "spEffect": 57610,
+        "rank": 10
+      },
+      {
+        "id": 157611,
+        "spEffect": 57611,
+        "rank": 11
+      },
+      {
+        "id": 157612,
+        "spEffect": 57612,
+        "rank": 12
+      },
+      {
+        "id": 157613,
+        "spEffect": 57613,
+        "rank": 13
+      },
+      {
+        "id": 157614,
+        "spEffect": 57614,
+        "rank": 14
+      },
+      {
+        "id": 157615,
+        "spEffect": 57615,
+        "rank": 15
+      },
+      {
+        "id": 157616,
+        "spEffect": 57616,
+        "rank": 16
+      },
+      {
+        "id": 157617,
+        "spEffect": 57617,
+        "rank": 17
+      },
+      {
+        "id": 157618,
+        "spEffect": 57618,
+        "rank": 18
+      },
+      {
+        "id": 157619,
+        "spEffect": 57619,
+        "rank": 19
+      },
+      {
+        "id": 157620,
+        "spEffect": 57620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Weapon sound silencing",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 159101,
+        "spEffect": 59000,
+        "rank": 1
+      },
+      {
+        "id": 159102,
+        "spEffect": 59000,
+        "rank": 2
+      },
+      {
+        "id": 159103,
+        "spEffect": 59000,
+        "rank": 3
+      },
+      {
+        "id": 159104,
+        "spEffect": 59000,
+        "rank": 4
+      },
+      {
+        "id": 159105,
+        "spEffect": 59000,
+        "rank": 5
+      },
+      {
+        "id": 159106,
+        "spEffect": 59000,
+        "rank": 6
+      },
+      {
+        "id": 159107,
+        "spEffect": 59000,
+        "rank": 7
+      },
+      {
+        "id": 159108,
+        "spEffect": 59000,
+        "rank": 8
+      },
+      {
+        "id": 159109,
+        "spEffect": 59000,
+        "rank": 9
+      },
+      {
+        "id": 159110,
+        "spEffect": 59000,
+        "rank": 10
+      },
+      {
+        "id": 159111,
+        "spEffect": 59000,
+        "rank": 11
+      },
+      {
+        "id": 159112,
+        "spEffect": 59000,
+        "rank": 12
+      },
+      {
+        "id": 159113,
+        "spEffect": 59000,
+        "rank": 13
+      },
+      {
+        "id": 159114,
+        "spEffect": 59000,
+        "rank": 14
+      },
+      {
+        "id": 159115,
+        "spEffect": 59000,
+        "rank": 15
+      },
+      {
+        "id": 159116,
+        "spEffect": 59000,
+        "rank": 16
+      },
+      {
+        "id": 159117,
+        "spEffect": 59000,
+        "rank": 17
+      },
+      {
+        "id": 159118,
+        "spEffect": 59000,
+        "rank": 18
+      },
+      {
+        "id": 159119,
+        "spEffect": 59000,
+        "rank": 19
+      },
+      {
+        "id": 159120,
+        "spEffect": 59000,
+        "rank": 20
+      },
+      {
+        "id": 159201,
+        "spEffect": 59000,
+        "rank": 1
+      },
+      {
+        "id": 159202,
+        "spEffect": 59000,
+        "rank": 2
+      },
+      {
+        "id": 159203,
+        "spEffect": 59000,
+        "rank": 3
+      },
+      {
+        "id": 159204,
+        "spEffect": 59000,
+        "rank": 4
+      },
+      {
+        "id": 159205,
+        "spEffect": 59000,
+        "rank": 5
+      },
+      {
+        "id": 159206,
+        "spEffect": 59000,
+        "rank": 6
+      },
+      {
+        "id": 159207,
+        "spEffect": 59000,
+        "rank": 7
+      },
+      {
+        "id": 159208,
+        "spEffect": 59000,
+        "rank": 8
+      },
+      {
+        "id": 159209,
+        "spEffect": 59000,
+        "rank": 9
+      },
+      {
+        "id": 159210,
+        "spEffect": 59000,
+        "rank": 10
+      },
+      {
+        "id": 159211,
+        "spEffect": 59000,
+        "rank": 11
+      },
+      {
+        "id": 159212,
+        "spEffect": 59000,
+        "rank": 12
+      },
+      {
+        "id": 159213,
+        "spEffect": 59000,
+        "rank": 13
+      },
+      {
+        "id": 159214,
+        "spEffect": 59000,
+        "rank": 14
+      },
+      {
+        "id": 159215,
+        "spEffect": 59000,
+        "rank": 15
+      },
+      {
+        "id": 159216,
+        "spEffect": 59000,
+        "rank": 16
+      },
+      {
+        "id": 159217,
+        "spEffect": 59000,
+        "rank": 17
+      },
+      {
+        "id": 159218,
+        "spEffect": 59000,
+        "rank": 18
+      },
+      {
+        "id": 159219,
+        "spEffect": 59000,
+        "rank": 19
+      },
+      {
+        "id": 159220,
+        "spEffect": 59000,
+        "rank": 20
+      },
+      {
+        "id": 159301,
+        "spEffect": 59000,
+        "rank": 1
+      },
+      {
+        "id": 159302,
+        "spEffect": 59000,
+        "rank": 2
+      },
+      {
+        "id": 159303,
+        "spEffect": 59000,
+        "rank": 3
+      },
+      {
+        "id": 159304,
+        "spEffect": 59000,
+        "rank": 4
+      },
+      {
+        "id": 159305,
+        "spEffect": 59000,
+        "rank": 5
+      },
+      {
+        "id": 159306,
+        "spEffect": 59000,
+        "rank": 6
+      },
+      {
+        "id": 159307,
+        "spEffect": 59000,
+        "rank": 7
+      },
+      {
+        "id": 159308,
+        "spEffect": 59000,
+        "rank": 8
+      },
+      {
+        "id": 159309,
+        "spEffect": 59000,
+        "rank": 9
+      },
+      {
+        "id": 159310,
+        "spEffect": 59000,
+        "rank": 10
+      },
+      {
+        "id": 159311,
+        "spEffect": 59000,
+        "rank": 11
+      },
+      {
+        "id": 159312,
+        "spEffect": 59000,
+        "rank": 12
+      },
+      {
+        "id": 159313,
+        "spEffect": 59000,
+        "rank": 13
+      },
+      {
+        "id": 159314,
+        "spEffect": 59000,
+        "rank": 14
+      },
+      {
+        "id": 159315,
+        "spEffect": 59000,
+        "rank": 15
+      },
+      {
+        "id": 159316,
+        "spEffect": 59000,
+        "rank": 16
+      },
+      {
+        "id": 159317,
+        "spEffect": 59000,
+        "rank": 17
+      },
+      {
+        "id": 159318,
+        "spEffect": 59000,
+        "rank": 18
+      },
+      {
+        "id": 159319,
+        "spEffect": 59000,
+        "rank": 19
+      },
+      {
+        "id": 159320,
+        "spEffect": 59000,
+        "rank": 20
+      },
+      {
+        "id": 159401,
+        "spEffect": 59000,
+        "rank": 1
+      },
+      {
+        "id": 159402,
+        "spEffect": 59000,
+        "rank": 2
+      },
+      {
+        "id": 159403,
+        "spEffect": 59000,
+        "rank": 3
+      },
+      {
+        "id": 159404,
+        "spEffect": 59000,
+        "rank": 4
+      },
+      {
+        "id": 159405,
+        "spEffect": 59000,
+        "rank": 5
+      },
+      {
+        "id": 159406,
+        "spEffect": 59000,
+        "rank": 6
+      },
+      {
+        "id": 159407,
+        "spEffect": 59000,
+        "rank": 7
+      },
+      {
+        "id": 159408,
+        "spEffect": 59000,
+        "rank": 8
+      },
+      {
+        "id": 159409,
+        "spEffect": 59000,
+        "rank": 9
+      },
+      {
+        "id": 159410,
+        "spEffect": 59000,
+        "rank": 10
+      },
+      {
+        "id": 159411,
+        "spEffect": 59000,
+        "rank": 11
+      },
+      {
+        "id": 159412,
+        "spEffect": 59000,
+        "rank": 12
+      },
+      {
+        "id": 159413,
+        "spEffect": 59000,
+        "rank": 13
+      },
+      {
+        "id": 159414,
+        "spEffect": 59000,
+        "rank": 14
+      },
+      {
+        "id": 159415,
+        "spEffect": 59000,
+        "rank": 15
+      },
+      {
+        "id": 159416,
+        "spEffect": 59000,
+        "rank": 16
+      },
+      {
+        "id": 159417,
+        "spEffect": 59000,
+        "rank": 17
+      },
+      {
+        "id": 159418,
+        "spEffect": 59000,
+        "rank": 18
+      },
+      {
+        "id": 159419,
+        "spEffect": 59000,
+        "rank": 19
+      },
+      {
+        "id": 159420,
+        "spEffect": 59000,
+        "rank": 20
+      },
+      {
+        "id": 159501,
+        "spEffect": 59000,
+        "rank": 1
+      },
+      {
+        "id": 159502,
+        "spEffect": 59000,
+        "rank": 2
+      },
+      {
+        "id": 159503,
+        "spEffect": 59000,
+        "rank": 3
+      },
+      {
+        "id": 159504,
+        "spEffect": 59000,
+        "rank": 4
+      },
+      {
+        "id": 159505,
+        "spEffect": 59000,
+        "rank": 5
+      },
+      {
+        "id": 159506,
+        "spEffect": 59000,
+        "rank": 6
+      },
+      {
+        "id": 159507,
+        "spEffect": 59000,
+        "rank": 7
+      },
+      {
+        "id": 159508,
+        "spEffect": 59000,
+        "rank": 8
+      },
+      {
+        "id": 159509,
+        "spEffect": 59000,
+        "rank": 9
+      },
+      {
+        "id": 159510,
+        "spEffect": 59000,
+        "rank": 10
+      },
+      {
+        "id": 159511,
+        "spEffect": 59000,
+        "rank": 11
+      },
+      {
+        "id": 159512,
+        "spEffect": 59000,
+        "rank": 12
+      },
+      {
+        "id": 159513,
+        "spEffect": 59000,
+        "rank": 13
+      },
+      {
+        "id": 159514,
+        "spEffect": 59000,
+        "rank": 14
+      },
+      {
+        "id": 159515,
+        "spEffect": 59000,
+        "rank": 15
+      },
+      {
+        "id": 159516,
+        "spEffect": 59000,
+        "rank": 16
+      },
+      {
+        "id": 159517,
+        "spEffect": 59000,
+        "rank": 17
+      },
+      {
+        "id": 159518,
+        "spEffect": 59000,
+        "rank": 18
+      },
+      {
+        "id": 159519,
+        "spEffect": 59000,
+        "rank": 19
+      },
+      {
+        "id": 159520,
+        "spEffect": 59000,
+        "rank": 20
+      },
+      {
+        "id": 159601,
+        "spEffect": 59000,
+        "rank": 1
+      },
+      {
+        "id": 159602,
+        "spEffect": 59000,
+        "rank": 2
+      },
+      {
+        "id": 159603,
+        "spEffect": 59000,
+        "rank": 3
+      },
+      {
+        "id": 159604,
+        "spEffect": 59000,
+        "rank": 4
+      },
+      {
+        "id": 159605,
+        "spEffect": 59000,
+        "rank": 5
+      },
+      {
+        "id": 159606,
+        "spEffect": 59000,
+        "rank": 6
+      },
+      {
+        "id": 159607,
+        "spEffect": 59000,
+        "rank": 7
+      },
+      {
+        "id": 159608,
+        "spEffect": 59000,
+        "rank": 8
+      },
+      {
+        "id": 159609,
+        "spEffect": 59000,
+        "rank": 9
+      },
+      {
+        "id": 159610,
+        "spEffect": 59000,
+        "rank": 10
+      },
+      {
+        "id": 159611,
+        "spEffect": 59000,
+        "rank": 11
+      },
+      {
+        "id": 159612,
+        "spEffect": 59000,
+        "rank": 12
+      },
+      {
+        "id": 159613,
+        "spEffect": 59000,
+        "rank": 13
+      },
+      {
+        "id": 159614,
+        "spEffect": 59000,
+        "rank": 14
+      },
+      {
+        "id": 159615,
+        "spEffect": 59000,
+        "rank": 15
+      },
+      {
+        "id": 159616,
+        "spEffect": 59000,
+        "rank": 16
+      },
+      {
+        "id": 159617,
+        "spEffect": 59000,
+        "rank": 17
+      },
+      {
+        "id": 159618,
+        "spEffect": 59000,
+        "rank": 18
+      },
+      {
+        "id": 159619,
+        "spEffect": 59000,
+        "rank": 19
+      },
+      {
+        "id": 159620,
+        "spEffect": 59000,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Maximum HP reduction curse",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 160101,
+        "spEffect": 104101,
+        "rank": 1
+      },
+      {
+        "id": 160102,
+        "spEffect": 104102,
+        "rank": 2
+      },
+      {
+        "id": 160103,
+        "spEffect": 104103,
+        "rank": 3
+      },
+      {
+        "id": 160104,
+        "spEffect": 104104,
+        "rank": 4
+      },
+      {
+        "id": 160105,
+        "spEffect": 104105,
+        "rank": 5
+      },
+      {
+        "id": 160106,
+        "spEffect": 104106,
+        "rank": 6
+      },
+      {
+        "id": 160107,
+        "spEffect": 104107,
+        "rank": 7
+      },
+      {
+        "id": 160108,
+        "spEffect": 104108,
+        "rank": 8
+      },
+      {
+        "id": 160109,
+        "spEffect": 104109,
+        "rank": 9
+      },
+      {
+        "id": 160110,
+        "spEffect": 104110,
+        "rank": 10
+      },
+      {
+        "id": 160111,
+        "spEffect": 104111,
+        "rank": 11
+      },
+      {
+        "id": 160112,
+        "spEffect": 104112,
+        "rank": 12
+      },
+      {
+        "id": 160113,
+        "spEffect": 104113,
+        "rank": 13
+      },
+      {
+        "id": 160114,
+        "spEffect": 104114,
+        "rank": 14
+      },
+      {
+        "id": 160115,
+        "spEffect": 104115,
+        "rank": 15
+      },
+      {
+        "id": 160116,
+        "spEffect": 104116,
+        "rank": 16
+      },
+      {
+        "id": 160117,
+        "spEffect": 104117,
+        "rank": 17
+      },
+      {
+        "id": 160118,
+        "spEffect": 104118,
+        "rank": 18
+      },
+      {
+        "id": 160119,
+        "spEffect": 104119,
+        "rank": 19
+      },
+      {
+        "id": 160120,
+        "spEffect": 104120,
+        "rank": 20
+      },
+      {
+        "id": 160201,
+        "spEffect": 104201,
+        "rank": 1
+      },
+      {
+        "id": 160202,
+        "spEffect": 104202,
+        "rank": 2
+      },
+      {
+        "id": 160203,
+        "spEffect": 104203,
+        "rank": 3
+      },
+      {
+        "id": 160204,
+        "spEffect": 104204,
+        "rank": 4
+      },
+      {
+        "id": 160205,
+        "spEffect": 104205,
+        "rank": 5
+      },
+      {
+        "id": 160206,
+        "spEffect": 104206,
+        "rank": 6
+      },
+      {
+        "id": 160207,
+        "spEffect": 104207,
+        "rank": 7
+      },
+      {
+        "id": 160208,
+        "spEffect": 104208,
+        "rank": 8
+      },
+      {
+        "id": 160209,
+        "spEffect": 104209,
+        "rank": 9
+      },
+      {
+        "id": 160210,
+        "spEffect": 104210,
+        "rank": 10
+      },
+      {
+        "id": 160211,
+        "spEffect": 104211,
+        "rank": 11
+      },
+      {
+        "id": 160212,
+        "spEffect": 104212,
+        "rank": 12
+      },
+      {
+        "id": 160213,
+        "spEffect": 104213,
+        "rank": 13
+      },
+      {
+        "id": 160214,
+        "spEffect": 104214,
+        "rank": 14
+      },
+      {
+        "id": 160215,
+        "spEffect": 104215,
+        "rank": 15
+      },
+      {
+        "id": 160216,
+        "spEffect": 104216,
+        "rank": 16
+      },
+      {
+        "id": 160217,
+        "spEffect": 104217,
+        "rank": 17
+      },
+      {
+        "id": 160218,
+        "spEffect": 104218,
+        "rank": 18
+      },
+      {
+        "id": 160219,
+        "spEffect": 104219,
+        "rank": 19
+      },
+      {
+        "id": 160220,
+        "spEffect": 104220,
+        "rank": 20
+      },
+      {
+        "id": 160301,
+        "spEffect": 104301,
+        "rank": 1
+      },
+      {
+        "id": 160302,
+        "spEffect": 104302,
+        "rank": 2
+      },
+      {
+        "id": 160303,
+        "spEffect": 104303,
+        "rank": 3
+      },
+      {
+        "id": 160304,
+        "spEffect": 104304,
+        "rank": 4
+      },
+      {
+        "id": 160305,
+        "spEffect": 104305,
+        "rank": 5
+      },
+      {
+        "id": 160306,
+        "spEffect": 104306,
+        "rank": 6
+      },
+      {
+        "id": 160307,
+        "spEffect": 104307,
+        "rank": 7
+      },
+      {
+        "id": 160308,
+        "spEffect": 104308,
+        "rank": 8
+      },
+      {
+        "id": 160309,
+        "spEffect": 104309,
+        "rank": 9
+      },
+      {
+        "id": 160310,
+        "spEffect": 104310,
+        "rank": 10
+      },
+      {
+        "id": 160311,
+        "spEffect": 104311,
+        "rank": 11
+      },
+      {
+        "id": 160312,
+        "spEffect": 104312,
+        "rank": 12
+      },
+      {
+        "id": 160313,
+        "spEffect": 104313,
+        "rank": 13
+      },
+      {
+        "id": 160314,
+        "spEffect": 104314,
+        "rank": 14
+      },
+      {
+        "id": 160315,
+        "spEffect": 104315,
+        "rank": 15
+      },
+      {
+        "id": 160316,
+        "spEffect": 104316,
+        "rank": 16
+      },
+      {
+        "id": 160317,
+        "spEffect": 104317,
+        "rank": 17
+      },
+      {
+        "id": 160318,
+        "spEffect": 104318,
+        "rank": 18
+      },
+      {
+        "id": 160319,
+        "spEffect": 104319,
+        "rank": 19
+      },
+      {
+        "id": 160320,
+        "spEffect": 104320,
+        "rank": 20
+      },
+      {
+        "id": 160401,
+        "spEffect": 104401,
+        "rank": 1
+      },
+      {
+        "id": 160402,
+        "spEffect": 104402,
+        "rank": 2
+      },
+      {
+        "id": 160403,
+        "spEffect": 104403,
+        "rank": 3
+      },
+      {
+        "id": 160404,
+        "spEffect": 104404,
+        "rank": 4
+      },
+      {
+        "id": 160405,
+        "spEffect": 104405,
+        "rank": 5
+      },
+      {
+        "id": 160406,
+        "spEffect": 104406,
+        "rank": 6
+      },
+      {
+        "id": 160407,
+        "spEffect": 104407,
+        "rank": 7
+      },
+      {
+        "id": 160408,
+        "spEffect": 104408,
+        "rank": 8
+      },
+      {
+        "id": 160409,
+        "spEffect": 104409,
+        "rank": 9
+      },
+      {
+        "id": 160410,
+        "spEffect": 104410,
+        "rank": 10
+      },
+      {
+        "id": 160411,
+        "spEffect": 104411,
+        "rank": 11
+      },
+      {
+        "id": 160412,
+        "spEffect": 104412,
+        "rank": 12
+      },
+      {
+        "id": 160413,
+        "spEffect": 104413,
+        "rank": 13
+      },
+      {
+        "id": 160414,
+        "spEffect": 104414,
+        "rank": 14
+      },
+      {
+        "id": 160415,
+        "spEffect": 104415,
+        "rank": 15
+      },
+      {
+        "id": 160416,
+        "spEffect": 104416,
+        "rank": 16
+      },
+      {
+        "id": 160417,
+        "spEffect": 104417,
+        "rank": 17
+      },
+      {
+        "id": 160418,
+        "spEffect": 104418,
+        "rank": 18
+      },
+      {
+        "id": 160419,
+        "spEffect": 104419,
+        "rank": 19
+      },
+      {
+        "id": 160420,
+        "spEffect": 104420,
+        "rank": 20
+      },
+      {
+        "id": 160501,
+        "spEffect": 104501,
+        "rank": 1
+      },
+      {
+        "id": 160502,
+        "spEffect": 104502,
+        "rank": 2
+      },
+      {
+        "id": 160503,
+        "spEffect": 104503,
+        "rank": 3
+      },
+      {
+        "id": 160504,
+        "spEffect": 104504,
+        "rank": 4
+      },
+      {
+        "id": 160505,
+        "spEffect": 104505,
+        "rank": 5
+      },
+      {
+        "id": 160506,
+        "spEffect": 104506,
+        "rank": 6
+      },
+      {
+        "id": 160507,
+        "spEffect": 104507,
+        "rank": 7
+      },
+      {
+        "id": 160508,
+        "spEffect": 104508,
+        "rank": 8
+      },
+      {
+        "id": 160509,
+        "spEffect": 104509,
+        "rank": 9
+      },
+      {
+        "id": 160510,
+        "spEffect": 104510,
+        "rank": 10
+      },
+      {
+        "id": 160511,
+        "spEffect": 104511,
+        "rank": 11
+      },
+      {
+        "id": 160512,
+        "spEffect": 104512,
+        "rank": 12
+      },
+      {
+        "id": 160513,
+        "spEffect": 104513,
+        "rank": 13
+      },
+      {
+        "id": 160514,
+        "spEffect": 104514,
+        "rank": 14
+      },
+      {
+        "id": 160515,
+        "spEffect": 104515,
+        "rank": 15
+      },
+      {
+        "id": 160516,
+        "spEffect": 104516,
+        "rank": 16
+      },
+      {
+        "id": 160517,
+        "spEffect": 104517,
+        "rank": 17
+      },
+      {
+        "id": 160518,
+        "spEffect": 104518,
+        "rank": 18
+      },
+      {
+        "id": 160519,
+        "spEffect": 104519,
+        "rank": 19
+      },
+      {
+        "id": 160520,
+        "spEffect": 104520,
+        "rank": 20
+      },
+      {
+        "id": 160601,
+        "spEffect": 104601,
+        "rank": 1
+      },
+      {
+        "id": 160602,
+        "spEffect": 104602,
+        "rank": 2
+      },
+      {
+        "id": 160603,
+        "spEffect": 104603,
+        "rank": 3
+      },
+      {
+        "id": 160604,
+        "spEffect": 104604,
+        "rank": 4
+      },
+      {
+        "id": 160605,
+        "spEffect": 104605,
+        "rank": 5
+      },
+      {
+        "id": 160606,
+        "spEffect": 104606,
+        "rank": 6
+      },
+      {
+        "id": 160607,
+        "spEffect": 104607,
+        "rank": 7
+      },
+      {
+        "id": 160608,
+        "spEffect": 104608,
+        "rank": 8
+      },
+      {
+        "id": 160609,
+        "spEffect": 104609,
+        "rank": 9
+      },
+      {
+        "id": 160610,
+        "spEffect": 104610,
+        "rank": 10
+      },
+      {
+        "id": 160611,
+        "spEffect": 104611,
+        "rank": 11
+      },
+      {
+        "id": 160612,
+        "spEffect": 104612,
+        "rank": 12
+      },
+      {
+        "id": 160613,
+        "spEffect": 104613,
+        "rank": 13
+      },
+      {
+        "id": 160614,
+        "spEffect": 104614,
+        "rank": 14
+      },
+      {
+        "id": 160615,
+        "spEffect": 104615,
+        "rank": 15
+      },
+      {
+        "id": 160616,
+        "spEffect": 104616,
+        "rank": 16
+      },
+      {
+        "id": 160617,
+        "spEffect": 104617,
+        "rank": 17
+      },
+      {
+        "id": 160618,
+        "spEffect": 104618,
+        "rank": 18
+      },
+      {
+        "id": 160619,
+        "spEffect": 104619,
+        "rank": 19
+      },
+      {
+        "id": 160620,
+        "spEffect": 104620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Maximum stamina reduction curse",
+    "kind": "gem",
+    "ids": [
+      {
+        "id": 161101,
+        "spEffect": 106101,
+        "rank": 1
+      },
+      {
+        "id": 161102,
+        "spEffect": 106102,
+        "rank": 2
+      },
+      {
+        "id": 161103,
+        "spEffect": 106103,
+        "rank": 3
+      },
+      {
+        "id": 161104,
+        "spEffect": 106104,
+        "rank": 4
+      },
+      {
+        "id": 161105,
+        "spEffect": 106105,
+        "rank": 5
+      },
+      {
+        "id": 161106,
+        "spEffect": 106106,
+        "rank": 6
+      },
+      {
+        "id": 161107,
+        "spEffect": 106107,
+        "rank": 7
+      },
+      {
+        "id": 161108,
+        "spEffect": 106108,
+        "rank": 8
+      },
+      {
+        "id": 161109,
+        "spEffect": 106109,
+        "rank": 9
+      },
+      {
+        "id": 161110,
+        "spEffect": 106110,
+        "rank": 10
+      },
+      {
+        "id": 161111,
+        "spEffect": 106111,
+        "rank": 11
+      },
+      {
+        "id": 161112,
+        "spEffect": 106112,
+        "rank": 12
+      },
+      {
+        "id": 161113,
+        "spEffect": 106113,
+        "rank": 13
+      },
+      {
+        "id": 161114,
+        "spEffect": 106114,
+        "rank": 14
+      },
+      {
+        "id": 161115,
+        "spEffect": 106115,
+        "rank": 15
+      },
+      {
+        "id": 161116,
+        "spEffect": 106116,
+        "rank": 16
+      },
+      {
+        "id": 161117,
+        "spEffect": 106117,
+        "rank": 17
+      },
+      {
+        "id": 161118,
+        "spEffect": 106118,
+        "rank": 18
+      },
+      {
+        "id": 161119,
+        "spEffect": 106119,
+        "rank": 19
+      },
+      {
+        "id": 161120,
+        "spEffect": 106120,
+        "rank": 20
+      },
+      {
+        "id": 161201,
+        "spEffect": 106201,
+        "rank": 1
+      },
+      {
+        "id": 161202,
+        "spEffect": 106202,
+        "rank": 2
+      },
+      {
+        "id": 161203,
+        "spEffect": 106203,
+        "rank": 3
+      },
+      {
+        "id": 161204,
+        "spEffect": 106204,
+        "rank": 4
+      },
+      {
+        "id": 161205,
+        "spEffect": 106205,
+        "rank": 5
+      },
+      {
+        "id": 161206,
+        "spEffect": 106206,
+        "rank": 6
+      },
+      {
+        "id": 161207,
+        "spEffect": 106207,
+        "rank": 7
+      },
+      {
+        "id": 161208,
+        "spEffect": 106208,
+        "rank": 8
+      },
+      {
+        "id": 161209,
+        "spEffect": 106209,
+        "rank": 9
+      },
+      {
+        "id": 161210,
+        "spEffect": 106210,
+        "rank": 10
+      },
+      {
+        "id": 161211,
+        "spEffect": 106211,
+        "rank": 11
+      },
+      {
+        "id": 161212,
+        "spEffect": 106212,
+        "rank": 12
+      },
+      {
+        "id": 161213,
+        "spEffect": 106213,
+        "rank": 13
+      },
+      {
+        "id": 161214,
+        "spEffect": 106214,
+        "rank": 14
+      },
+      {
+        "id": 161215,
+        "spEffect": 106215,
+        "rank": 15
+      },
+      {
+        "id": 161216,
+        "spEffect": 106216,
+        "rank": 16
+      },
+      {
+        "id": 161217,
+        "spEffect": 106217,
+        "rank": 17
+      },
+      {
+        "id": 161218,
+        "spEffect": 106218,
+        "rank": 18
+      },
+      {
+        "id": 161219,
+        "spEffect": 106219,
+        "rank": 19
+      },
+      {
+        "id": 161220,
+        "spEffect": 106220,
+        "rank": 20
+      },
+      {
+        "id": 161301,
+        "spEffect": 106301,
+        "rank": 1
+      },
+      {
+        "id": 161302,
+        "spEffect": 106302,
+        "rank": 2
+      },
+      {
+        "id": 161303,
+        "spEffect": 106303,
+        "rank": 3
+      },
+      {
+        "id": 161304,
+        "spEffect": 106304,
+        "rank": 4
+      },
+      {
+        "id": 161305,
+        "spEffect": 106305,
+        "rank": 5
+      },
+      {
+        "id": 161306,
+        "spEffect": 106306,
+        "rank": 6
+      },
+      {
+        "id": 161307,
+        "spEffect": 106307,
+        "rank": 7
+      },
+      {
+        "id": 161308,
+        "spEffect": 106308,
+        "rank": 8
+      },
+      {
+        "id": 161309,
+        "spEffect": 106309,
+        "rank": 9
+      },
+      {
+        "id": 161310,
+        "spEffect": 106310,
+        "rank": 10
+      },
+      {
+        "id": 161311,
+        "spEffect": 106311,
+        "rank": 11
+      },
+      {
+        "id": 161312,
+        "spEffect": 106312,
+        "rank": 12
+      },
+      {
+        "id": 161313,
+        "spEffect": 106313,
+        "rank": 13
+      },
+      {
+        "id": 161314,
+        "spEffect": 106314,
+        "rank": 14
+      },
+      {
+        "id": 161315,
+        "spEffect": 106315,
+        "rank": 15
+      },
+      {
+        "id": 161316,
+        "spEffect": 106316,
+        "rank": 16
+      },
+      {
+        "id": 161317,
+        "spEffect": 106317,
+        "rank": 17
+      },
+      {
+        "id": 161318,
+        "spEffect": 106318,
+        "rank": 18
+      },
+      {
+        "id": 161319,
+        "spEffect": 106319,
+        "rank": 19
+      },
+      {
+        "id": 161320,
+        "spEffect": 106320,
+        "rank": 20
+      },
+      {
+        "id": 161401,
+        "spEffect": 106401,
+        "rank": 1
+      },
+      {
+        "id": 161402,
+        "spEffect": 106402,
+        "rank": 2
+      },
+      {
+        "id": 161403,
+        "spEffect": 106403,
+        "rank": 3
+      },
+      {
+        "id": 161404,
+        "spEffect": 106404,
+        "rank": 4
+      },
+      {
+        "id": 161405,
+        "spEffect": 106405,
+        "rank": 5
+      },
+      {
+        "id": 161406,
+        "spEffect": 106406,
+        "rank": 6
+      },
+      {
+        "id": 161407,
+        "spEffect": 106407,
+        "rank": 7
+      },
+      {
+        "id": 161408,
+        "spEffect": 106408,
+        "rank": 8
+      },
+      {
+        "id": 161409,
+        "spEffect": 106409,
+        "rank": 9
+      },
+      {
+        "id": 161410,
+        "spEffect": 106410,
+        "rank": 10
+      },
+      {
+        "id": 161411,
+        "spEffect": 106411,
+        "rank": 11
+      },
+      {
+        "id": 161412,
+        "spEffect": 106412,
+        "rank": 12
+      },
+      {
+        "id": 161413,
+        "spEffect": 106413,
+        "rank": 13
+      },
+      {
+        "id": 161414,
+        "spEffect": 106414,
+        "rank": 14
+      },
+      {
+        "id": 161415,
+        "spEffect": 106415,
+        "rank": 15
+      },
+      {
+        "id": 161416,
+        "spEffect": 106416,
+        "rank": 16
+      },
+      {
+        "id": 161417,
+        "spEffect": 106417,
+        "rank": 17
+      },
+      {
+        "id": 161418,
+        "spEffect": 106418,
+        "rank": 18
+      },
+      {
+        "id": 161419,
+        "spEffect": 106419,
+        "rank": 19
+      },
+      {
+        "id": 161420,
+        "spEffect": 106420,
+        "rank": 20
+      },
+      {
+        "id": 161501,
+        "spEffect": 106501,
+        "rank": 1
+      },
+      {
+        "id": 161502,
+        "spEffect": 106502,
+        "rank": 2
+      },
+      {
+        "id": 161503,
+        "spEffect": 106503,
+        "rank": 3
+      },
+      {
+        "id": 161504,
+        "spEffect": 106504,
+        "rank": 4
+      },
+      {
+        "id": 161505,
+        "spEffect": 106505,
+        "rank": 5
+      },
+      {
+        "id": 161506,
+        "spEffect": 106506,
+        "rank": 6
+      },
+      {
+        "id": 161507,
+        "spEffect": 106507,
+        "rank": 7
+      },
+      {
+        "id": 161508,
+        "spEffect": 106508,
+        "rank": 8
+      },
+      {
+        "id": 161509,
+        "spEffect": 106509,
+        "rank": 9
+      },
+      {
+        "id": 161510,
+        "spEffect": 106510,
+        "rank": 10
+      },
+      {
+        "id": 161511,
+        "spEffect": 106511,
+        "rank": 11
+      },
+      {
+        "id": 161512,
+        "spEffect": 106512,
+        "rank": 12
+      },
+      {
+        "id": 161513,
+        "spEffect": 106513,
+        "rank": 13
+      },
+      {
+        "id": 161514,
+        "spEffect": 106514,
+        "rank": 14
+      },
+      {
+        "id": 161515,
+        "spEffect": 106515,
+        "rank": 15
+      },
+      {
+        "id": 161516,
+        "spEffect": 106516,
+        "rank": 16
+      },
+      {
+        "id": 161517,
+        "spEffect": 106517,
+        "rank": 17
+      },
+      {
+        "id": 161518,
+        "spEffect": 106518,
+        "rank": 18
+      },
+      {
+        "id": 161519,
+        "spEffect": 106519,
+        "rank": 19
+      },
+      {
+        "id": 161520,
+        "spEffect": 106520,
+        "rank": 20
+      },
+      {
+        "id": 161601,
+        "spEffect": 106601,
+        "rank": 1
+      },
+      {
+        "id": 161602,
+        "spEffect": 106602,
+        "rank": 2
+      },
+      {
+        "id": 161603,
+        "spEffect": 106603,
+        "rank": 3
+      },
+      {
+        "id": 161604,
+        "spEffect": 106604,
+        "rank": 4
+      },
+      {
+        "id": 161605,
+        "spEffect": 106605,
+        "rank": 5
+      },
+      {
+        "id": 161606,
+        "spEffect": 106606,
+        "rank": 6
+      },
+      {
+        "id": 161607,
+        "spEffect": 106607,
+        "rank": 7
+      },
+      {
+        "id": 161608,
+        "spEffect": 106608,
+        "rank": 8
+      },
+      {
+        "id": 161609,
+        "spEffect": 106609,
+        "rank": 9
+      },
+      {
+        "id": 161610,
+        "spEffect": 106610,
+        "rank": 10
+      },
+      {
+        "id": 161611,
+        "spEffect": 106611,
+        "rank": 11
+      },
+      {
+        "id": 161612,
+        "spEffect": 106612,
+        "rank": 12
+      },
+      {
+        "id": 161613,
+        "spEffect": 106613,
+        "rank": 13
+      },
+      {
+        "id": 161614,
+        "spEffect": 106614,
+        "rank": 14
+      },
+      {
+        "id": 161615,
+        "spEffect": 106615,
+        "rank": 15
+      },
+      {
+        "id": 161616,
+        "spEffect": 106616,
+        "rank": 16
+      },
+      {
+        "id": 161617,
+        "spEffect": 106617,
+        "rank": 17
+      },
+      {
+        "id": 161618,
+        "spEffect": 106618,
+        "rank": 18
+      },
+      {
+        "id": 161619,
+        "spEffect": 106619,
+        "rank": 19
+      },
+      {
+        "id": 161620,
+        "spEffect": 106620,
+        "rank": 20
+      }
+    ]
+  },
+  {
+    "label": "Blood damage reduction",
+    "kind": "rune",
+    "reference": 1118000,
+    "ids": [
+      {
+        "id": 1117000,
+        "spEffect": 117000
+      },
+      {
+        "id": 1117001,
+        "spEffect": 117001
+      },
+      {
+        "id": 1117002,
+        "spEffect": 117002
+      }
+    ]
+  },
+  {
+    "label": "Increased damage taken",
+    "kind": "rune",
+    "reference": 1123000,
+    "ids": [
+      {
+        "id": 1124000,
+        "spEffect": 124000
+      },
+      {
+        "id": 1124001,
+        "spEffect": 124001
+      },
+      {
+        "id": 1124002,
+        "spEffect": 124002
+      }
+    ]
+  },
+  {
+    "label": "Lower fire defense",
+    "kind": "rune",
+    "reference": 1119000,
+    "ids": [
+      {
+        "id": 1120000,
+        "spEffect": 120000
+      },
+      {
+        "id": 1120001,
+        "spEffect": 120001
+      },
+      {
+        "id": 1120002,
+        "spEffect": 120002
+      }
+    ]
+  },
+  {
+    "label": "Reduced blood vial capacity",
+    "kind": "rune",
+    "reference": 1134000,
+    "ids": [
+      {
+        "id": 1135000,
+        "spEffect": 135000
+      },
+      {
+        "id": 1135001,
+        "spEffect": 135001
+      },
+      {
+        "id": 1135002,
+        "spEffect": 135002
+      },
+      {
+        "id": 1135003,
+        "spEffect": 135003
+      },
+      {
+        "id": 1135004,
+        "spEffect": 135004
+      }
+    ]
+  },
+  {
+    "label": "Reduced bullet capacity",
+    "kind": "rune",
+    "reference": 1136000,
+    "ids": [
+      {
+        "id": 1137000,
+        "spEffect": 137000
+      },
+      {
+        "id": 1137001,
+        "spEffect": 137001
+      },
+      {
+        "id": 1137002,
+        "spEffect": 137002
+      },
+      {
+        "id": 1137003,
+        "spEffect": 137003
+      },
+      {
+        "id": 1137004,
+        "spEffect": 137004
+      }
+    ]
+  },
+  {
+    "label": "Possible stamina recovery increase",
+    "kind": "rune",
+    "reference": 1105000,
+    "inferred": true,
+    "evidence": "The linked SpEffect rows set staminaRecoverChangeSpeed to +4, +7 or +15. The name, scaling, and behavior in game are unverified.",
+    "ids": [
+      {
+        "id": 1138000,
+        "spEffect": 138000,
+        "observation": "+4"
+      },
+      {
+        "id": 1138001,
+        "spEffect": 138001,
+        "observation": "+7"
+      },
+      {
+        "id": 1138002,
+        "spEffect": 138002,
+        "observation": "+15"
+      }
+    ]
+  },
+  {
+    "label": "Possible stamina recovery decrease",
+    "kind": "rune",
+    "reference": 1105000,
+    "inferred": true,
+    "evidence": "The linked SpEffect rows set staminaRecoverChangeSpeed to −4, −7 or −15. The name, scaling, and behavior in game are unverified.",
+    "ids": [
+      {
+        "id": 1139000,
+        "spEffect": 139000,
+        "observation": "−4"
+      },
+      {
+        "id": 1139001,
+        "spEffect": 139001,
+        "observation": "−7"
+      },
+      {
+        "id": 1139002,
+        "spEffect": 139002,
+        "observation": "−15"
+      }
+    ]
+  },
+  {
+    "label": "Possible slash damage reduction",
+    "kind": "rune",
+    "reference": 1118000,
+    "inferred": true,
+    "evidence": "The linked SpEffect rows set slashDamageCutRate to 0.95, 0.93 or 0.90. This suggests reduced slash damage; the effect has not been tested.",
+    "ids": [
+      {
+        "id": 1114000,
+        "spEffect": 114000,
+        "observation": "0.95"
+      },
+      {
+        "id": 1114001,
+        "spEffect": 114001,
+        "observation": "0.93"
+      },
+      {
+        "id": 1114002,
+        "spEffect": 114002,
+        "observation": "0.90"
+      }
+    ]
+  },
+  {
+    "label": "Possible blunt damage reduction",
+    "kind": "rune",
+    "reference": 1118000,
+    "inferred": true,
+    "evidence": "The linked SpEffect rows set blowDamageCutRate to 0.95, 0.93 or 0.90. This suggests reduced blunt damage; the effect has not been tested.",
+    "ids": [
+      {
+        "id": 1115000,
+        "spEffect": 115000,
+        "observation": "0.95"
+      },
+      {
+        "id": 1115001,
+        "spEffect": 115001,
+        "observation": "0.93"
+      },
+      {
+        "id": 1115002,
+        "spEffect": 115002,
+        "observation": "0.90"
+      }
+    ]
+  },
+  {
+    "label": "Possible thrust damage reduction",
+    "kind": "rune",
+    "reference": 1118000,
+    "inferred": true,
+    "evidence": "The linked SpEffect rows set thrustDamageCutRate to 0.95, 0.93 or 0.90. This suggests reduced thrust damage; the effect has not been tested.",
+    "ids": [
+      {
+        "id": 1116000,
+        "spEffect": 116000,
+        "observation": "0.95"
+      },
+      {
+        "id": 1116001,
+        "spEffect": 116001,
+        "observation": "0.93"
+      },
+      {
+        "id": 1116002,
+        "spEffect": 116002,
+        "observation": "0.90"
+      }
+    ]
+  },
+  {
+    "label": "Possible reduced Blood Echoes",
+    "kind": "rune",
+    "reference": 1100000,
+    "inferred": true,
+    "evidence": "Linked SpEffect rows set soulRate to 0.9, 0.8 and 0.7. This suggests reduced echoes; the in-game effect is unverified.",
+    "ids": [
+      {
+        "id": 1101000,
+        "spEffect": 101000,
+        "observation": "0.9"
+      },
+      {
+        "id": 1101001,
+        "spEffect": 101001,
+        "observation": "0.8"
+      },
+      {
+        "id": 1101002,
+        "spEffect": 101002,
+        "observation": "0.7"
+      }
+    ]
+  },
+  {
+    "label": "Unknown life reduction parameter",
+    "kind": "rune",
+    "reference": 1123000,
+    "inferred": true,
+    "evidence": "Linked SpEffect rows set lifeReductionRate to 0.8, 0.7 and 0.5. Its meaning and in-game behavior are unknown.",
+    "ids": [
+      {
+        "id": 1130000,
+        "spEffect": 130000,
+        "observation": "0.8"
+      },
+      {
+        "id": 1130001,
+        "spEffect": 130001,
+        "observation": "0.7"
+      },
+      {
+        "id": 1130002,
+        "spEffect": 130002,
+        "observation": "0.5"
+      }
+    ]
+  },
+  {
+    "label": "Unknown blood damage parameter",
+    "kind": "rune",
+    "reference": 1123000,
+    "inferred": true,
+    "evidence": "Linked SpEffect rows set bloodDamageRate to 80, 70 and 50, compared with 100 in ordinary rows. Its in-game meaning is unknown.",
+    "ids": [
+      {
+        "id": 1131000,
+        "spEffect": 131000,
+        "observation": "80"
+      },
+      {
+        "id": 1131001,
+        "spEffect": 131001,
+        "observation": "70"
+      },
+      {
+        "id": 1131002,
+        "spEffect": 131002,
+        "observation": "50"
+      }
+    ]
+  }
+]

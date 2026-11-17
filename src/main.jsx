@@ -3,6 +3,7 @@ import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { SaveEditor, SHAPES, integer } from './save-engine.js';
+import { registerExperimentalEffects } from './experimental-effects.js';
 
 import { gemVisual, gemDisplayName } from './gem-icons.js';
 import { normalizeGemEffectUnits } from './gem-effect-units.js';
@@ -14,6 +15,9 @@ import Altars from './altars.jsx';
 import ShortcutMap from './ShortcutMap.jsx';
 import GemBuilder from './GemBuilder.jsx';
 const QuestResearch = React.lazy(() => import('./QuestResearch.jsx'));
+const SaveComparison = React.lazy(() => import('./SaveComparison.jsx'));
+const ExperimentalEffects = React.lazy(() => import('./ExperimentalEffects.jsx'));
+const HexEditor = React.lazy(() => import('./HexEditor.jsx'));
 
 
 
@@ -55,6 +59,7 @@ function Icon({name,size=20,...props}) {
 
   const paths={flag:'M5 21V3 M5 4h13l-3 4 3 4H5',altar:'M4 21h16 M6 17h12v4H6z M8 13h8v4H8z M12 3v10 M9 6h6',grid:'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',bag:'M5 7h14l2 14H3L5 7z M8 7V5a4 4 0 0 1 8 0v2',box:'M3 7l9-4 9 4-9 4-9-4z M3 7v10l9 4 9-4V7 M12 11v10',gem:'M3 8l4-5h10l4 5-9 13L3 8z M3 8h18 M7 3l5 18 5-18',boss:'M5 3l14 18 M19 3L5 21 M3 15l6 6 M15 21l6-6 M4 4l4 1-3 3-1-4z M20 4l-4 1 3 3 1-4z',user:'M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0 M4 21v-2a8 8 0 0 1 16 0v2',history:'M3 11a9 9 0 1 1 2 7 M3 4v7h7 M12 7v5l3 2',upload:'M12 16V3 M7 8l5-5 5 5 M4 15v6h16v-6',download:'M12 3v13 M7 11l5 5 5-5 M4 17v4h16v-4',arrow:'M4 12h16 M14 6l6 6-6 6',check:'M5 12l4 4L19 6',shield:'M12 3l8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3z M8 12l3 3 5-6',search:'M10 3a7 7 0 1 1 0 14 7 7 0 0 1 0-14 M15 15l6 6',plus:'M12 5v14 M5 12h14',close:'M6 6l12 12 M18 6L6 18',undo:'M9 4L3 10l6 6 M3 10h10a7 7 0 0 1 7 7',redo:'M15 4l6 6-6 6 M21 10H11a7 7 0 0 0-7 7',moon:'M20 14A9 9 0 0 1 10 4a9 9 0 1 0 10 10',file:'M6 2h8l5 5v15H5V2z M13 2v6h6 M8 13h8 M8 17h6',info:'M12 11v6 M12 7v1 M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0',pin:'M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0 M15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0'};
 
+  paths.flask='M9 3h6 M10 3v6l-5.5 9.5A2.3 2.3 0 0 0 6.5 22h11a2.3 2.3 0 0 0 2-3.5L14 9V3 M7.5 16h9 M10 19h.01 M14 18h.01';
   paths.lamp='M18 22c0-5-1-8-1-12V5c0-2-1.5-3-3.5-3 M11.5 3c-.8 0-1.3.7-1.4 1.5l-.5 1h2.6l-.5-1c-.1-.8-.5-1.5-1.2-1.5 M13 3c.8 0 1.3.7 1.4 1.5l.5 1h-2.6l.5-1c.1-.8.5-1.5 1.2-1.5 M11 5.5 9.5 9 M13.5 5.5 15 9 M10 9h4.5 M10.5 8h3.5 M9.8 10h4.9l-.5 2.3h-3.9l-.5-2.3z M12.2 10v2.3 M10.3 13h3.9 M10.8 13l1.4 1 1.4-1 M12.2 14v.8 M16.5 22h3';
   paths.bag='M4 7h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z M9 7V5h6v2 M7 7v13 M17 7v13';
   paths.box='M3 10V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2 M3 10h18v10H3z M3 8h18 M7 4v16 M17 4v16 M10 10v3h4v-3';
@@ -159,6 +164,7 @@ export default function App(){
     }
   }, [theme]);
   const [informationOpen, setInformationOpen] = useState(false);
+  const [experimentalTab, setExperimentalTab] = useState('quests');
   const [saveError, setSaveError] = useState('');
 
   const [data,setData]=useState(null),[loadError,setLoadError]=useState(''),[editor,setEditor]=useState(null),[page,setPage]=useState('Overview'),[revision,render]=useState(0),[busy,setBusy]=useState(false),[notice,setNotice]=useState(null),[demo,setDemo]=useState(false),[modal,setModal]=useState(null),[search,setSearch]=useState(''),[category,setCategory]=useState('all'),[selected,setSelected]=useState(null),[upgradeKind,setUpgradeKind]=useState(1),[upgradeLocation,setUpgradeLocation]=useState('all');
@@ -167,7 +173,7 @@ export default function App(){
 
   const fileInput=useRef(),appearanceInput=useRef(),noticeTimer=useRef();
 
-  useEffect(()=>{Promise.all(['items','weapons','armors','bosses','upgrades','gem-sources','rune-templates','offsets','locations','lamps','shortcuts','shortcut-auxiliary','maps/manifest'].map(async n=>{const r=await fetch(`${base}data/${n}.json`);if(!r.ok)throw Error(`Could not load ${n}. Reload the page to retry.`);const value=await r.json();return [n,n==='upgrades'?normalizeGemEffectUnits(value):value];})).then(x=>setData(Object.fromEntries(x))).catch(e=>setLoadError(e.message));return()=>clearTimeout(noticeTimer.current);},[]);
+  useEffect(()=>{Promise.all(['items','weapons','armors','bosses','upgrades','gem-sources','rune-templates','experimental-effects','offsets','locations','lamps','shortcuts','shortcut-auxiliary','maps/manifest'].map(async n=>{const r=await fetch(`${base}data/${n}.json`);if(!r.ok)throw Error(`Could not load ${n}. Reload the page to retry.`);const value=await r.json();return [n,n==='upgrades'?normalizeGemEffectUnits(value):value];})).then(x=>setData(registerExperimentalEffects(Object.fromEntries(x)))).catch(e=>setLoadError(e.message));return()=>clearTimeout(noticeTimer.current);},[]);
 
   const notify=(text,error=false)=>{setNotice({text,error});clearTimeout(noticeTimer.current);noticeTimer.current=setTimeout(()=>setNotice(null),5500);};
 
@@ -225,7 +231,7 @@ export default function App(){
       {Object.entries({...titles, Experimental:'Experimental'}).map(([value, label]) => {
         const active = !informationOpen && page === value;
         return <button key={value} className={active ? 'active' : ''} aria-current={active ? 'page' : undefined} onClick={() => navigate(value)}>
-          <span className="section-icon"><Icon name={{Overview:'grid',Inventory:'bag',Storage:'box',Upgrades:'gem',Bosses:'boss',Character:'user',Altars:'altar',Lamps:'lamp',Shortcuts:'flag',WorldFlags:'flag',Changes:'history',Experimental:'user'}[value]} size={18}/></span>
+          <span className="section-icon"><Icon name={{Overview:'grid',Inventory:'bag',Storage:'box',Upgrades:'gem',Bosses:'boss',Character:'user',Altars:'altar',Lamps:'lamp',Shortcuts:'flag',WorldFlags:'flag',Changes:'history',Experimental:'flask'}[value]} size={18}/></span>
           {label}{value === 'Changes' && editor.history.length > 0 && <span className="nav-count">{editor.history.length}</span>}
         </button>;
       })}
@@ -304,7 +310,7 @@ export default function App(){
         <ShortcutSettings shortcuts={data.shortcuts} charts={data['maps/manifest']} editor={editor} act={act}/>
       </Panel>}
 
-      {page==='Experimental'&&<><div className="segmented" aria-label="Experimental categories"><button className="selected" aria-current="page">NPC quests</button></div><React.Suspense fallback={<p>Loading NPC research…</p>}><QuestResearch editor={editor} act={act} revision={revision}/></React.Suspense></>}
+      {page==='Experimental'&&<><div className="segmented" aria-label="Experimental categories"><button className={experimentalTab==='quests'?'selected':''} aria-pressed={experimentalTab==='quests'} onClick={()=>setExperimentalTab('quests')}>NPC quests</button><button className={experimentalTab==='effects'?'selected':''} aria-pressed={experimentalTab==='effects'} onClick={()=>setExperimentalTab('effects')}>Cut effects</button><button className={experimentalTab==='hex'?'selected':''} aria-pressed={experimentalTab==='hex'} onClick={()=>setExperimentalTab('hex')}>Byte editor</button><button className={experimentalTab==='comparison'?'selected':''} aria-pressed={experimentalTab==='comparison'} onClick={()=>setExperimentalTab('comparison')}>Save comparison</button></div><React.Suspense fallback={<p>Loading…</p>}>{experimentalTab==='quests'?<QuestResearch editor={editor} act={act} revision={revision}/>:experimentalTab==='effects'?<ExperimentalEffects data={data} editor={editor} act={act} notify={notify}/>:experimentalTab==='hex'?<HexEditor editor={editor} data={data} act={act} revision={revision}/>:<SaveComparison key={editor.name} editor={editor} data={data} revision={revision}/>}</React.Suspense></>}
 
       {page==='WorldFlags'&&<Panel title="World settings">
         <div className="world-action">

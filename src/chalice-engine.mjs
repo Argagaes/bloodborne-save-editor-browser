@@ -9,6 +9,8 @@ export const CATEGORY_NAMES = {
   equipment: 'Equipment',
   bloodgems: 'Blood gems',
   testing: 'Testing and cut content',
+  research: 'Research maps',
+  research_crash: 'Reported crashes',
 };
 
 export function parseRecord(values) {

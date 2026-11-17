@@ -19,7 +19,7 @@ function EffectField({index, value, onChange, entries, effects}) {
 export default function GemBuilder({data,onAdd}) {
   const [query,setQuery]=useState(''),[rating,setRating]=useState('all'),[shape,setShape]=useState(1),[primary,setPrimary]=useState(null),[cursed,setCursed]=useState(false),[extra,setExtra]=useState([NONE,NONE,NONE,NONE,NONE]);
   const effects=data.upgrades.gemEffects;
-  const entries=useMemo(()=>Object.entries(effects).filter(([id,e])=>Number(id)!==NONE&&e.name&&Number(e.rating)>0),[effects]);
+  const entries=useMemo(()=>Object.entries(effects).filter(([id,e])=>Number(id)!==NONE&&e.name&&!e.experimental&&Number(e.rating)>0),[effects]);
   const words=query.replace(/\bgems\b/ig,'gem').replace(/\bbloodgems?\b/ig,'blood gem').trim();
   const searchCursed=/\bcursed\b/i.test(query);
   const results=useMemo(()=>entries.filter(([id,e])=>(rating==='all'||Number(e.rating)===Number(rating))&&containsWords(`${(cursed||searchCursed)&&!/^cursed\b/i.test(e.name)?'Cursed ':''}${gemDisplayName(e.name)} ${e.effect} ${id}`,words)).slice(0,100),[entries,rating,words,cursed,searchCursed]);

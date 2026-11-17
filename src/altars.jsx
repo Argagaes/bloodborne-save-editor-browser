@@ -73,7 +73,7 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
   const categories = [...new Set(entries.map(dungeon => dungeon.category))];
   const search = query.trim().toLowerCase();
   const filtered = entries.filter(dungeon =>
-    (category === 'all' || dungeon.category === category)
+    ((category === 'all' && dungeon.category !== 'research_crash') || dungeon.category === category)
     && `${dungeon.glyph} ${dungeon.desc}`.toLowerCase().includes(search)
   );
 
@@ -132,6 +132,7 @@ export default function Altars({ editor, hidden, act, notify, Icon, Panel }) {
           <div className="selected-glyph">{selected.glyph}</div>
           <span className="eyebrow">{categoryName(selected.category)}</span>
           <p className="selected-description">{selected.desc}</p>
+          {['research','research_crash'].includes(selected.category) && <p className="catalog-warning">Research map ID, not a glyph. This record is constructed from an existing test-dungeon template; only its map identifiers were changed. Behavior and compatibility are unverified. Notes describe specific game versions and may differ on shadPS4. Keep a backup. <a href="https://docs.google.com/spreadsheets/d/1nrXYpOyUj7k9ff0vdtF0F-7xDK5XNF-tD0ivY7gelbs/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Source sheet</a></p>}
           {selected.category === 'testing' && <p className="catalog-warning">Testing and cut-content dungeons can contain unfinished areas. Keep your original backup.</p>}
           <label className="field">
             <span className="field-label">Target altar</span>
