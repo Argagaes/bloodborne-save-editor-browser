@@ -123,3 +123,8 @@ The event-flag pool group formula was cross-checked against 120 existing lamp an
 
 
 NPCs SpEffects.xlsx cross-check: the installed m25_00 map assigns entity 2500600 parameter 6040 (Annalise) and 2500790 parameter 6150 (Alfred). The previous association of parameter 6150 and item lot 34040 with Annalise was incorrect; flag 50001820 is now listed under Alfred. The workbook provides NPC parameter effect and modifier descriptions, not save flags. Values are transcribed as reference and are not verified in-game; variants and multipliers are not automatically editable.
+
+
+### Follow-up: temporary map state
+
+The user reports that the observed Eileen character-state bit was present only when the relevant map was loaded. It appears to track temporary map character state, like other enemies killed in the current area, rather than a permanent Eileen quest flag. The experimental first-encounter reset control was removed; the original observations above remain as historical research.
