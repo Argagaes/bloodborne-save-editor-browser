@@ -437,7 +437,7 @@
   },
   {
     "id": 10900,
-    "name": "Bullet [PG Designation]",
+    "name": "Bullet (possible Blood Bullets)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -447,7 +447,10 @@
     "onlyOne": false,
     "consumable": true,
     "refId": -1,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests this internal action may correspond to creating Blood Bullets; the meaning of PG is unconfirmed.",
+    "internalName": "Bullet [PG Designation]",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 10910,
@@ -479,7 +482,7 @@
   },
   {
     "id": 11100,
-    "name": "Poison / Bleeding Recovery Drug",
+    "name": "Poison / Bleeding Remedy (possible Antidote)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -489,11 +492,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 200,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an Antidote-related record; bleeding may refer to a cut mechanic or rapid poison.",
+    "internalName": "Poison / Bleeding Recovery Drug",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11101,
-    "name": "Frenzy / Beasthood Recovery Drug",
+    "name": "Frenzy / Beasthood Remedy (possible Sedative)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -503,11 +509,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 230,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests a possible Sedative-related record; any effect on Beasthood is unverified.",
+    "internalName": "Frenzy / Beasthood Recovery Drug",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11110,
-    "name": "Beasthood Drug",
+    "name": "Beasthood Drug (possible Beast Blood Pellet)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -517,7 +526,10 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 3240,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki associates this internal name with Beast Blood Pellets; behavior has not been verified.",
+    "internalName": "Beasthood Drug",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11120,
@@ -541,7 +553,7 @@
   },
   {
     "id": 11200,
-    "name": "Flame Jar",
+    "name": "Flame Jar (possible Molotov Cocktail)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -551,11 +563,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 100,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki associates this internal name with Molotov Cocktail.",
+    "internalName": "Flame Jar",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11210,
-    "name": "Poison Knife",
+    "name": "Poison Knife (internal record)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -565,11 +580,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 121,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki associates this internal name with Poison Knife.",
+    "internalName": "Poison Knife",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11220,
-    "name": "Oil Urn",
+    "name": "Oil Urn (internal record)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -579,11 +597,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 150,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki associates this internal name with Oil Urn.",
+    "internalName": "Oil Urn",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11230,
-    "name": "Pebble",
+    "name": "Pebble (internal record)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -593,11 +614,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 170,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki associates this internal name with Pebble.",
+    "internalName": "Pebble",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11240,
-    "name": "Throwing Knife",
+    "name": "Throwing Knife (internal record)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -607,11 +631,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 120,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki associates this internal name with Throwing Knife.",
+    "internalName": "Throwing Knife",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11250,
-    "name": "Back Flame Jar",
+    "name": "Rear Flame Jar (translation uncertain)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -621,11 +648,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 110,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The Japanese name refers to a flame jar used from behind. The wiki calls it Black Flame Jar and speculates about a stronger Molotov; the interpretation is unverified.",
+    "internalName": "Back Flame Jar",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11260,
-    "name": "Beast’s Temptation",
+    "name": "Beast Lure (possible Blood Cocktail)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -635,11 +665,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 160,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki translates this as Beast’s Temptation and suggests an association with Pungent Blood Cocktail; behavior is unverified.",
+    "internalName": "Beast’s Temptation",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11270,
-    "name": "HP Recovery Not Possible",
+    "name": "Prevent HP Recovery (possible Numbing Mist)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -649,11 +682,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 180,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Numbing Mist; behavior is unverified.",
+    "internalName": "HP Recovery Not Possible",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11300,
-    "name": "Enchantment: Fire",
+    "name": "Fire Enchantment (possible Fire Paper)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -663,11 +699,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 2200,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Fire Paper; behavior is unverified.",
+    "internalName": "Enchantment: Fire",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11310,
-    "name": "Enchantment: Magic",
+    "name": "Magic Enchantment (possible Arcane Paper)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -677,11 +716,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 2210,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki speculates this could be a cut arcane weapon enchantment; behavior is unverified.",
+    "internalName": "Enchantment: Magic",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11320,
-    "name": "Enchantment: Bolt",
+    "name": "Bolt Enchantment (possible Bolt Paper)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -691,11 +733,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 2220,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Bolt Paper; behavior is unverified.",
+    "internalName": "Enchantment: Bolt",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 11330,
-    "name": "Gun Power Up",
+    "name": "Gun Power Up (possible Bone Marrow Ash)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -705,11 +750,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 2230,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Bone Marrow Ash; behavior is unverified.",
+    "internalName": "Gun Power Up",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12000,
-    "name": "Tentacle Summon",
+    "name": "Tentacle Summon (possible Augur of Ebrietas)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -719,11 +767,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 370,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Augur of Ebrietas; behavior is unverified.",
+    "internalName": "Tentacle Summon",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12010,
-    "name": "Space Summon",
+    "name": "Space Summon (possible A Call Beyond)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -733,11 +784,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 380,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with A Call Beyond; behavior is unverified.",
+    "internalName": "Space Summon",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12020,
-    "name": "Reflective Wall",
+    "name": "Reflective Wall (possible Beast Roar)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -747,11 +801,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 390,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Beast Roar; behavior is unverified.",
+    "internalName": "Reflective Wall",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12030,
-    "name": "Become Slimy",
+    "name": "Become Slimy (possible Empty Phantasm Shell)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -761,11 +818,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 320,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Empty Phantasm Shell; behavior is unverified.",
+    "internalName": "Become Slimy",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12050,
-    "name": "Ranged Recovery",
+    "name": "Area Recovery (possible Choir Bell)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -775,11 +835,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 360,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Choir Bell; behavior is unverified.",
+    "internalName": "Ranged Recovery",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12060,
-    "name": "Accelerator",
+    "name": "Acceleration (possible Old Hunter Bone)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -789,11 +852,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 1120,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Old Hunter Bone; behavior is unverified.",
+    "internalName": "Accelerator",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12070,
-    "name": "Magic Crawling Across the Ground",
+    "name": "Ground-Crawling Magic (possible Tiny Tonitrus)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -803,11 +869,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 410,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Tiny Tonitrus; its note mistakenly labels this entry as 2070, but the item-ID table identifies it as 12070.",
+    "internalName": "Magic Crawling Across the Ground",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12080,
-    "name": "Guided Bullet",
+    "name": "Homing Projectile (possible Executioner’s Gloves)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -817,11 +886,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 350,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Executioner’s Gloves; behavior is unverified.",
+    "internalName": "Guided Bullet",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12090,
-    "name": "Tackle Each Other",
+    "name": "Friendly Fire (possible Shaman Bone Blade)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -831,11 +903,14 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 310,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The Japanese internal name indicates allies fighting each other; the wiki suggests Shaman Bone Blade. Behavior is unverified.",
+    "internalName": "Tackle Each Other",
+    "nameSource": "Wiki translation and possible association"
   },
   {
     "id": 12110,
-    "name": "Messenger Mimic",
+    "name": "Messenger Mimic (possible Messenger’s Gift)",
     "classification": "internal",
     "present": true,
     "goodsType": 0,
@@ -845,6 +920,9 @@
     "onlyOne": false,
     "consumable": false,
     "refId": 340,
-    "iconId": 0
+    "iconId": 0,
+    "researchNote": "The wiki suggests an association with Messenger’s Gift; behavior is unverified.",
+    "internalName": "Messenger Mimic",
+    "nameSource": "Wiki translation and possible association"
   }
 ]

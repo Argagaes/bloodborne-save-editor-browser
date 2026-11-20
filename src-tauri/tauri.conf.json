@@ -1,6 +1,6 @@
 {
   "productName": "Bloodborne Save Editor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "identifier": "com.argagaes.bloodbornesaveeditor",
   "build": {
     "beforeBuildCommand": "npm run build",

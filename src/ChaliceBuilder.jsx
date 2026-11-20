@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import DungeonEffects from './DungeonEffects.jsx';
+import {dungeonSummary, setDungeonMapByte, AREA_NAMES, LAYOUT_NAMES} from './dungeon-record.js';
 import { ACTIVE_FLAGS, formatHexRecord, parseHexRecord } from './chalice-engine.mjs';
 
 export default function ChaliceBuilder({altar, template, act, editor, notify, onClose, onRecordChange, poolPanel}) {
@@ -6,6 +8,9 @@ export default function ChaliceBuilder({altar, template, act, editor, notify, on
   const [flagsMode,setFlagsMode]=useState('preserve');
   const [flags,setFlags]=useState(()=>formatHexRecord(altar.flags));
   const [error,setError]=useState('');
+  let bytes=null;try {bytes=parseHexRecord(record);} catch {}
+  const summary=dungeonSummary(bytes);
+  function updateRecord(next) {const value=formatHexRecord(next);setRecord(value);onRecordChange(value);}
   function apply() {
     try {
       const bytes=parseHexRecord(record);
@@ -20,12 +25,14 @@ export default function ChaliceBuilder({altar, template, act, editor, notify, on
     <div className="catalog-heading"><div><h2>Custom chalice builder</h2><p className="muted">Altar {altar.slot} · {template?`Starting from ${template.glyph}`:'Starting from the current altar'}</p></div><button type="button" className="button secondary" onClick={onClose}>Close builder</button></div>
     <p>Edit or paste all 124 bytes in order, as two-digit hexadecimal values separated by spaces or newlines. Byte offsets begin at 00. Values are not validated as a playable dungeon.</p>
     <p className="muted">The research identifies byte 00 as the map marker, 01 as area/depth, and 02–03 as layout seed. Later bytes include server identity, feature and rite data; preserve unknown bytes unless you intend to change them.</p>
-    <label className="field"><span className="field-label">Dungeon record · 124 bytes</span><textarea className="chalice-hex" aria-label="Dungeon record hex bytes" spellCheck="false" value={record} onChange={e=>{setRecord(e.target.value);onRecordChange(e.target.value);}}/></label>
+    <section className="builder-section"><h3>Dungeon overview</h3>{summary?<><p>Changing a map field also updates its matching copy in the record. A different copy is preserved for research.</p><div className="dungeon-effects-grid"><label className="field"><span className="field-label">Area and depth</span><select value={bytes[1]} onChange={e=>updateRecord(setDungeonMapByte(bytes,1,Number(e.target.value)))}>{!Object.hasOwn(AREA_NAMES,bytes[1])&&<option value={bytes[1]}>{summary.area}</option>}{Object.entries(AREA_NAMES).map(([id,name])=><option key={id} value={id}>{name}</option>)}</select></label><label className="field"><span className="field-label">Layout variant</span><select value={bytes[2]} onChange={e=>updateRecord(setDungeonMapByte(bytes,2,Number(e.target.value)))}>{!Object.hasOwn(LAYOUT_NAMES,bytes[2])&&<option value={bytes[2]}>{summary.layout}</option>}{Object.entries(LAYOUT_NAMES).map(([id,name])=><option key={id} value={id}>{name}</option>)}</select></label><label className="field"><span className="field-label">Layout number (0–99)</span><input type="number" min="0" max="99" step="1" key={bytes[3]} defaultValue={bytes[3]} onBlur={e=>{const n=Number(e.target.value);if(e.target.value.trim()!==''&&Number.isInteger(n)&&n>=0&&n<=99)updateRecord(setDungeonMapByte(bytes,3,n));else e.target.value=String(bytes[3]);}} onKeyDown={e=>{if(e.key==='Enter')e.currentTarget.blur();}}/></label><span><strong>Map ID</strong> · {summary.map}</span></div></>:<p>Enter a complete record to view its details.</p>}{summary&&!summary.duplicate&&<p className="catalog-warning">The repeated map identifier differs from the first one; changing a field preserves a different copy. Verify the record before assigning it.</p>}</section>
+    <section className="builder-section"><h3>Dungeon effects and rites</h3><DungeonEffects record={bytes} onChange={updateRecord}/></section>
+    <details className="builder-section"><summary><strong>Raw dungeon record</strong></summary><label className="field"><span className="field-label">Dungeon record · 124 bytes</span><textarea className="chalice-hex" aria-label="Dungeon record hex bytes" spellCheck="false" value={record} onChange={e=>{setRecord(e.target.value);onRecordChange(e.target.value);}}/></label></details>
     <label className="field"><span className="field-label">Altar activation and progress flags</span><select value={flagsMode} onChange={e=>setFlagsMode(e.target.value)}><option value="preserve">Preserve current altar flags</option><option value="active">Set standard activation flags (resets progress)</option><option value="custom">Edit all 124 flag bytes</option></select></label>
     {flagsMode==='custom'&&<label className="field"><span className="field-label">Activation and progress flags · 124 bytes</span><textarea className="chalice-hex" aria-label="Altar flag hex bytes" spellCheck="false" value={flags} onChange={e=>setFlags(e.target.value)}/></label>}
     <p className="catalog-warning">Custom layouts, edited rites or unknown flags may crash the game or make an altar unusable. Keep a backup. Preserving flags on an empty altar may leave it inactive.</p>
     <p className="muted"><a href="https://docs.google.com/spreadsheets/d/1zFIzhnXHhYomlR-tFJcyk3cPywf1snqkDH900j6rtAI/edit?gid=935899711#gid=935899711" target="_blank" rel="noopener noreferrer">Tomb Prospectors hex research</a> · <a href="https://docs.google.com/spreadsheets/d/1nrXYpOyUj7k9ff0vdtF0F-7xDK5XNF-tD0ivY7gelbs/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Test chalice notes</a></p>
     {error&&<p className="error-text" role="alert">{error}</p>}<button type="button" className="button primary" onClick={apply}>Assign custom dungeon to altar {altar.slot}</button>
-    {poolPanel(bytes=>{const value= formatHexRecord(bytes);setRecord(value);onRecordChange(value);})}
+    {poolPanel(updateRecord)}
   </section>;
 }

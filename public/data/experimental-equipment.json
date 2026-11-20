@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1090000,
+    "family": "weapon",
+    "name": "Roaming fists",
+    "wikiName": "徘徊拳",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 2090000,
+    "family": "weapon",
+    "name": "Roaming Chikage",
+    "wikiName": "徘徊千景",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 4090000,
+    "family": "weapon",
+    "name": "Roaming Blade of Mercy",
+    "wikiName": "徘徊慈悲の刃",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 5090000,
+    "family": "weapon",
+    "name": "Roaming Hunter Axe",
+    "wikiName": "徘徊獣狩りの斧",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 5190000,
+    "family": "weapon",
+    "name": "Roaming Burial Blade",
+    "wikiName": "徘徊葬送の刃",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 6090000,
+    "family": "weapon",
+    "name": "Roaming Hunter Blunderbuss",
+    "wikiName": "徘徊獣狩りの散弾銃",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 6190000,
+    "family": "weapon",
+    "name": "Roaming Ludwig's Rifle",
+    "wikiName": "徘徊ルドウイークの長銃",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 7090000,
+    "family": "weapon",
+    "name": "Roaming Saw Cleaver",
+    "wikiName": "徘徊ノコギリ鉈",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 7190000,
+    "family": "weapon",
+    "name": "Roaming Saw Spear",
+    "wikiName": "徘徊ノコギリ槍",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 8090000,
+    "family": "weapon",
+    "name": "Roaming Kirkhammer",
+    "wikiName": "徘徊教会の石槌",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 8190000,
+    "family": "weapon",
+    "name": "Roaming Ludwig's Holy Blade",
+    "wikiName": "徘徊ルドウイークの聖剣",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 9090000,
+    "family": "weapon",
+    "name": "Roaming Beast Claw",
+    "wikiName": "徘徊獣の爪",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 10090000,
+    "family": "weapon",
+    "name": "Roaming Rifle Spear",
+    "wikiName": "徘徊銃槍",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 10190000,
+    "family": "weapon",
+    "name": "Roaming Reiterpallasch",
+    "wikiName": "徘徊レイテルパラッシュ",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 11090000,
+    "family": "weapon",
+    "name": "Roaming Stake Driver",
+    "wikiName": "徘徊パイルハンマー",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 12090000,
+    "family": "weapon",
+    "name": "Roaming Logarius' Wheel",
+    "wikiName": "徘徊ローゲリウスの車輪",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 13090000,
+    "family": "weapon",
+    "name": "Roaming Tonitrus",
+    "wikiName": "徘徊トニトルス",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 14090000,
+    "family": "weapon",
+    "name": "Roaming Hunter Pistol",
+    "wikiName": "徘徊獣狩りの短銃",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 14190000,
+    "family": "weapon",
+    "name": "Roaming Evelyn",
+    "wikiName": "徘徊エヴェリン",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 14290000,
+    "family": "weapon",
+    "name": "Roaming Repeating Pistol",
+    "wikiName": "徘徊教会の連装銃",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 15090000,
+    "family": "weapon",
+    "name": "Roaming Cannon",
+    "wikiName": "徘徊大砲",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 18090000,
+    "family": "weapon",
+    "name": "Roaming Rosmarinus",
+    "wikiName": "徘徊ロスマリヌス",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 18190000,
+    "family": "weapon",
+    "name": "Roaming Flamesprayer",
+    "wikiName": "徘徊火炎放射",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 19090000,
+    "family": "weapon",
+    "name": "Roaming Wooden Shield",
+    "wikiName": "徘徊木の盾",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 20090000,
+    "family": "weapon",
+    "name": "Roaming Hunter's Torch",
+    "wikiName": "徘徊獣狩りの松明",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 22090000,
+    "family": "weapon",
+    "name": "Roaming Threaded Cane",
+    "wikiName": "徘徊仕込み杖",
+    "classification": "Roaming weapon / ghost record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1000,
+    "family": "armor",
+    "name": "100",
+    "wikiName": "100",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1100,
+    "family": "armor",
+    "name": "M spot",
+    "wikiName": "Ｍスポット",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1200,
+    "family": "armor",
+    "name": "Short",
+    "wikiName": "ショート",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1300,
+    "family": "armor",
+    "name": "all back long",
+    "wikiName": "オールバックロング",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1400,
+    "family": "armor",
+    "name": "tail",
+    "wikiName": "テール",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1500,
+    "family": "armor",
+    "name": "disturbed long hair",
+    "wikiName": "乱れ長髪",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1600,
+    "family": "armor",
+    "name": "center part",
+    "wikiName": "センターパート",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1700,
+    "family": "armor",
+    "name": "semi-long seven categories",
+    "wikiName": "セミロング七三分け",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1800,
+    "family": "armor",
+    "name": "wave",
+    "wikiName": "ウェーブ",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 1900,
+    "family": "armor",
+    "name": "Bob",
+    "wikiName": "ボブ",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3000,
+    "family": "armor",
+    "name": "skins",
+    "wikiName": "スキン",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3100,
+    "family": "armor",
+    "name": "Berry Short",
+    "wikiName": "ベリーショート",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3200,
+    "family": "armor",
+    "name": "wave short",
+    "wikiName": "ウェーブショート",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3300,
+    "family": "armor",
+    "name": "straight short",
+    "wikiName": "ストレートショート",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3400,
+    "family": "armor",
+    "name": "straight long",
+    "wikiName": "ストレートロング",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3500,
+    "family": "armor",
+    "name": "Ponytail A",
+    "wikiName": "ポニーテールA",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3600,
+    "family": "armor",
+    "name": "Ponytail B",
+    "wikiName": "ポニーテールB",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3700,
+    "family": "armor",
+    "name": "Wave Long",
+    "wikiName": "ウェーブロング",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3800,
+    "family": "armor",
+    "name": "sinion",
+    "wikiName": "シニヨン",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 3900,
+    "family": "armor",
+    "name": "Lay down",
+    "wikiName": "編み込み",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 5000,
+    "family": "armor",
+    "name": "wandering hairstyle",
+    "wikiName": "徘徊髪型",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 901000,
+    "family": "armor",
+    "name": "body",
+    "wikiName": "からだ",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 902000,
+    "family": "armor",
+    "name": "thousand arms",
+    "wikiName": "腕",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  },
+  {
+    "id": 903000,
+    "family": "armor",
+    "name": "000 legs",
+    "wikiName": "脚",
+    "classification": "Character appearance / body record",
+    "present": true,
+    "status": "Parameter found; inventory and in-game behavior untested"
+  }
+]

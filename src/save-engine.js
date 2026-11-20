@@ -1,3 +1,4 @@
+import {STAT_NAMES} from './character-stat-rules.js';
 // Binary layouts ported from src-tauri/src/data_handling. All writes are local.
 import { readAltars, writeAltar } from './chalice-engine.mjs';
 import { SPECIAL_GEMS, isCurseEffect, defaultCurse } from './gem-special.js';
@@ -117,6 +118,14 @@ export class SaveEditor {
   altars(catalog) { return readAltars(this.bytes, this.inventoryOffset, catalog); }
   replaceAltar(slot, dungeon) { writeAltar(this.bytes, this.inventoryOffset, slot, dungeon); }
   setStat(name,value) { const s=this.data.offsets.find(s=>s.name===name); if(!s) throw Error('Unknown attribute.'); const n=integer(value,s.length===1?255:0xffffffff); for(let i=0;i<s.times;i++) this.put(this.usernameOffset+s.rel_offset+4*i,n,s.length); }
+  setCharacterAttribute(name,value) {
+    if(!STAT_NAMES.includes(name)) throw Error('Choose a character attribute.');
+    const n=integer(value),stats={...this.stats,[name]:n};
+    const level=STAT_NAMES.reduce((sum,key)=>sum+stats[key],0)-50;
+    this.setStat(name,n);
+    if(Number.isSafeInteger(level)&&level>=0&&level<=0xffffffff) this.setStat('Level',level);
+  }
+  setCharacterOrigin(origin) { this.setStat('Origin',integer(origin,8)); }
   setName(value) { if(!/^[\x20-\x7e]{1,16}$/.test(value)) throw Error('Use 1–16 printable ASCII characters.'); for(let i=0;i<16;i++) this.bytes[this.usernameOffset+1+2*i]=value.charCodeAt(i)||0; }
   quantity(article,n) { if(article.family!=='item'||article.category==='key') throw Error('This item quantity cannot be edited.'); this.put(article.offset+12,integer(n)); }
   transform(article,id) {
@@ -179,6 +188,16 @@ export class SaveEditor {
     const record=new Uint8Array(40),v=new DataView(record.buffer);
     [id,source,template.kind,template.shape,...template.effects].forEach((n,j)=>v.setUint32(j*4,integer(n),true));
     const next=new Uint8Array(this.bytes.length); next.set(this.bytes.subarray(0,empty)); next.set(record,empty); next.set(this.bytes.subarray(empty+8,this.bytes.length-32),empty+40); this.bytes=next;
+  }
+  cloneGem(upgrade) {
+    const current=this.upgrades.find(u=>u.id===upgrade?.id && u.offset===upgrade.offset);
+    if(!current || current.kind!==1 || current.location==='unreferenced') throw Error('Select an existing blood gem to clone.');
+    this.addUpgrade({kind:1,source:current.source,shape:current.shape,effects:[...current.effects]},current.location==='storage'?'storage':'inventory');
+  }
+  cloneRune(upgrade) {
+    const current=this.upgrades.find(u=>u.id===upgrade?.id && u.offset===upgrade.offset);
+    if(!current || current.kind!==2 || current.location==='unreferenced') throw Error('Select an existing Caryll rune to clone.');
+    this.addUpgrade({kind:2,source:current.source,shape:current.shape,effects:[...current.effects]},current.location==='storage'?'storage':'inventory');
   }
   removeUpgrade(upgrade) {
     const current=this.upgrades.find(u=>u.id===upgrade?.id && u.offset===upgrade.offset);

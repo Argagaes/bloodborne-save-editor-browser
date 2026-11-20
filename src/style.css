@@ -377,8 +377,8 @@ main{ grid-column: 2; padding: 28px; min-width: 0; }
 .gem-builder-secondary { border-top: 1px solid var(--border); margin-top: 16px; padding-top: 14px; }
 .gem-builder-secondary-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-size: 12px; }
 .gem-builder-secondary-heading span { color: var(--muted); font-size: 11px; }
-.gem-builder-effect { min-width: 0; }
-.gem-effect-current { display: flex; gap: 6px; align-items: center; justify-content: space-between; min-height: 28px; color: var(--muted); font-size: 11px; }
+.gem-builder-effect { min-width: 0; display: flex; flex-direction: column; }
+.gem-effect-current { display: flex; flex: 1; gap: 6px; align-items: center; justify-content: space-between; box-sizing: border-box; min-height: 44px; margin: 4px 0; color: var(--muted); font-size: 11px; }
 .gem-effect-current span { overflow-wrap: anywhere; }
 .gem-effect-search { position: relative; }
 .gem-effect-search input { width: 100%; }
@@ -425,3 +425,16 @@ main{ grid-column: 2; padding: 28px; min-width: 0; }
 
 .builder-gem-pool { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
 .builder-gem-pool h3 { margin: 0 0 8px; }
+
+.research-invitation { margin-top: 18px; padding: 13px 16px; border: 1px solid var(--control-border); border-left: 3px solid var(--accent); border-radius: 4px; background: var(--panel); color: var(--panel-text); }
+.research-invitation strong, .research-invitation span { display: block; }
+.research-invitation span { margin-top: 4px; line-height: 1.5; }
+
+.upgrade-full-layout { display: block; }
+.upgrade-card { border-bottom: 1px solid var(--border); }
+.upgrade-card > .item-row { border-bottom: 0; }
+.upgrade-card-actions { display: flex; gap: 18px; padding: 0 14px 10px 62px; }
+.upgrade-card-actions button:disabled { opacity: .45; cursor: not-allowed; }
+.gem-editor-dialog .gem-builder-effects { margin-top: 16px; }
+
+.gem-effect-category { display: block; margin-top: 4px; font-size: 10px; line-height: 1.35; opacity: .85; overflow-wrap: anywhere; }

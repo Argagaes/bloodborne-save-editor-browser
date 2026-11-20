@@ -50,3 +50,23 @@ test('rating variants stay within the primary effect family and curse toggle pre
   e.transaction('uncurse',()=>e.setGemCursed(gem,false));gem=e.upgrades.find(x=>x.id===gem.id);assert.equal(gem.effects[1],17112);assert.ok(!gem.effects.some(id=>isCurseEffect(effects[id])));
   e.transaction('rating',()=>e.setEffect(gem,0,126320));assert.equal(e.upgrades.find(x=>x.id===gem.id).effects[0],126320);
 });
+
+test('clone gems preserves all effects and source, assigns a new ID, reloads and undoes',()=>{
+ const e=make(),template={kind:1,source:0x80016094,shape:63,effects:[126314,17112,42118,none,none,41218]};
+ e.transaction('add',()=>e.addUpgrade(template,'storage'));
+ const original=e.upgrades.findLast(u=>u.kind===1&&u.location==='storage'&&u.effects[0]===template.effects[0]);
+ const before=e.bytes.slice(),ids=new Set(e.upgrades.map(u=>u.id));
+ e.transaction('clone',()=>e.cloneGem(original));
+ const clone=e.upgrades.find(u=>!ids.has(u.id));assert.ok(clone);assert.equal(clone.location,'storage');assert.equal(clone.source,original.source);assert.equal(clone.shape,original.shape);assert.deepEqual(clone.effects,original.effects);
+ const reloaded=new SaveEditor(e.bytes,data);assert.deepEqual(reloaded.upgrades.find(u=>u.id===clone.id).effects,original.effects);
+ e.undo();assert.deepEqual(e.bytes,before);
+});
+
+test('cloning a rune retains its type, source and all effects and supports undo',()=>{
+ const e=make(),template={kind:2,...data['rune-templates'][0]};
+ e.transaction('add',()=>e.addUpgrade(template));
+ const original=e.upgrades.findLast(u=>u.kind===2&&u.location==='inventory'&&u.source===template.source),before=e.bytes.slice(),ids=new Set(e.upgrades.map(u=>u.id));
+ e.transaction('clone rune',()=>e.cloneRune(original));const clone=e.upgrades.find(u=>!ids.has(u.id));
+ assert.equal(clone.kind,2);assert.equal(clone.shape,original.shape);assert.equal(clone.source,original.source);assert.deepEqual(clone.effects,original.effects);
+ assert.deepEqual(new SaveEditor(e.bytes,data).upgrades.find(u=>u.id===clone.id).effects,original.effects);e.undo();assert.deepEqual(e.bytes,before);
+});

@@ -20,7 +20,7 @@ test('adding an experimental item round trips and undo restores the save',()=>{
   assert.ok(editor.transaction('experimental item',()=>editor.addItem(11310,1)));
   const reopened=new SaveEditor(editor.bytes,data);
   const item=reopened.articles.find(x=>x.family==='item'&&x.id===11310);
-  assert.equal(item?.info.item_name,'Enchantment: Magic');
+  assert.equal(item?.info.item_name,data['experimental-items'].find(x=>x.id===11310).name);
   assert.equal(item?.location,'inventory');
   editor.undo();assert.deepEqual(editor.bytes,before);
   assert.throws(()=>editor.transaction('unavailable',()=>editor.addItem(7101,1)),/Unknown item/);
